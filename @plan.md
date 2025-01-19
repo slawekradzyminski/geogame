@@ -1,88 +1,70 @@
 # Geography Quiz App - Project Plan
 
 ## Data Preparation ✅
-- Scrape country data ✅
-- Create data validation ✅
-- Add Polish translations for capitals and languages ✅
-- Create separate files for EN and PL data ✅
+- Scrape country data from REST Countries API
+- Process and validate data
+- Save data in JSON format for both English and Polish
+- Add flag images to public directory
 
 ## Internationalization Setup ✅
-- Install i18n dependencies ✅
-- Configure i18n ✅
-- Create translation files structure ✅
-- Add language switcher ✅
-- Implement translations for UI elements ✅
+- Configure i18next
+- Add translations for English and Polish
+- Implement language switcher
+- Add translations for quiz content
 
 ## Layout & UI Foundation ✅
-- Set up Chakra UI ✅
-- Create responsive layout ✅
-- Implement dark/light mode toggle ✅
-- Add consistent width constraints ✅
-- Create responsive home page ✅
+- Set up Chakra UI with theme support
+- Create responsive layout
+- Implement dark/light mode toggle
+- Add consistent width constraints
 
-## Game Implementation 🎮
-- Create QuizContext for game state management
-- Implement quiz logic:
-  - Random country selection
-  - Answer options generation
-  - Score tracking
-  - Progress tracking
-- Add quiz components:
-  - Question display
-  - Answer options
-  - Progress indicator
-  - Score display
-  - Timer (optional)
-  - Results summary
+## Game Implementation 🚧
+### Capital Quiz Mode ✅
+- Basic quiz functionality works
+- TODO: Add interactive world map to show country location
+- TODO: Add animations for correct/incorrect answers
 
-## Quiz Modes 🎯
-- Capitals quiz:
-  - Show country name, guess capital
-  - Display map preview (optional)
-- Flags quiz:
-  - Show flag, guess country name
-  - Add flag images handling
-- Languages quiz:
-  - Show country name, guess official language(s)
-  - Handle multiple correct answers
+### Flag Quiz Mode ❌
+- Currently broken
+- Issues with flag image loading
+- Needs complete reimplementation
 
-## Navigation & Flow 🔄
-- Add route protection
-- Implement game flow:
-  - Start screen
-  - Questions sequence
-  - Results screen
-  - Play again option
-- Add animations for transitions
+### Language Quiz Mode ❌
+- Currently broken
+- Issues with language data
+- Needs complete reimplementation
 
-## Styling & Polish 🎨
-- Create consistent spacing system
-- Add animations for:
-  - Answer selection
-  - Score updates
-  - Transitions between questions
-- Improve visual feedback for:
-  - Correct/incorrect answers
-  - Game progress
-  - Final score
+## Testing 🚧
+### Unit Tests (Vitest)
+- Set up Vitest configuration
+- Add tests for utils/quiz.ts
+- Add tests for QuizContext
+- Add tests for game components
 
-## Testing 🧪
-- Add unit tests for:
-  - Quiz logic
-  - Score calculation
-  - Answer validation
-- Add integration tests for:
-  - Game flow
-  - Language switching
-  - Theme switching
-- Add E2E tests for complete game scenarios
+### E2E Tests (Playwright)
+- Test basic navigation
+- Test quiz gameplay
+- Test internationalization
+- Test responsive design
 
 ## Future Enhancements 📈
 - Add difficulty levels
-- Implement multiplayer mode
+- Implement scoring system
 - Add leaderboard
-- Create achievement system
 - Add sound effects
-- Implement PWA support
+- Add achievements
+- Add statistics tracking
 
-Would you like to start with implementing the game logic and quiz components? 
+## Known Issues 🐛
+1. Flag quiz mode doesn't display images correctly
+2. Language quiz mode has data inconsistencies
+3. Need to add proper error handling
+4. Need to add loading states
+5. Need to add proper TypeScript types for country data
+
+## Next Steps 🎯
+1. Implement world map in Capital quiz
+2. Set up Vitest and add unit tests
+3. Fix Flag quiz mode
+4. Fix Language quiz mode
+5. Add proper error handling 

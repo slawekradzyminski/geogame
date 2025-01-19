@@ -1,50 +1,67 @@
-# React + TypeScript + Vite
+# Geography Quiz App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based interactive quiz application to test and improve your knowledge of world geography. Built with TypeScript, Vite, and Chakra UI.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🌍 Test your knowledge of world capitals, flags, and languages
+- 🌐 Full internationalization support (English and Polish)
+- 🎨 Modern UI with dark/light mode
+- 📱 Fully responsive design
+- ⚡ Fast and lightweight
 
-## Expanding the ESLint configuration
+## Current Status
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- ✅ Capital Quiz: Functional (map feature coming soon)
+- ❌ Flag Quiz: Under development
+- ❌ Language Quiz: Under development
 
-- Configure the top-level `parserOptions` property like this:
+## Tech Stack
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Frontend
+- React 18.3
+- TypeScript 5.6
+- Vite 6.0
+- Chakra UI 2.8
+- React Router 7.1
+- i18next for internationalization
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Testing
+- Playwright for E2E testing
+- Vitest for unit testing (coming soon)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Development Tools
+- ESLint 9 with TypeScript support
+- React Hooks plugin
+- React Refresh for HMR
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Data
+- REST Countries API for initial data
+- JSON storage for optimized data access
+- SVG flag images
+
+## Development Setup
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+4. Run tests:
+   ```bash
+   npm test
+   ```
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run lint` - Run ESLint
+- `npm test` - Run tests
+- `npm run prepare-data` - Update country data
+- `npm run scrape-data` - Fetch fresh data from API
+- `npm run validate-data` - Validate data structure

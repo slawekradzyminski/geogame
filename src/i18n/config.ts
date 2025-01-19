@@ -10,22 +10,19 @@ i18n
   .init({
     fallbackLng: 'en',
     supportedLngs: ['en', 'pl'],
-    
+    debug: true,
+    ns: ['common', 'quiz'],
+    defaultNS: 'common',
     interpolation: {
-      escapeValue: false, // React already escapes values
+      escapeValue: false,
     },
-
     backend: {
-      loadPath: '/locales/{{lng}}/{{ns}}.json',
+      loadPath: '/{{lng}}/{{ns}}.json',
     },
-
     detection: {
       order: ['localStorage', 'navigator'],
       caches: ['localStorage'],
     },
-
-    ns: ['common', 'quiz'],
-    defaultNS: 'common',
   });
 
 export default i18n; 

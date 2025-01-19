@@ -3,6 +3,7 @@ import { ChakraProvider, Center, Flex } from "@chakra-ui/react";
 import { Layout } from "./components/Layout";
 import { Home } from "./pages/Home";
 import { Quiz } from "./pages/Quiz";
+import { QuizProvider } from "./context/QuizContext";
 import theme from "./theme";
 
 function App() {
@@ -16,12 +17,14 @@ function App() {
       <Center>
         <ChakraProvider theme={theme}>
           <Router>
-            <Layout>
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/quiz/:mode" element={<Quiz />} />
-              </Routes>
-            </Layout>
+            <QuizProvider>
+              <Layout>
+                <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/quiz/:mode" element={<Quiz />} />
+                </Routes>
+              </Layout>
+            </QuizProvider>
           </Router>
         </ChakraProvider>
       </Center>
