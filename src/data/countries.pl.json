@@ -1,0 +1,2380 @@
+[
+  {
+    "id": "south-georgia",
+    "name": "Georgia Południowa i Sandwich Południowy",
+    "capital": "King Edward Point",
+    "flagUrl": "assets/flags/south-georgia.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "grenada",
+    "name": "Grenada",
+    "capital": "St. George's",
+    "flagUrl": "assets/flags/grenada.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "switzerland",
+    "name": "Szwajcaria",
+    "capital": "Bern",
+    "flagUrl": "assets/flags/switzerland.svg",
+    "languages": [
+      "francuski",
+      "niemiecki szwajcarski",
+      "włoski",
+      "retoromański"
+    ]
+  },
+  {
+    "id": "sierra-leone",
+    "name": "Sierra Leone",
+    "capital": "Freetown",
+    "flagUrl": "assets/flags/sierra-leone.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "hungary",
+    "name": "Węgry",
+    "capital": "Budapeszt",
+    "flagUrl": "assets/flags/hungary.svg",
+    "languages": [
+      "węgierski"
+    ]
+  },
+  {
+    "id": "taiwan",
+    "name": "Tajwan",
+    "capital": "Taipei",
+    "flagUrl": "assets/flags/taiwan.svg",
+    "languages": [
+      "chiński"
+    ]
+  },
+  {
+    "id": "wallis-and-futuna",
+    "name": "Wallis i Futuna",
+    "capital": "Mata-Utu",
+    "flagUrl": "assets/flags/wallis-and-futuna.svg",
+    "languages": [
+      "francuski"
+    ]
+  },
+  {
+    "id": "barbados",
+    "name": "Barbados",
+    "capital": "Bridgetown",
+    "flagUrl": "assets/flags/barbados.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "pitcairn-islands",
+    "name": "Pitcairn",
+    "capital": "Adamstown",
+    "flagUrl": "assets/flags/pitcairn-islands.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "ivory-coast",
+    "name": "WybrzeŻe Kości Słoniowej",
+    "capital": "Yamoussoukro",
+    "flagUrl": "assets/flags/ivory-coast.svg",
+    "languages": [
+      "francuski"
+    ]
+  },
+  {
+    "id": "tunisia",
+    "name": "Tunezja",
+    "capital": "Tunis",
+    "flagUrl": "assets/flags/tunisia.svg",
+    "languages": [
+      "arabski"
+    ]
+  },
+  {
+    "id": "italy",
+    "name": "Włochy",
+    "capital": "Rzym",
+    "flagUrl": "assets/flags/italy.svg",
+    "languages": [
+      "włoski"
+    ]
+  },
+  {
+    "id": "benin",
+    "name": "Benin",
+    "capital": "Porto-Novo",
+    "flagUrl": "assets/flags/benin.svg",
+    "languages": [
+      "francuski"
+    ]
+  },
+  {
+    "id": "indonesia",
+    "name": "Indonezja",
+    "capital": "Dżakarta",
+    "flagUrl": "assets/flags/indonesia.svg",
+    "languages": [
+      "indonezyjski"
+    ]
+  },
+  {
+    "id": "cape-verde",
+    "name": "Republika Zielonego Przylądka",
+    "capital": "Praia",
+    "flagUrl": "assets/flags/cape-verde.svg",
+    "languages": [
+      "portugalski"
+    ]
+  },
+  {
+    "id": "saint-kitts-and-nevis",
+    "name": "Saint Kitts i Nevis",
+    "capital": "Basseterre",
+    "flagUrl": "assets/flags/saint-kitts-and-nevis.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "laos",
+    "name": "Laos",
+    "capital": "Vientiane",
+    "flagUrl": "assets/flags/laos.svg",
+    "languages": [
+      "laotański"
+    ]
+  },
+  {
+    "id": "caribbean-netherlands",
+    "name": "Antyle Holenderskie",
+    "capital": "Kralendijk",
+    "flagUrl": "assets/flags/caribbean-netherlands.svg",
+    "languages": [
+      "angielski",
+      "holenderski",
+      "papiamento"
+    ]
+  },
+  {
+    "id": "uganda",
+    "name": "Uganda",
+    "capital": "Kampala",
+    "flagUrl": "assets/flags/uganda.svg",
+    "languages": [
+      "angielski",
+      "suahili"
+    ]
+  },
+  {
+    "id": "andorra",
+    "name": "Andora",
+    "capital": "Andorra la Vella",
+    "flagUrl": "assets/flags/andorra.svg",
+    "languages": [
+      "kataloński"
+    ]
+  },
+  {
+    "id": "burundi",
+    "name": "Burundi",
+    "capital": "Gitega",
+    "flagUrl": "assets/flags/burundi.svg",
+    "languages": [
+      "francuski",
+      "kirundi"
+    ]
+  },
+  {
+    "id": "south-africa",
+    "name": "Południowa Afryka",
+    "capital": "Pretoria",
+    "flagUrl": "assets/flags/south-africa.svg",
+    "languages": [
+      "afrykanerski",
+      "angielski",
+      "południowy ndebele",
+      "północny sotho",
+      "południowy sotho",
+      "suazi",
+      "tswana",
+      "tsonga",
+      "venda",
+      "xhosa",
+      "zulu"
+    ]
+  },
+  {
+    "id": "france",
+    "name": "Francja",
+    "capital": "Paryż",
+    "flagUrl": "assets/flags/france.svg",
+    "languages": [
+      "francuski"
+    ]
+  },
+  {
+    "id": "libya",
+    "name": "Libia",
+    "capital": "Tripoli",
+    "flagUrl": "assets/flags/libya.svg",
+    "languages": [
+      "arabski"
+    ]
+  },
+  {
+    "id": "mexico",
+    "name": "Meksyk",
+    "capital": "Meksyk",
+    "flagUrl": "assets/flags/mexico.svg",
+    "languages": [
+      "hiszpański"
+    ]
+  },
+  {
+    "id": "gabon",
+    "name": "Gabon",
+    "capital": "Libreville",
+    "flagUrl": "assets/flags/gabon.svg",
+    "languages": [
+      "francuski"
+    ]
+  },
+  {
+    "id": "northern-mariana-islands",
+    "name": "Mariany Północne",
+    "capital": "Saipan",
+    "flagUrl": "assets/flags/northern-mariana-islands.svg",
+    "languages": [
+      "karoliński",
+      "czamorro",
+      "angielski"
+    ]
+  },
+  {
+    "id": "north-macedonia",
+    "name": "Macedonia Północna",
+    "capital": "Skopje",
+    "flagUrl": "assets/flags/north-macedonia.svg",
+    "languages": [
+      "macedoński"
+    ]
+  },
+  {
+    "id": "china",
+    "name": "Chiny",
+    "capital": "Pekin",
+    "flagUrl": "assets/flags/china.svg",
+    "languages": [
+      "chiński"
+    ]
+  },
+  {
+    "id": "yemen",
+    "name": "Jemen",
+    "capital": "Sana'a",
+    "flagUrl": "assets/flags/yemen.svg",
+    "languages": [
+      "arabski"
+    ]
+  },
+  {
+    "id": "saint-barthélemy",
+    "name": "Saint-Barthélemy",
+    "capital": "Gustavia",
+    "flagUrl": "assets/flags/saint-barthélemy.svg",
+    "languages": [
+      "francuski"
+    ]
+  },
+  {
+    "id": "guernsey",
+    "name": "Guernsey",
+    "capital": "St. Peter Port",
+    "flagUrl": "assets/flags/guernsey.svg",
+    "languages": [
+      "angielski",
+      "francuski",
+      "guernésiais"
+    ]
+  },
+  {
+    "id": "solomon-islands",
+    "name": "Wyspy Salomona",
+    "capital": "Honiara",
+    "flagUrl": "assets/flags/solomon-islands.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "svalbard-and-jan-mayen",
+    "name": "Svalbard i Jan Mayen",
+    "capital": "Longyearbyen",
+    "flagUrl": "assets/flags/svalbard-and-jan-mayen.svg",
+    "languages": [
+      "norweski"
+    ]
+  },
+  {
+    "id": "faroe-islands",
+    "name": "Wyspy Owcze",
+    "capital": "Tórshavn",
+    "flagUrl": "assets/flags/faroe-islands.svg",
+    "languages": [
+      "duński",
+      "farerski"
+    ]
+  },
+  {
+    "id": "uzbekistan",
+    "name": "Uzbekistan",
+    "capital": "Tashkent",
+    "flagUrl": "assets/flags/uzbekistan.svg",
+    "languages": [
+      "rosyjski",
+      "uzbecki"
+    ]
+  },
+  {
+    "id": "egypt",
+    "name": "Egipt",
+    "capital": "Cairo",
+    "flagUrl": "assets/flags/egypt.svg",
+    "languages": [
+      "arabski"
+    ]
+  },
+  {
+    "id": "senegal",
+    "name": "Senegal",
+    "capital": "Dakar",
+    "flagUrl": "assets/flags/senegal.svg",
+    "languages": [
+      "francuski"
+    ]
+  },
+  {
+    "id": "sri-lanka",
+    "name": "Sri Lanka",
+    "capital": "Sri Jayawardenepura Kotte",
+    "flagUrl": "assets/flags/sri-lanka.svg",
+    "languages": [
+      "syngaleski",
+      "tamilski"
+    ]
+  },
+  {
+    "id": "palestine",
+    "name": "Palestyna",
+    "capital": "Ramallah",
+    "flagUrl": "assets/flags/palestine.svg",
+    "languages": [
+      "arabski"
+    ]
+  },
+  {
+    "id": "bangladesh",
+    "name": "Bangladesz",
+    "capital": "Dhaka",
+    "flagUrl": "assets/flags/bangladesh.svg",
+    "languages": [
+      "bengalski"
+    ]
+  },
+  {
+    "id": "peru",
+    "name": "Peru",
+    "capital": "Lima",
+    "flagUrl": "assets/flags/peru.svg",
+    "languages": [
+      "ajmara",
+      "keczua",
+      "hiszpański"
+    ]
+  },
+  {
+    "id": "singapore",
+    "name": "Singapur",
+    "capital": "Singapore",
+    "flagUrl": "assets/flags/singapore.svg",
+    "languages": [
+      "angielski",
+      "chiński",
+      "malajski",
+      "tamilski"
+    ]
+  },
+  {
+    "id": "turkey",
+    "name": "Turcja",
+    "capital": "Ankara",
+    "flagUrl": "assets/flags/turkey.svg",
+    "languages": [
+      "turecki"
+    ]
+  },
+  {
+    "id": "afghanistan",
+    "name": "Afganistan",
+    "capital": "Kabul",
+    "flagUrl": "assets/flags/afghanistan.svg",
+    "languages": [
+      "dari",
+      "paszto",
+      "turkmeński"
+    ]
+  },
+  {
+    "id": "aruba",
+    "name": "Aruba",
+    "capital": "Oranjestad",
+    "flagUrl": "assets/flags/aruba.svg",
+    "languages": [
+      "holenderski",
+      "papiamento"
+    ]
+  },
+  {
+    "id": "cook-islands",
+    "name": "Wyspy Cooka",
+    "capital": "Avarua",
+    "flagUrl": "assets/flags/cook-islands.svg",
+    "languages": [
+      "angielski",
+      "maoryski wysp cooka"
+    ]
+  },
+  {
+    "id": "united-kingdom",
+    "name": "Zjednoczone Królestwo",
+    "capital": "Londyn",
+    "flagUrl": "assets/flags/united-kingdom.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "zambia",
+    "name": "Zambia",
+    "capital": "Lusaka",
+    "flagUrl": "assets/flags/zambia.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "finland",
+    "name": "Finlandia",
+    "capital": "Helsinki",
+    "flagUrl": "assets/flags/finland.svg",
+    "languages": [
+      "fiński",
+      "szwedzki"
+    ]
+  },
+  {
+    "id": "niger",
+    "name": "Niger",
+    "capital": "Niamey",
+    "flagUrl": "assets/flags/niger.svg",
+    "languages": [
+      "francuski"
+    ]
+  },
+  {
+    "id": "christmas-island",
+    "name": "Wyspa Bożego Narodzenia",
+    "capital": "Flying Fish Cove",
+    "flagUrl": "assets/flags/christmas-island.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "tokelau",
+    "name": "Tokelau",
+    "capital": "Fakaofo",
+    "flagUrl": "assets/flags/tokelau.svg",
+    "languages": [
+      "angielski",
+      "samoański",
+      "tokelau"
+    ]
+  },
+  {
+    "id": "guinea-bissau",
+    "name": "Gwinea Bissau",
+    "capital": "Bissau",
+    "flagUrl": "assets/flags/guinea-bissau.svg",
+    "languages": [
+      "portugalski",
+      "kreolski górnogwinejski"
+    ]
+  },
+  {
+    "id": "azerbaijan",
+    "name": "Azerbejdżan",
+    "capital": "Baku",
+    "flagUrl": "assets/flags/azerbaijan.svg",
+    "languages": [
+      "azerski"
+    ]
+  },
+  {
+    "id": "réunion",
+    "name": "Reunion",
+    "capital": "Saint-Denis",
+    "flagUrl": "assets/flags/réunion.svg",
+    "languages": [
+      "francuski"
+    ]
+  },
+  {
+    "id": "djibouti",
+    "name": "Dżibuti",
+    "capital": "Djibouti",
+    "flagUrl": "assets/flags/djibouti.svg",
+    "languages": [
+      "arabski",
+      "francuski"
+    ]
+  },
+  {
+    "id": "north-korea",
+    "name": "Korea Północna",
+    "capital": "Pyongyang",
+    "flagUrl": "assets/flags/north-korea.svg",
+    "languages": [
+      "koreański"
+    ]
+  },
+  {
+    "id": "mauritius",
+    "name": "Mauritius",
+    "capital": "Port Louis",
+    "flagUrl": "assets/flags/mauritius.svg",
+    "languages": [
+      "angielski",
+      "francuski",
+      "kreolski maurytyjski"
+    ]
+  },
+  {
+    "id": "montserrat",
+    "name": "Montserrat",
+    "capital": "Plymouth",
+    "flagUrl": "assets/flags/montserrat.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "united-states-virgin-islands",
+    "name": "Wyspy Dziewicze Stanów Zjednoczonych",
+    "capital": "Charlotte Amalie",
+    "flagUrl": "assets/flags/united-states-virgin-islands.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "colombia",
+    "name": "Kolumbia",
+    "capital": "Bogotá",
+    "flagUrl": "assets/flags/colombia.svg",
+    "languages": [
+      "hiszpański"
+    ]
+  },
+  {
+    "id": "greece",
+    "name": "Grecja",
+    "capital": "Ateny",
+    "flagUrl": "assets/flags/greece.svg",
+    "languages": [
+      "grecki"
+    ]
+  },
+  {
+    "id": "croatia",
+    "name": "Chorwacja",
+    "capital": "Zagrzeb",
+    "flagUrl": "assets/flags/croatia.svg",
+    "languages": [
+      "chorwacki"
+    ]
+  },
+  {
+    "id": "morocco",
+    "name": "Maroko",
+    "capital": "Rabat",
+    "flagUrl": "assets/flags/morocco.svg",
+    "languages": [
+      "arabski",
+      "berberyjski"
+    ]
+  },
+  {
+    "id": "algeria",
+    "name": "Algieria",
+    "capital": "Algiers",
+    "flagUrl": "assets/flags/algeria.svg",
+    "languages": [
+      "arabski"
+    ]
+  },
+  {
+    "id": "netherlands",
+    "name": "Holandia",
+    "capital": "Amsterdam",
+    "flagUrl": "assets/flags/netherlands.svg",
+    "languages": [
+      "holenderski"
+    ]
+  },
+  {
+    "id": "sudan",
+    "name": "Sudan",
+    "capital": "Khartoum",
+    "flagUrl": "assets/flags/sudan.svg",
+    "languages": [
+      "arabski",
+      "angielski"
+    ]
+  },
+  {
+    "id": "fiji",
+    "name": "Fidżi",
+    "capital": "Suva",
+    "flagUrl": "assets/flags/fiji.svg",
+    "languages": [
+      "angielski",
+      "fidżyjski",
+      "hindi fidżyjskie"
+    ]
+  },
+  {
+    "id": "liechtenstein",
+    "name": "Liechtenstein",
+    "capital": "Vaduz",
+    "flagUrl": "assets/flags/liechtenstein.svg",
+    "languages": [
+      "niemiecki"
+    ]
+  },
+  {
+    "id": "nepal",
+    "name": "Nepal",
+    "capital": "Kathmandu",
+    "flagUrl": "assets/flags/nepal.svg",
+    "languages": [
+      "nepalski"
+    ]
+  },
+  {
+    "id": "puerto-rico",
+    "name": "Portoryko",
+    "capital": "San Juan",
+    "flagUrl": "assets/flags/puerto-rico.svg",
+    "languages": [
+      "angielski",
+      "hiszpański"
+    ]
+  },
+  {
+    "id": "georgia",
+    "name": "Gruzja",
+    "capital": "Tbilisi",
+    "flagUrl": "assets/flags/georgia.svg",
+    "languages": [
+      "gruziński"
+    ]
+  },
+  {
+    "id": "pakistan",
+    "name": "Pakistan",
+    "capital": "Islamabad",
+    "flagUrl": "assets/flags/pakistan.svg",
+    "languages": [
+      "angielski",
+      "urdu"
+    ]
+  },
+  {
+    "id": "monaco",
+    "name": "Monako",
+    "capital": "Monaco",
+    "flagUrl": "assets/flags/monaco.svg",
+    "languages": [
+      "francuski"
+    ]
+  },
+  {
+    "id": "botswana",
+    "name": "Botswana",
+    "capital": "Gaborone",
+    "flagUrl": "assets/flags/botswana.svg",
+    "languages": [
+      "angielski",
+      "tswana"
+    ]
+  },
+  {
+    "id": "lebanon",
+    "name": "Liban",
+    "capital": "Beirut",
+    "flagUrl": "assets/flags/lebanon.svg",
+    "languages": [
+      "arabski",
+      "francuski"
+    ]
+  },
+  {
+    "id": "papua-new-guinea",
+    "name": "Papua-Nowa Gwinea",
+    "capital": "Port Moresby",
+    "flagUrl": "assets/flags/papua-new-guinea.svg",
+    "languages": [
+      "angielski",
+      "hiri motu",
+      "tok pisin"
+    ]
+  },
+  {
+    "id": "mayotte",
+    "name": "Majotta",
+    "capital": "Mamoudzou",
+    "flagUrl": "assets/flags/mayotte.svg",
+    "languages": [
+      "francuski"
+    ]
+  },
+  {
+    "id": "dominican-republic",
+    "name": "Dominikana",
+    "capital": "Santo Domingo",
+    "flagUrl": "assets/flags/dominican-republic.svg",
+    "languages": [
+      "hiszpański"
+    ]
+  },
+  {
+    "id": "norfolk-island",
+    "name": "Wyspa Norfolk",
+    "capital": "Kingston",
+    "flagUrl": "assets/flags/norfolk-island.svg",
+    "languages": [
+      "angielski",
+      "norfuk"
+    ]
+  },
+  {
+    "id": "qatar",
+    "name": "Katar",
+    "capital": "Doha",
+    "flagUrl": "assets/flags/qatar.svg",
+    "languages": [
+      "arabski"
+    ]
+  },
+  {
+    "id": "madagascar",
+    "name": "Madagaskar",
+    "capital": "Antananarivo",
+    "flagUrl": "assets/flags/madagascar.svg",
+    "languages": [
+      "francuski",
+      "malgaski"
+    ]
+  },
+  {
+    "id": "india",
+    "name": "Indie",
+    "capital": "Nowe Delhi",
+    "flagUrl": "assets/flags/india.svg",
+    "languages": [
+      "angielski",
+      "hindi",
+      "tamilski"
+    ]
+  },
+  {
+    "id": "syria",
+    "name": "Syria",
+    "capital": "Damascus",
+    "flagUrl": "assets/flags/syria.svg",
+    "languages": [
+      "arabski"
+    ]
+  },
+  {
+    "id": "montenegro",
+    "name": "Czarnogóra",
+    "capital": "Podgorica",
+    "flagUrl": "assets/flags/montenegro.svg",
+    "languages": [
+      "czarnogórski"
+    ]
+  },
+  {
+    "id": "eswatini",
+    "name": "Suazi",
+    "capital": "Mbabane",
+    "flagUrl": "assets/flags/eswatini.svg",
+    "languages": [
+      "angielski",
+      "suazi"
+    ]
+  },
+  {
+    "id": "paraguay",
+    "name": "Paragwaj",
+    "capital": "Asunción",
+    "flagUrl": "assets/flags/paraguay.svg",
+    "languages": [
+      "guarani",
+      "hiszpański"
+    ]
+  },
+  {
+    "id": "el-salvador",
+    "name": "Salwador",
+    "capital": "San Salvador",
+    "flagUrl": "assets/flags/el-salvador.svg",
+    "languages": [
+      "hiszpański"
+    ]
+  },
+  {
+    "id": "ukraine",
+    "name": "Ukraina",
+    "capital": "Kyiv",
+    "flagUrl": "assets/flags/ukraine.svg",
+    "languages": [
+      "ukraiński"
+    ]
+  },
+  {
+    "id": "isle-of-man",
+    "name": "Wyspa Man",
+    "capital": "Douglas",
+    "flagUrl": "assets/flags/isle-of-man.svg",
+    "languages": [
+      "angielski",
+      "manx"
+    ]
+  },
+  {
+    "id": "namibia",
+    "name": "Namibia",
+    "capital": "Windhoek",
+    "flagUrl": "assets/flags/namibia.svg",
+    "languages": [
+      "afrykanerski",
+      "niemiecki",
+      "angielski",
+      "herero",
+      "khoekhoe",
+      "kwangali",
+      "lozi",
+      "ndonga",
+      "tswana"
+    ]
+  },
+  {
+    "id": "united-arab-emirates",
+    "name": "Emiraty Arabskie",
+    "capital": "Abu Dhabi",
+    "flagUrl": "assets/flags/united-arab-emirates.svg",
+    "languages": [
+      "arabski"
+    ]
+  },
+  {
+    "id": "bulgaria",
+    "name": "Bułgaria",
+    "capital": "Sofia",
+    "flagUrl": "assets/flags/bulgaria.svg",
+    "languages": [
+      "bułgarski"
+    ]
+  },
+  {
+    "id": "greenland",
+    "name": "Grenlandia",
+    "capital": "Nuuk",
+    "flagUrl": "assets/flags/greenland.svg",
+    "languages": [
+      "grenlandzki"
+    ]
+  },
+  {
+    "id": "germany",
+    "name": "Niemcy",
+    "capital": "Berlin",
+    "flagUrl": "assets/flags/germany.svg",
+    "languages": [
+      "niemiecki"
+    ]
+  },
+  {
+    "id": "cambodia",
+    "name": "Kambodża",
+    "capital": "Phnom Penh",
+    "flagUrl": "assets/flags/cambodia.svg",
+    "languages": [
+      "khmerski"
+    ]
+  },
+  {
+    "id": "iraq",
+    "name": "Irak",
+    "capital": "Baghdad",
+    "flagUrl": "assets/flags/iraq.svg",
+    "languages": [
+      "arabski",
+      "aramejski",
+      "sorani"
+    ]
+  },
+  {
+    "id": "french-southern-and-antarctic-lands",
+    "name": "Francuskie Terytoria Południowe i Antarktyczne",
+    "capital": "Port-aux-Français",
+    "flagUrl": "assets/flags/french-southern-and-antarctic-lands.svg",
+    "languages": [
+      "francuski"
+    ]
+  },
+  {
+    "id": "sweden",
+    "name": "Szwecja",
+    "capital": "Sztokholm",
+    "flagUrl": "assets/flags/sweden.svg",
+    "languages": [
+      "szwedzki"
+    ]
+  },
+  {
+    "id": "cuba",
+    "name": "Kuba",
+    "capital": "Hawana",
+    "flagUrl": "assets/flags/cuba.svg",
+    "languages": [
+      "hiszpański"
+    ]
+  },
+  {
+    "id": "kyrgyzstan",
+    "name": "Kirgistan",
+    "capital": "Bishkek",
+    "flagUrl": "assets/flags/kyrgyzstan.svg",
+    "languages": [
+      "kirgiski",
+      "rosyjski"
+    ]
+  },
+  {
+    "id": "russia",
+    "name": "Rosja",
+    "capital": "Moskwa",
+    "flagUrl": "assets/flags/russia.svg",
+    "languages": [
+      "rosyjski"
+    ]
+  },
+  {
+    "id": "malaysia",
+    "name": "Malezja",
+    "capital": "Kuala Lumpur",
+    "flagUrl": "assets/flags/malaysia.svg",
+    "languages": [
+      "angielski",
+      "malajski"
+    ]
+  },
+  {
+    "id": "são-tomé-and-príncipe",
+    "name": "Wyspy Świętego Tomasza i Książęca",
+    "capital": "São Tomé",
+    "flagUrl": "assets/flags/são-tomé-and-príncipe.svg",
+    "languages": [
+      "portugalski"
+    ]
+  },
+  {
+    "id": "cyprus",
+    "name": "Cypr",
+    "capital": "Nicosia",
+    "flagUrl": "assets/flags/cyprus.svg",
+    "languages": [
+      "grecki",
+      "turecki"
+    ]
+  },
+  {
+    "id": "canada",
+    "name": "Kanada",
+    "capital": "Ottawa",
+    "flagUrl": "assets/flags/canada.svg",
+    "languages": [
+      "angielski",
+      "francuski"
+    ]
+  },
+  {
+    "id": "malawi",
+    "name": "Malawi",
+    "capital": "Lilongwe",
+    "flagUrl": "assets/flags/malawi.svg",
+    "languages": [
+      "angielski",
+      "czewa"
+    ]
+  },
+  {
+    "id": "saudi-arabia",
+    "name": "Arabia Saudyjska",
+    "capital": "Riyadh",
+    "flagUrl": "assets/flags/saudi-arabia.svg",
+    "languages": [
+      "arabski"
+    ]
+  },
+  {
+    "id": "bosnia-and-herzegovina",
+    "name": "Bośnia i Hercegowina",
+    "capital": "Sarajevo",
+    "flagUrl": "assets/flags/bosnia-and-herzegovina.svg",
+    "languages": [
+      "bośniacki",
+      "chorwacki",
+      "serbski"
+    ]
+  },
+  {
+    "id": "ethiopia",
+    "name": "Etiopia",
+    "capital": "Addis Ababa",
+    "flagUrl": "assets/flags/ethiopia.svg",
+    "languages": [
+      "amharski"
+    ]
+  },
+  {
+    "id": "spain",
+    "name": "Hiszpania",
+    "capital": "Madryt",
+    "flagUrl": "assets/flags/spain.svg",
+    "languages": [
+      "hiszpański",
+      "kataloński",
+      "baskijski",
+      "galicyjski"
+    ]
+  },
+  {
+    "id": "slovenia",
+    "name": "Słowenia",
+    "capital": "Ljubljana",
+    "flagUrl": "assets/flags/slovenia.svg",
+    "languages": [
+      "słoweński"
+    ]
+  },
+  {
+    "id": "oman",
+    "name": "Oman",
+    "capital": "Muscat",
+    "flagUrl": "assets/flags/oman.svg",
+    "languages": [
+      "arabski"
+    ]
+  },
+  {
+    "id": "saint-pierre-and-miquelon",
+    "name": "Saint-Pierre i Miquelon",
+    "capital": "Saint-Pierre",
+    "flagUrl": "assets/flags/saint-pierre-and-miquelon.svg",
+    "languages": [
+      "francuski"
+    ]
+  },
+  {
+    "id": "san-marino",
+    "name": "San Marino",
+    "capital": "City of San Marino",
+    "flagUrl": "assets/flags/san-marino.svg",
+    "languages": [
+      "włoski"
+    ]
+  },
+  {
+    "id": "lesotho",
+    "name": "Lesotho",
+    "capital": "Maseru",
+    "flagUrl": "assets/flags/lesotho.svg",
+    "languages": [
+      "angielski",
+      "sotho"
+    ]
+  },
+  {
+    "id": "marshall-islands",
+    "name": "Wyspy Marshalla",
+    "capital": "Majuro",
+    "flagUrl": "assets/flags/marshall-islands.svg",
+    "languages": [
+      "angielski",
+      "marszalski"
+    ]
+  },
+  {
+    "id": "sint-maarten",
+    "name": "Sint Maarten",
+    "capital": "Philipsburg",
+    "flagUrl": "assets/flags/sint-maarten.svg",
+    "languages": [
+      "angielski",
+      "francuski",
+      "holenderski"
+    ]
+  },
+  {
+    "id": "iceland",
+    "name": "Islandia",
+    "capital": "Reykjavik",
+    "flagUrl": "assets/flags/iceland.svg",
+    "languages": [
+      "islandzki"
+    ]
+  },
+  {
+    "id": "luxembourg",
+    "name": "Luksemburg",
+    "capital": "Luxembourg",
+    "flagUrl": "assets/flags/luxembourg.svg",
+    "languages": [
+      "niemiecki",
+      "francuski",
+      "luksemburski"
+    ]
+  },
+  {
+    "id": "argentina",
+    "name": "Argentyna",
+    "capital": "Buenos Aires",
+    "flagUrl": "assets/flags/argentina.svg",
+    "languages": [
+      "guarani",
+      "hiszpański"
+    ]
+  },
+  {
+    "id": "turks-and-caicos-islands",
+    "name": "Turks i Caicos",
+    "capital": "Cockburn Town",
+    "flagUrl": "assets/flags/turks-and-caicos-islands.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "nauru",
+    "name": "Nauru",
+    "capital": "Yaren",
+    "flagUrl": "assets/flags/nauru.svg",
+    "languages": [
+      "angielski",
+      "naurański"
+    ]
+  },
+  {
+    "id": "cocos-(keeling)-islands",
+    "name": "Wyspy Kokosowe",
+    "capital": "West Island",
+    "flagUrl": "assets/flags/cocos-(keeling)-islands.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "western-sahara",
+    "name": "Sahara Zachodnia",
+    "capital": "El Aaiún",
+    "flagUrl": "assets/flags/western-sahara.svg",
+    "languages": [
+      "berberyjski",
+      "hassanija",
+      "hiszpański"
+    ]
+  },
+  {
+    "id": "dominica",
+    "name": "Dominika",
+    "capital": "Roseau",
+    "flagUrl": "assets/flags/dominica.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "costa-rica",
+    "name": "Kostaryka",
+    "capital": "San José",
+    "flagUrl": "assets/flags/costa-rica.svg",
+    "languages": [
+      "hiszpański"
+    ]
+  },
+  {
+    "id": "australia",
+    "name": "Australia",
+    "capital": "Canberra",
+    "flagUrl": "assets/flags/australia.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "thailand",
+    "name": "Tajlandia",
+    "capital": "Bangkok",
+    "flagUrl": "assets/flags/thailand.svg",
+    "languages": [
+      "tajski"
+    ]
+  },
+  {
+    "id": "haiti",
+    "name": "Haiti",
+    "capital": "Port-au-Prince",
+    "flagUrl": "assets/flags/haiti.svg",
+    "languages": [
+      "francuski",
+      "kreolski haitański"
+    ]
+  },
+  {
+    "id": "tuvalu",
+    "name": "Tuvalu",
+    "capital": "Funafuti",
+    "flagUrl": "assets/flags/tuvalu.svg",
+    "languages": [
+      "angielski",
+      "tuvalu"
+    ]
+  },
+  {
+    "id": "honduras",
+    "name": "Honduras",
+    "capital": "Tegucigalpa",
+    "flagUrl": "assets/flags/honduras.svg",
+    "languages": [
+      "hiszpański"
+    ]
+  },
+  {
+    "id": "equatorial-guinea",
+    "name": "Gwinea Równikowa",
+    "capital": "Malabo",
+    "flagUrl": "assets/flags/equatorial-guinea.svg",
+    "languages": [
+      "francuski",
+      "portugalski",
+      "hiszpański"
+    ]
+  },
+  {
+    "id": "saint-lucia",
+    "name": "Saint Lucia",
+    "capital": "Castries",
+    "flagUrl": "assets/flags/saint-lucia.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "french-polynesia",
+    "name": "Polinezja Francuska",
+    "capital": "Papeetē",
+    "flagUrl": "assets/flags/french-polynesia.svg",
+    "languages": [
+      "francuski"
+    ]
+  },
+  {
+    "id": "belarus",
+    "name": "Białoruś",
+    "capital": "Mińsk",
+    "flagUrl": "assets/flags/belarus.svg",
+    "languages": [
+      "białoruski",
+      "rosyjski"
+    ]
+  },
+  {
+    "id": "latvia",
+    "name": "Łotwa",
+    "capital": "Ryga",
+    "flagUrl": "assets/flags/latvia.svg",
+    "languages": [
+      "łotewski"
+    ]
+  },
+  {
+    "id": "palau",
+    "name": "Palau",
+    "capital": "Ngerulmud",
+    "flagUrl": "assets/flags/palau.svg",
+    "languages": [
+      "angielski",
+      "palau"
+    ]
+  },
+  {
+    "id": "guadeloupe",
+    "name": "Gwadelupa",
+    "capital": "Basse-Terre",
+    "flagUrl": "assets/flags/guadeloupe.svg",
+    "languages": [
+      "francuski"
+    ]
+  },
+  {
+    "id": "philippines",
+    "name": "Filipiny",
+    "capital": "Manila",
+    "flagUrl": "assets/flags/philippines.svg",
+    "languages": [
+      "angielski",
+      "filipiński"
+    ]
+  },
+  {
+    "id": "gibraltar",
+    "name": "Gibraltar",
+    "capital": "Gibraltar",
+    "flagUrl": "assets/flags/gibraltar.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "denmark",
+    "name": "Dania",
+    "capital": "Kopenhaga",
+    "flagUrl": "assets/flags/denmark.svg",
+    "languages": [
+      "duński"
+    ]
+  },
+  {
+    "id": "cameroon",
+    "name": "Kamerun",
+    "capital": "Yaoundé",
+    "flagUrl": "assets/flags/cameroon.svg",
+    "languages": [
+      "angielski",
+      "francuski"
+    ]
+  },
+  {
+    "id": "guinea",
+    "name": "Gwinea",
+    "capital": "Conakry",
+    "flagUrl": "assets/flags/guinea.svg",
+    "languages": [
+      "francuski"
+    ]
+  },
+  {
+    "id": "bahrain",
+    "name": "Bahrajn",
+    "capital": "Manama",
+    "flagUrl": "assets/flags/bahrain.svg",
+    "languages": [
+      "arabski"
+    ]
+  },
+  {
+    "id": "suriname",
+    "name": "Surinam",
+    "capital": "Paramaribo",
+    "flagUrl": "assets/flags/suriname.svg",
+    "languages": [
+      "holenderski"
+    ]
+  },
+  {
+    "id": "dr-congo",
+    "name": "Demokratyczna Republika Konga",
+    "capital": "Kinshasa",
+    "flagUrl": "assets/flags/dr-congo.svg",
+    "languages": [
+      "francuski",
+      "kikongo",
+      "lingala",
+      "tshiluba",
+      "suahili"
+    ]
+  },
+  {
+    "id": "somalia",
+    "name": "Somalia",
+    "capital": "Mogadishu",
+    "flagUrl": "assets/flags/somalia.svg",
+    "languages": [
+      "arabski",
+      "somalijski"
+    ]
+  },
+  {
+    "id": "czechia",
+    "name": "Czechy",
+    "capital": "Praga",
+    "flagUrl": "assets/flags/czechia.svg",
+    "languages": [
+      "czeski",
+      "słowacki"
+    ]
+  },
+  {
+    "id": "new-caledonia",
+    "name": "Nowa Kaledonia",
+    "capital": "Nouméa",
+    "flagUrl": "assets/flags/new-caledonia.svg",
+    "languages": [
+      "francuski"
+    ]
+  },
+  {
+    "id": "vanuatu",
+    "name": "Vanuatu",
+    "capital": "Port Vila",
+    "flagUrl": "assets/flags/vanuatu.svg",
+    "languages": [
+      "bislama",
+      "angielski",
+      "francuski"
+    ]
+  },
+  {
+    "id": "saint-helena,-ascension-and-tristan-da-cunha",
+    "name": "Wyspa Świętej Heleny, Wyspa Wniebowstąpienia i Tristan da Cunha",
+    "capital": "Jamestown",
+    "flagUrl": "assets/flags/saint-helena,-ascension-and-tristan-da-cunha.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "togo",
+    "name": "Togo",
+    "capital": "Lomé",
+    "flagUrl": "assets/flags/togo.svg",
+    "languages": [
+      "francuski"
+    ]
+  },
+  {
+    "id": "british-virgin-islands",
+    "name": "Brytyjskie Wyspy Dziewicze",
+    "capital": "Road Town",
+    "flagUrl": "assets/flags/british-virgin-islands.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "kenya",
+    "name": "Kenia",
+    "capital": "Nairobi",
+    "flagUrl": "assets/flags/kenya.svg",
+    "languages": [
+      "angielski",
+      "suahili"
+    ]
+  },
+  {
+    "id": "niue",
+    "name": "Niue",
+    "capital": "Alofi",
+    "flagUrl": "assets/flags/niue.svg",
+    "languages": [
+      "angielski",
+      "niue"
+    ]
+  },
+  {
+    "id": "rwanda",
+    "name": "Rwanda",
+    "capital": "Kigali",
+    "flagUrl": "assets/flags/rwanda.svg",
+    "languages": [
+      "angielski",
+      "francuski",
+      "kinyarwanda"
+    ]
+  },
+  {
+    "id": "estonia",
+    "name": "Estonia",
+    "capital": "Tallin",
+    "flagUrl": "assets/flags/estonia.svg",
+    "languages": [
+      "estoński"
+    ]
+  },
+  {
+    "id": "romania",
+    "name": "Rumunia",
+    "capital": "Bukareszt",
+    "flagUrl": "assets/flags/romania.svg",
+    "languages": [
+      "rumuński"
+    ]
+  },
+  {
+    "id": "trinidad-and-tobago",
+    "name": "Trynidad i Tobago",
+    "capital": "Port of Spain",
+    "flagUrl": "assets/flags/trinidad-and-tobago.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "guyana",
+    "name": "Gujana",
+    "capital": "Georgetown",
+    "flagUrl": "assets/flags/guyana.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "timor-leste",
+    "name": "Timor Wschodni",
+    "capital": "Dili",
+    "flagUrl": "assets/flags/timor-leste.svg",
+    "languages": [
+      "portugalski",
+      "tetum"
+    ]
+  },
+  {
+    "id": "vietnam",
+    "name": "Wietnam",
+    "capital": "Hanoi",
+    "flagUrl": "assets/flags/vietnam.svg",
+    "languages": [
+      "wietnamski"
+    ]
+  },
+  {
+    "id": "uruguay",
+    "name": "Urugwaj",
+    "capital": "Montevideo",
+    "flagUrl": "assets/flags/uruguay.svg",
+    "languages": [
+      "hiszpański"
+    ]
+  },
+  {
+    "id": "vatican-city",
+    "name": "Watykan",
+    "capital": "Vatican City",
+    "flagUrl": "assets/flags/vatican-city.svg",
+    "languages": [
+      "włoski",
+      "łaciński"
+    ]
+  },
+  {
+    "id": "hong-kong",
+    "name": "Hongkong",
+    "capital": "City of Victoria",
+    "flagUrl": "assets/flags/hong-kong.svg",
+    "languages": [
+      "angielski",
+      "chiński"
+    ]
+  },
+  {
+    "id": "austria",
+    "name": "Austria",
+    "capital": "Wiedeń",
+    "flagUrl": "assets/flags/austria.svg",
+    "languages": [
+      "niemiecki"
+    ]
+  },
+  {
+    "id": "antigua-and-barbuda",
+    "name": "Antigua i Barbuda",
+    "capital": "Saint John's",
+    "flagUrl": "assets/flags/antigua-and-barbuda.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "turkmenistan",
+    "name": "Turkmenistan",
+    "capital": "Ashgabat",
+    "flagUrl": "assets/flags/turkmenistan.svg",
+    "languages": [
+      "rosyjski",
+      "turkmeński"
+    ]
+  },
+  {
+    "id": "mozambique",
+    "name": "Mozambik",
+    "capital": "Maputo",
+    "flagUrl": "assets/flags/mozambique.svg",
+    "languages": [
+      "portugalski"
+    ]
+  },
+  {
+    "id": "panama",
+    "name": "Panama",
+    "capital": "Panama City",
+    "flagUrl": "assets/flags/panama.svg",
+    "languages": [
+      "hiszpański"
+    ]
+  },
+  {
+    "id": "micronesia",
+    "name": "Mikronezja",
+    "capital": "Palikir",
+    "flagUrl": "assets/flags/micronesia.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "ireland",
+    "name": "Irlandia",
+    "capital": "Dublin",
+    "flagUrl": "assets/flags/ireland.svg",
+    "languages": [
+      "angielski",
+      "irlandzki"
+    ]
+  },
+  {
+    "id": "curaçao",
+    "name": "Curaçao",
+    "capital": "Willemstad",
+    "flagUrl": "assets/flags/curaçao.svg",
+    "languages": [
+      "angielski",
+      "holenderski",
+      "papiamento"
+    ]
+  },
+  {
+    "id": "french-guiana",
+    "name": "Gujana Francuska",
+    "capital": "Cayenne",
+    "flagUrl": "assets/flags/french-guiana.svg",
+    "languages": [
+      "francuski"
+    ]
+  },
+  {
+    "id": "norway",
+    "name": "Norwegia",
+    "capital": "Oslo",
+    "flagUrl": "assets/flags/norway.svg",
+    "languages": [
+      "norweski nynorsk",
+      "norweski bokmål",
+      "lapoński"
+    ]
+  },
+  {
+    "id": "åland-islands",
+    "name": "Wyspy Alandzkie",
+    "capital": "Mariehamn",
+    "flagUrl": "assets/flags/åland-islands.svg",
+    "languages": [
+      "szwedzki"
+    ]
+  },
+  {
+    "id": "central-african-republic",
+    "name": "Republika Środkowoafrykańska",
+    "capital": "Bangui",
+    "flagUrl": "assets/flags/central-african-republic.svg",
+    "languages": [
+      "francuski",
+      "sango"
+    ]
+  },
+  {
+    "id": "burkina-faso",
+    "name": "Burkina Faso",
+    "capital": "Ouagadougou",
+    "flagUrl": "assets/flags/burkina-faso.svg",
+    "languages": [
+      "francuski"
+    ]
+  },
+  {
+    "id": "eritrea",
+    "name": "Erytrea",
+    "capital": "Asmara",
+    "flagUrl": "assets/flags/eritrea.svg",
+    "languages": [
+      "arabski",
+      "angielski",
+      "tigrinia"
+    ]
+  },
+  {
+    "id": "tanzania",
+    "name": "Tanzania",
+    "capital": "Dodoma",
+    "flagUrl": "assets/flags/tanzania.svg",
+    "languages": [
+      "angielski",
+      "suahili"
+    ]
+  },
+  {
+    "id": "south-korea",
+    "name": "Korea Południowa",
+    "capital": "Seul",
+    "flagUrl": "assets/flags/south-korea.svg",
+    "languages": [
+      "koreański"
+    ]
+  },
+  {
+    "id": "jordan",
+    "name": "Jordania",
+    "capital": "Amman",
+    "flagUrl": "assets/flags/jordan.svg",
+    "languages": [
+      "arabski"
+    ]
+  },
+  {
+    "id": "mauritania",
+    "name": "Mauretania",
+    "capital": "Nouakchott",
+    "flagUrl": "assets/flags/mauritania.svg",
+    "languages": [
+      "arabski"
+    ]
+  },
+  {
+    "id": "lithuania",
+    "name": "Litwa",
+    "capital": "Wilno",
+    "flagUrl": "assets/flags/lithuania.svg",
+    "languages": [
+      "litewski"
+    ]
+  },
+  {
+    "id": "united-states-minor-outlying-islands",
+    "name": "Dalekie Wyspy Mniejsze Stanów Zjednoczonych",
+    "capital": "Washington DC",
+    "flagUrl": "assets/flags/united-states-minor-outlying-islands.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "slovakia",
+    "name": "Słowacja",
+    "capital": "Bratysława",
+    "flagUrl": "assets/flags/slovakia.svg",
+    "languages": [
+      "słowacki"
+    ]
+  },
+  {
+    "id": "angola",
+    "name": "Angola",
+    "capital": "Luanda",
+    "flagUrl": "assets/flags/angola.svg",
+    "languages": [
+      "portugalski"
+    ]
+  },
+  {
+    "id": "kazakhstan",
+    "name": "Kazachstan",
+    "capital": "Nur-Sultan",
+    "flagUrl": "assets/flags/kazakhstan.svg",
+    "languages": [
+      "kazachski",
+      "rosyjski"
+    ]
+  },
+  {
+    "id": "moldova",
+    "name": "Mołdawia",
+    "capital": "Chișinău",
+    "flagUrl": "assets/flags/moldova.svg",
+    "languages": [
+      "rumuński"
+    ]
+  },
+  {
+    "id": "mali",
+    "name": "Mali",
+    "capital": "Bamako",
+    "flagUrl": "assets/flags/mali.svg",
+    "languages": [
+      "francuski"
+    ]
+  },
+  {
+    "id": "falkland-islands",
+    "name": "Falklandy",
+    "capital": "Stanley",
+    "flagUrl": "assets/flags/falkland-islands.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "armenia",
+    "name": "Armenia",
+    "capital": "Yerevan",
+    "flagUrl": "assets/flags/armenia.svg",
+    "languages": [
+      "ormiański"
+    ]
+  },
+  {
+    "id": "samoa",
+    "name": "Samoa",
+    "capital": "Apia",
+    "flagUrl": "assets/flags/samoa.svg",
+    "languages": [
+      "angielski",
+      "samoański"
+    ]
+  },
+  {
+    "id": "jersey",
+    "name": "Jersey",
+    "capital": "Saint Helier",
+    "flagUrl": "assets/flags/jersey.svg",
+    "languages": [
+      "angielski",
+      "francuski",
+      "jersiais"
+    ]
+  },
+  {
+    "id": "japan",
+    "name": "Japonia",
+    "capital": "Tokio",
+    "flagUrl": "assets/flags/japan.svg",
+    "languages": [
+      "japoński"
+    ]
+  },
+  {
+    "id": "bolivia",
+    "name": "Boliwia",
+    "capital": "Sucre",
+    "flagUrl": "assets/flags/bolivia.svg",
+    "languages": [
+      "ajmara",
+      "guarani",
+      "keczua",
+      "hiszpański"
+    ]
+  },
+  {
+    "id": "chile",
+    "name": "Chile",
+    "capital": "Santiago",
+    "flagUrl": "assets/flags/chile.svg",
+    "languages": [
+      "hiszpański"
+    ]
+  },
+  {
+    "id": "united-states",
+    "name": "Stany Zjednoczone",
+    "capital": "Waszyngton",
+    "flagUrl": "assets/flags/united-states.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "saint-vincent-and-the-grenadines",
+    "name": "Saint Vincent i Grenadyny",
+    "capital": "Kingstown",
+    "flagUrl": "assets/flags/saint-vincent-and-the-grenadines.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "bermuda",
+    "name": "Bermudy",
+    "capital": "Hamilton",
+    "flagUrl": "assets/flags/bermuda.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "seychelles",
+    "name": "Seszele",
+    "capital": "Victoria",
+    "flagUrl": "assets/flags/seychelles.svg",
+    "languages": [
+      "kreolski seszelski",
+      "angielski",
+      "francuski"
+    ]
+  },
+  {
+    "id": "british-indian-ocean-territory",
+    "name": "Brytyjskie Terytorium Oceanu Indyjskiego",
+    "capital": "Diego Garcia",
+    "flagUrl": "assets/flags/british-indian-ocean-territory.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "guatemala",
+    "name": "Gwatemala",
+    "capital": "Guatemala City",
+    "flagUrl": "assets/flags/guatemala.svg",
+    "languages": [
+      "hiszpański"
+    ]
+  },
+  {
+    "id": "ecuador",
+    "name": "Ekwador",
+    "capital": "Quito",
+    "flagUrl": "assets/flags/ecuador.svg",
+    "languages": [
+      "hiszpański"
+    ]
+  },
+  {
+    "id": "martinique",
+    "name": "Martynika",
+    "capital": "Fort-de-France",
+    "flagUrl": "assets/flags/martinique.svg",
+    "languages": [
+      "francuski"
+    ]
+  },
+  {
+    "id": "tajikistan",
+    "name": "Tadżykistan",
+    "capital": "Dushanbe",
+    "flagUrl": "assets/flags/tajikistan.svg",
+    "languages": [
+      "rosyjski",
+      "tadżycki"
+    ]
+  },
+  {
+    "id": "malta",
+    "name": "Malta",
+    "capital": "Valletta",
+    "flagUrl": "assets/flags/malta.svg",
+    "languages": [
+      "angielski",
+      "maltański"
+    ]
+  },
+  {
+    "id": "gambia",
+    "name": "Gambia",
+    "capital": "Banjul",
+    "flagUrl": "assets/flags/gambia.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "nigeria",
+    "name": "Nigeria",
+    "capital": "Abuja",
+    "flagUrl": "assets/flags/nigeria.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "bahamas",
+    "name": "Bahamy",
+    "capital": "Nassau",
+    "flagUrl": "assets/flags/bahamas.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "kosovo",
+    "name": "Kosowo",
+    "capital": "Pristina",
+    "flagUrl": "assets/flags/kosovo.svg",
+    "languages": [
+      "albański",
+      "serbski"
+    ]
+  },
+  {
+    "id": "kuwait",
+    "name": "Kuwejt",
+    "capital": "Kuwait City",
+    "flagUrl": "assets/flags/kuwait.svg",
+    "languages": [
+      "arabski"
+    ]
+  },
+  {
+    "id": "maldives",
+    "name": "Malediwy",
+    "capital": "Malé",
+    "flagUrl": "assets/flags/maldives.svg",
+    "languages": [
+      "malediwski"
+    ]
+  },
+  {
+    "id": "south-sudan",
+    "name": "Sudan",
+    "capital": "Juba",
+    "flagUrl": "assets/flags/south-sudan.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "iran",
+    "name": "Iran",
+    "capital": "Tehran",
+    "flagUrl": "assets/flags/iran.svg",
+    "languages": [
+      "perski"
+    ]
+  },
+  {
+    "id": "albania",
+    "name": "Albania",
+    "capital": "Tirana",
+    "flagUrl": "assets/flags/albania.svg",
+    "languages": [
+      "albański"
+    ]
+  },
+  {
+    "id": "brazil",
+    "name": "Brazylia",
+    "capital": "Brasília",
+    "flagUrl": "assets/flags/brazil.svg",
+    "languages": [
+      "portugalski"
+    ]
+  },
+  {
+    "id": "serbia",
+    "name": "Serbia",
+    "capital": "Belgrad",
+    "flagUrl": "assets/flags/serbia.svg",
+    "languages": [
+      "serbski"
+    ]
+  },
+  {
+    "id": "belize",
+    "name": "Belize",
+    "capital": "Belmopan",
+    "flagUrl": "assets/flags/belize.svg",
+    "languages": [
+      "kreolski belizeński",
+      "angielski",
+      "hiszpański"
+    ]
+  },
+  {
+    "id": "myanmar",
+    "name": "Mjanma",
+    "capital": "Naypyidaw",
+    "flagUrl": "assets/flags/myanmar.svg",
+    "languages": [
+      "birmański"
+    ]
+  },
+  {
+    "id": "bhutan",
+    "name": "Bhutan",
+    "capital": "Thimphu",
+    "flagUrl": "assets/flags/bhutan.svg",
+    "languages": [
+      "dzongkha"
+    ]
+  },
+  {
+    "id": "venezuela",
+    "name": "Wenezuela",
+    "capital": "Caracas",
+    "flagUrl": "assets/flags/venezuela.svg",
+    "languages": [
+      "hiszpański"
+    ]
+  },
+  {
+    "id": "liberia",
+    "name": "Liberia",
+    "capital": "Monrovia",
+    "flagUrl": "assets/flags/liberia.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "jamaica",
+    "name": "Jamajka",
+    "capital": "Kingston",
+    "flagUrl": "assets/flags/jamaica.svg",
+    "languages": [
+      "angielski",
+      "patois jamajski"
+    ]
+  },
+  {
+    "id": "poland",
+    "name": "Polska",
+    "capital": "Warszawa",
+    "flagUrl": "assets/flags/poland.svg",
+    "languages": [
+      "polski"
+    ]
+  },
+  {
+    "id": "cayman-islands",
+    "name": "Kajmany",
+    "capital": "George Town",
+    "flagUrl": "assets/flags/cayman-islands.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "brunei",
+    "name": "Brunei",
+    "capital": "Bandar Seri Begawan",
+    "flagUrl": "assets/flags/brunei.svg",
+    "languages": [
+      "malajski"
+    ]
+  },
+  {
+    "id": "comoros",
+    "name": "Komory",
+    "capital": "Moroni",
+    "flagUrl": "assets/flags/comoros.svg",
+    "languages": [
+      "arabski",
+      "francuski",
+      "komoryjski"
+    ]
+  },
+  {
+    "id": "guam",
+    "name": "Guam",
+    "capital": "Hagåtña",
+    "flagUrl": "assets/flags/guam.svg",
+    "languages": [
+      "czamorro",
+      "angielski",
+      "hiszpański"
+    ]
+  },
+  {
+    "id": "tonga",
+    "name": "Tonga",
+    "capital": "Nuku'alofa",
+    "flagUrl": "assets/flags/tonga.svg",
+    "languages": [
+      "angielski",
+      "tongański"
+    ]
+  },
+  {
+    "id": "kiribati",
+    "name": "Kiribati",
+    "capital": "South Tarawa",
+    "flagUrl": "assets/flags/kiribati.svg",
+    "languages": [
+      "angielski",
+      "gilbertyjski"
+    ]
+  },
+  {
+    "id": "ghana",
+    "name": "Ghana",
+    "capital": "Accra",
+    "flagUrl": "assets/flags/ghana.svg",
+    "languages": [
+      "angielski"
+    ]
+  },
+  {
+    "id": "chad",
+    "name": "Czad",
+    "capital": "N'Djamena",
+    "flagUrl": "assets/flags/chad.svg",
+    "languages": [
+      "arabski",
+      "francuski"
+    ]
+  },
+  {
+    "id": "zimbabwe",
+    "name": "Zimbabwe",
+    "capital": "Harare",
+    "flagUrl": "assets/flags/zimbabwe.svg",
+    "languages": [
+      "chibarwe",
+      "angielski",
+      "kalanga",
+      "khoisan",
+      "ndau",
+      "północny ndebele",
+      "czewa",
+      "szona",
+      "sotho",
+      "tonga",
+      "tswana",
+      "tsonga",
+      "venda",
+      "xhosa",
+      "zimbabweński język migowy"
+    ]
+  },
+  {
+    "id": "saint-martin",
+    "name": "Saint-Martin",
+    "capital": "Marigot",
+    "flagUrl": "assets/flags/saint-martin.svg",
+    "languages": [
+      "francuski"
+    ]
+  },
+  {
+    "id": "mongolia",
+    "name": "Mongolia",
+    "capital": "Ulan Bator",
+    "flagUrl": "assets/flags/mongolia.svg",
+    "languages": [
+      "mongolski"
+    ]
+  },
+  {
+    "id": "portugal",
+    "name": "Portugalia",
+    "capital": "Lizbona",
+    "flagUrl": "assets/flags/portugal.svg",
+    "languages": [
+      "portugalski"
+    ]
+  },
+  {
+    "id": "american-samoa",
+    "name": "Samoa Amerykańskie",
+    "capital": "Pago Pago",
+    "flagUrl": "assets/flags/american-samoa.svg",
+    "languages": [
+      "angielski",
+      "samoański"
+    ]
+  },
+  {
+    "id": "republic-of-the-congo",
+    "name": "Kongo",
+    "capital": "Brazzaville",
+    "flagUrl": "assets/flags/republic-of-the-congo.svg",
+    "languages": [
+      "francuski",
+      "kikongo",
+      "lingala"
+    ]
+  },
+  {
+    "id": "belgium",
+    "name": "Belgia",
+    "capital": "Bruksela",
+    "flagUrl": "assets/flags/belgium.svg",
+    "languages": [
+      "niemiecki",
+      "francuski",
+      "holenderski"
+    ]
+  },
+  {
+    "id": "israel",
+    "name": "Izrael",
+    "capital": "Jerusalem",
+    "flagUrl": "assets/flags/israel.svg",
+    "languages": [
+      "arabski",
+      "hebrajski"
+    ]
+  },
+  {
+    "id": "new-zealand",
+    "name": "Nowa Zelandia",
+    "capital": "Wellington",
+    "flagUrl": "assets/flags/new-zealand.svg",
+    "languages": [
+      "angielski",
+      "maoryski",
+      "nowozelandzki język migowy"
+    ]
+  },
+  {
+    "id": "nicaragua",
+    "name": "Nikaragua",
+    "capital": "Managua",
+    "flagUrl": "assets/flags/nicaragua.svg",
+    "languages": [
+      "hiszpański"
+    ]
+  },
+  {
+    "id": "anguilla",
+    "name": "Anguilla",
+    "capital": "The Valley",
+    "flagUrl": "assets/flags/anguilla.svg",
+    "languages": [
+      "angielski"
+    ]
+  }
+]
