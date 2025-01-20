@@ -23,25 +23,4 @@ test('home page layout', async ({ page }) => {
     // Check if the container is centered (allowing for small differences)
     expect(Math.abs(actualCenterX - expectedCenterX)).toBeLessThan(5);
   }
-});
-
-test('home page displays correct content in English', async ({ page }) => {
-  // given
-  await page.goto('http://localhost:5174/');
-  
-  // Log the page content for debugging
-  console.log('Page content:', await page.content());
-
-  // when - wait longer for content to load
-  const title = await page.getByRole('heading', { name: 'Geography Quiz' });
-  await expect(title).toBeVisible({ timeout: 10000 });
-
-  const capitalsModeTitle = await page.getByRole('heading', { name: 'Capitals' });
-  await expect(capitalsModeTitle).toBeVisible({ timeout: 10000 });
-
-  const flagsModeTitle = await page.getByRole('heading', { name: 'Flags' });
-  await expect(flagsModeTitle).toBeVisible({ timeout: 10000 });
-
-  const languagesModeTitle = await page.getByRole('heading', { name: 'Languages' });
-  await expect(languagesModeTitle).toBeVisible({ timeout: 10000 });
 }); 

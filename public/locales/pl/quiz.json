@@ -1,14 +1,9 @@
 {
   "modes": {
-    "capital": "Stolice",
-    "flag": "Flagi",
-    "language": "Języki",
+    "capital": "Zgadnij stolicę",
+    "flag": "Zgadnij flagę",
+    "language": "Zgadnij język",
     "select": "Wybierz tryb quizu"
-  },
-  "modeDescriptions": {
-    "capital": "Sprawdź swoją wiedzę o stolicach świata",
-    "flag": "Rozpoznaj kraje po ich flagach",
-    "language": "Dopasuj kraje do ich języków"
   },
   "difficulty": {
     "easy": "Łatwy",
@@ -32,18 +27,5 @@
     "incorrect": "Niepoprawnie! {{type}} kraju {{country}} to {{answer}}",
     "streak": "Masz serię {{count}} poprawnych odpowiedzi!",
     "perfect": "Doskonały wynik! Wszystkie odpowiedzi poprawne!"
-  },
-  "question": {
-    "capital": "Jaka jest stolica {{item}}?",
-    "flag": "Do którego kraju należy ta flaga?",
-    "language": "W którym kraju mówi się w języku {{item}}?"
-  },
-  "loading": "Ładowanie quizu...",
-  "gameOver": "Koniec gry!",
-  "finalScore": "Twój wynik końcowy: {{score}}/{{total}}",
-  "backToHome": "Powrót do strony głównej",
-  "playAgain": "Zagraj ponownie",
-  "progress": "Pytanie {{current}}/{{total}}",
-  "score": "Wynik: {{score}}/{{total}}",
-  "flagAlt": "Flaga kraju"
+  }
 } 

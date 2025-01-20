@@ -1,43 +1,71 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Box, Text } from '@chakra-ui/react';
+import { Box, Container, Heading, Progress, Text, VStack, Button } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
-import { useQuiz } from '../context/QuizContext';
-import { QuizMode } from '../types/quiz';
-import { CapitalQuiz } from '../components/quiz/CapitalQuiz';
-import { FlagQuiz } from '../components/quiz/FlagQuiz';
-import { LanguageQuiz } from '../components/quiz/LanguageQuiz';
 
-export function Quiz() {
-  const { mode } = useParams<{ mode: string }>();
+type QuizMode = 'capital' | 'flag' | 'language';
+
+export const Quiz = () => {
+  const { mode } = useParams<{ mode: QuizMode }>();
   const navigate = useNavigate();
-  const { t } = useTranslation('quiz');
-  const { startQuiz } = useQuiz();
+  const { t } = useTranslation(['common', 'quiz']);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    // Validate quiz mode
     if (!mode || !['capital', 'flag', 'language'].includes(mode)) {
       navigate('/');
       return;
     }
-    startQuiz(mode as QuizMode);
-  }, [mode, navigate, startQuiz]);
 
-  if (!mode || !['capital', 'flag', 'language'].includes(mode)) {
+    // Load quiz data
+    const loadQuizData = async () => {
+      try {
+        setIsLoading(true);
+        // TODO: Load quiz data based on mode
+        setIsLoading(false);
+      } catch (err) {
+        setError(t('common.error'));
+        setIsLoading(false);
+      }
+    };
+
+    loadQuizData();
+  }, [mode, navigate, t]);
+
+  if (error) {
     return (
-      <Box p={8} textAlign="center">
-        <Text>{t('invalidMode')}</Text>
-      </Box>
+      <Container maxW="container.xl" py={10}>
+        <VStack spacing={4}>
+          <Text color="red.500">{error}</Text>
+          <Button onClick={() => navigate('/')}>{t('common.back')}</Button>
+        </VStack>
+      </Container>
     );
   }
 
-  switch (mode) {
-    case 'capital':
-      return <CapitalQuiz />;
-    case 'flag':
-      return <FlagQuiz />;
-    case 'language':
-      return <LanguageQuiz />;
-    default:
-      return null;
+  if (isLoading) {
+    return (
+      <Container maxW="container.xl" py={10}>
+        <VStack spacing={4}>
+          <Text>{t('common.loading')}</Text>
+          <Progress size="xs" isIndeterminate w="100%" />
+        </VStack>
+      </Container>
+    );
   }
-} 
+
+  return (
+    <Container maxW="container.xl" py={10}>
+      <VStack spacing={6}>
+        <Heading>{t(`quiz:modes.${mode}`)}</Heading>
+        <Box w="100%">
+          {/* Quiz content will be added here */}
+          <Text>Quiz content coming soon...</Text>
+        </Box>
+        <Button onClick={() => navigate('/')}>{t('common.back')}</Button>
+      </VStack>
+    </Container>
+  );
+}; 

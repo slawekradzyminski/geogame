@@ -1,7 +1,7 @@
 {
   "app": {
     "title": "Geography Quiz",
-    "description": "Test your knowledge of world geography! Choose a quiz mode to start learning about capitals, flags, and languages of different countries."
+    "description": "Test your knowledge of world geography"
   },
   "nav": {
     "home": "Home",

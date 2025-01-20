@@ -1,7 +1,7 @@
 {
   "app": {
     "title": "Quiz Geograficzny",
-    "description": "Sprawdź swoją wiedzę z geografii świata! Wybierz tryb quizu, aby poznać stolice, flagi i języki różnych krajów."
+    "description": "Sprawdź swoją wiedzę o geografii świata"
   },
   "nav": {
     "home": "Strona główna",
@@ -23,12 +23,12 @@
   },
   "common": {
     "loading": "Ładowanie...",
-    "error": "Wystąpił błąd",
+    "error": "Błąd",
     "retry": "Spróbuj ponownie",
     "save": "Zapisz",
     "cancel": "Anuluj",
     "next": "Dalej",
-    "back": "Powrót",
+    "back": "Wstecz",
     "submit": "Zatwierdź",
     "correct": "Poprawnie!",
     "incorrect": "Niepoprawnie!"
