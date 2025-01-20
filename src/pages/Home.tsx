@@ -1,74 +1,169 @@
-import { Box, Button, Heading, Stack, Text, useColorModeValue } from '@chakra-ui/react';
-import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { 
+  Box, 
+  Typography, 
+  Card, 
+  CardContent,
+  Button,
+  alpha,
+  useTheme,
+  SvgIconProps,
+  Grid,
+  Container
+} from '@mui/material';
+import PublicIcon from '@mui/icons-material/Public';
+import FlagIcon from '@mui/icons-material/Flag';
+import TranslateIcon from '@mui/icons-material/Translate';
+import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 
-export const Home = () => {
-  const { t } = useTranslation(['common', 'quiz']);
+interface QuizOptionProps {
+  icon: React.ComponentType<SvgIconProps>;
+  title: string;
+  description: string;
+  onClick: () => void;
+  color: string;
+}
+
+const QuizOption = ({ icon: Icon, title, description, onClick, color }: QuizOptionProps) => (
+  <Grid item xs={12} sm={6} md={4}>
+    <Card
+      onClick={onClick}
+      sx={{
+        height: '100%',
+        cursor: 'pointer',
+        transition: 'all 0.3s ease-in-out',
+        '&:hover': {
+          transform: 'translateY(-8px)',
+          boxShadow: (theme) => `0 20px 40px ${alpha(theme.palette.primary.main, 0.15)}`,
+        },
+      }}
+    >
+      <CardContent sx={{ height: '100%', p: 4, textAlign: 'center' }}>
+        <Box
+          sx={{
+            mb: 3,
+            display: 'inline-flex',
+            p: 2,
+            borderRadius: '50%',
+            backgroundColor: alpha(color, 0.1),
+          }}
+        >
+          <Icon sx={{ fontSize: 40, color: color }} />
+        </Box>
+        <Typography variant="h5" component="h2" gutterBottom fontWeight="bold">
+          {title}
+        </Typography>
+        <Typography variant="body1" color="text.secondary">
+          {description}
+        </Typography>
+      </CardContent>
+    </Card>
+  </Grid>
+);
+
+export default function Home() {
   const navigate = useNavigate();
-  const bgColor = useColorModeValue('white', 'gray.800');
+  const { t } = useTranslation('quiz');
+  const theme = useTheme();
+
+  const startQuiz = (mode: string) => {
+    navigate(`/quiz/${mode}`);
+  };
 
   return (
-    <Box
-      bg={bgColor} 
-      p={{ base: 6, md: 12, lg: 16 }}
-      borderRadius="xl" 
-      boxShadow="xl"
-      textAlign="center"
-      w={{ base: '95%', md: '90%', lg: '1000px' }}
-      mx="auto"
+    <Container
+      maxWidth="lg"
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        py: { xs: 4, md: 6 }
+      }}
     >
-      <Heading 
-        as="h1" 
-        size={{ base: 'xl', md: '2xl' }}
-        mb={{ base: 4, md: 6, lg: 8 }}
-      >
-        {t('app.title')}
-      </Heading>
-      <Text 
-        fontSize={{ base: 'lg', md: 'xl', lg: '2xl' }}
-        mb={{ base: 8, md: 12, lg: 16 }}
-        px={{ base: 4, md: 8 }}
-      >
-        {t('app.description')}
-      </Text>
-      
-      <Stack 
-        spacing={{ base: 4, md: 6, lg: 8 }} 
-        direction={{ base: 'column', md: 'row' }} 
-        justify="center"
-        w="full"
-      >
-        <Button
-          size={{ base: 'md', md: 'lg' }}
-          onClick={() => navigate('/quiz/capital')}
-          px={{ base: 8, md: 10, lg: 12 }}
-          py={{ base: 6, md: 7, lg: 8 }}
-          fontSize={{ base: 'md', md: 'lg', lg: 'xl' }}
-          w={{ base: 'full', md: 'auto' }}
+      <Box sx={{ width: '100%', maxWidth: 800, mb: 8 }}>
+        <Typography
+          component="h1"
+          variant="h2"
+          sx={{
+            mb: 3,
+            fontWeight: 800,
+            textAlign: 'center',
+            background: (theme) =>
+              `-webkit-linear-gradient(45deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+          }}
         >
-          {t('quiz:modes.capital')}
-        </Button>
-        <Button
-          size={{ base: 'md', md: 'lg' }}
-          onClick={() => navigate('/quiz/flag')}
-          px={{ base: 8, md: 10, lg: 12 }}
-          py={{ base: 6, md: 7, lg: 8 }}
-          fontSize={{ base: 'md', md: 'lg', lg: 'xl' }}
-          w={{ base: 'full', md: 'auto' }}
+          Test Your Geography Knowledge
+        </Typography>
+        <Typography 
+          variant="subtitle1" 
+          color="text.secondary" 
+          sx={{ mb: 4, textAlign: 'center' }}
         >
-          {t('quiz:modes.flag')}
+          Challenge yourself with our interactive geography quiz. Learn about capitals, flags, and languages from around the world.
+        </Typography>
+        <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+          <Button
+            variant="contained"
+            size="large"
+            onClick={() => startQuiz('random')}
+            startIcon={<EmojiEventsIcon />}
+            sx={{ 
+              px: 4, 
+              py: 1.5,
+              mb: { xs: 4, md: 6 } 
+            }}
+          >
+            Start Random Quiz
         </Button>
-        <Button
-          size={{ base: 'md', md: 'lg' }}
-          onClick={() => navigate('/quiz/language')}
-          px={{ base: 8, md: 10, lg: 12 }}
-          py={{ base: 6, md: 7, lg: 8 }}
-          fontSize={{ base: 'md', md: 'lg', lg: 'xl' }}
-          w={{ base: 'full', md: 'auto' }}
+        </Box>
+      </Box>
+
+      <Box sx={{ width: '100%', maxWidth: 1200 }}>
+        <Typography variant="h4" component="h2" textAlign="center" gutterBottom>
+          Choose Your Challenge
+        </Typography>
+        <Typography 
+          variant="subtitle1" 
+          color="text.secondary" 
+          textAlign="center" 
+          sx={{ mb: 6 }}
         >
-          {t('quiz:modes.language')}
-        </Button>
-      </Stack>
+          Select from our different quiz modes and test your knowledge in various areas of geography.
+        </Typography>
+
+        <Grid 
+          container 
+          spacing={4} 
+          justifyContent="center"
+          alignItems="stretch"
+        >
+          <QuizOption
+            icon={PublicIcon}
+            title={t('modes.capital')}
+            description={t('questions.capital', { country: '' })}
+            onClick={() => startQuiz('capital')}
+            color={theme.palette.primary.main}
+          />
+          <QuizOption
+            icon={FlagIcon}
+            title={t('modes.flag')}
+            description={t('questions.flag', { country: '' })}
+            onClick={() => startQuiz('flag')}
+            color={theme.palette.secondary.main}
+          />
+          <QuizOption
+            icon={TranslateIcon}
+            title={t('modes.language')}
+            description={t('questions.language', { country: '' })}
+            onClick={() => startQuiz('language')}
+            color={theme.palette.primary.dark}
+          />
+        </Grid>
     </Box>
+    </Container>
   );
-}; 
+} 

@@ -10,13 +10,16 @@
     "preview": "vite preview",
     "scrape-data": "tsx src/scripts/scrapeData.ts",
     "validate-data": "tsx src/scripts/validateData.ts",
-    "prepare-data": "npm run scrape-data && npm run validate-data"
+    "prepare-data": "npm run scrape-data && npm run validate-data",
+    "test": "playwright test --reporter=list"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
     "@chakra-ui/react": "^2.8.2",
-    "@emotion/react": "^11.11.3",
-    "@emotion/styled": "^11.11.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^6.4.0",
+    "@mui/material": "^6.4.0",
     "framer-motion": "^10.18.0",
     "i18next": "^24.2.1",
     "i18next-browser-languagedetector": "^8.0.2",

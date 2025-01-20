@@ -1,50 +1,63 @@
-# React + TypeScript + Vite
+# Geography Quiz Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive quiz application to test your knowledge of world geography, including capitals, flags, and languages.
 
-Currently, two official plugins are available:
+## Project Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- `/src` - Source code
+- `/public` - Static assets and translations
+- `/tests` - E2E tests (Playwright)
+- `PLAN.md` - Current project status and implementation plan
 
-## Expanding the ESLint configuration
+## Development
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Prerequisites
 
-- Configure the top-level `parserOptions` property like this:
+- Node.js (v18+)
+- npm
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Setup
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Run tests
+npm test
+# or for more detailed output
+npx playwright test --reporter=list
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## For AI Agents
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Project Planning
+The project plan is maintained in `PLAN.md`. This file contains:
+- ✅ Completed tasks
+- 🚧 In-progress features
+- 📋 Upcoming tasks
+- Development timeline
+- Project structure
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Testing
+- E2E tests are written using Playwright
+- Tests follow the given/when/then pattern
+- Run tests with detailed output:
+  ```bash
+  npx playwright test --reporter=list
+  ```
+- Test files are located in `/tests` directory
+- Each test file follows the pattern: `*.spec.ts`
+
+### Internationalization
+- Translation files are in `/public/locales/{lang}/`
+- Separate files for different namespaces (common.json, quiz.json)
+- Use `useTranslation` hook from react-i18next for translations
+
+### Code Style
+- TypeScript with strict mode
+- Modern React patterns (hooks, functional components)
+- Material UI for components
+- Tests provided as comments with given/when/then structure

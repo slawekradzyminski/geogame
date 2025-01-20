@@ -1,31 +1,33 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { ChakraProvider, Center, Flex } from "@chakra-ui/react";
-import { Layout } from "./components/Layout";
-import { Home } from "./pages/Home";
-import { Quiz } from "./pages/Quiz";
-import theme from "./theme";
+import { ThemeProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+import { Container } from '@mui/material';
+import { theme } from './theme/theme';
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <Flex
-      width={"100vw"}
-      height={"100vh"}
-      alignContent={"center"}
-      justifyContent={"center"}
-    >
-      <Center>
-        <ChakraProvider theme={theme}>
-          <Router>
-            <Layout>
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/quiz/:mode" element={<Quiz />} />
-              </Routes>
-            </Layout>
-          </Router>
-        </ChakraProvider>
-      </Center>
-    </Flex>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Container
+        component="main"
+        maxWidth={false}
+        disableGutters
+        sx={{
+          display: 'flex',
+          minHeight: '100vh',
+          alignItems: 'center',
+          justifyContent: 'center',
+          p: 0
+        }}
+      >
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </Router>
+      </Container>
+    </ThemeProvider>
   );
 }
 

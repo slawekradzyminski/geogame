@@ -1,14 +1,17 @@
 # Geography Quiz Application - Implementation Plan
 
-## 1. Project Setup & Dependencies
-- Create Vite React TypeScript project
-- Install required dependencies:
+## ✅ Completed Tasks
+
+### Project Setup & Dependencies
+- ✅ Create Vite React TypeScript project
+- ✅ Install required dependencies:
   ```json
   {
     "dependencies": {
       "react-i18next": "^14.0.0",
       "i18next": "^23.7.0",
-      "@chakra-ui/react": "^2.8.0",
+      "@mui/material": "^5.15.0",
+      "@mui/icons-material": "^5.15.0",
       "@emotion/react": "^11.11.0",
       "@emotion/styled": "^11.11.0",
       "framer-motion": "^10.16.0"
@@ -16,38 +19,83 @@
   }
   ```
 
-## 2. Data Preparation (Pre-development)
-- Create data scraper script to fetch from REST Countries API
-- Clean and transform the data:
-  ```typescript
-  // Example structure
-  interface CountryData {
-    id: string;
-    nameEn: string;
-    namePl: string;
-    capital: string;
-    flagUrl: string;
-    languages: string[];
-  }
-  ```
-- Store as static JSON in `src/data/countries.json`
-- Create data validation script to ensure data quality
-- Add data versioning for future updates
+### Data Preparation
+- ✅ Create and run data scraper
+- ✅ Clean and validate data
+- ✅ Create separate files for EN and PL data
+- ✅ Store as static JSON
 
-## 3. Core Types & Services (✓ Implemented)
-- ✓ Country interface
-- ✓ QuizType enum
-- ✓ QuizQuestion interface
-- Update country service to use local JSON instead of API
-- ✓ Quiz context for state management
+### Layout & UI Foundation
+- ✅ Set up Material UI
+- ✅ Implement responsive layout using MUI Grid and Box
+- ✅ Add consistent width constraints using MUI Container
+- ✅ Create responsive home page with MUI components
 
-## 4. Internationalization
-- Create translation files (en.json, pl.json)
-- Setup i18n configuration
-- Implement language switcher component
-- Add translations for country names and languages
+### Testing
+- ✅ E2E tests for homepage:
+  - Layout and responsiveness
+  - Navigation flows
+  - Interactive elements
+  - Basic i18n features
 
-## 5. Components Structure
+## 🚧 In Progress
+
+### Internationalization
+- 🚧 Configure i18n
+  - ✅ Basic setup
+  - ✅ Translation files structure
+  - ❌ Language switcher
+  - ❌ Dynamic language loading
+  - ❌ Polish translations for UI elements
+- 🚧 Add translations for:
+  - ✅ Basic UI elements
+  - ❌ Quiz questions
+  - ❌ Quiz feedback
+  - ❌ Error messages
+
+### Theme Implementation
+- Configure theme provider
+- Implement dark/light mode toggle
+- Add theme switcher component
+- Create consistent color palette
+
+## 📋 Upcoming Tasks
+
+### Core Types & Services
+- Create types directory
+- Implement interfaces:
+  - Country interface
+  - QuizType enum
+  - QuizQuestion interface
+  - Quiz state interface
+- Add type guards and validation
+
+### Quiz Implementation 🎮
+- Create QuizContext for game state management
+- Implement quiz logic:
+  - Random country selection
+  - Answer options generation
+  - Score tracking
+  - Progress tracking
+- Add quiz components:
+  - Question display
+  - Answer options
+  - Progress indicator
+  - Score display
+  - Results summary
+
+### Quiz Modes
+- Capitals quiz:
+  - Show country name, guess capital
+  - Display map preview
+- Flags quiz:
+  - Show flag, guess country name
+  - Add flag images handling
+- Languages quiz:
+  - Show country name, guess official language(s)
+  - Handle multiple correct answers
+
+### Project Structure
 ```
 src/
 ├── data/
@@ -58,6 +106,7 @@ src/
 ├── components/
 │   ├── Layout/
 │   │   ├── Header.tsx
+│   │   ├── ThemeProvider.tsx
 │   │   └── LanguageSwitcher.tsx
 │   ├── Quiz/
 │   │   ├── QuizCard.tsx
@@ -65,78 +114,64 @@ src/
 │   │   ├── AnswerOptions.tsx
 │   │   └── QuizTypeSelector.tsx
 │   └── common/
-│       ├── Button.tsx
-│       ├── Loading.tsx
-│       └── ErrorMessage.tsx
+│       ├── CustomButton.tsx
+│       ├── LoadingSpinner.tsx
+│       └── ErrorAlert.tsx
 ```
 
-## 6. Quiz Logic Implementation
-- Complete `generateQuizQuestion` cases:
-  - COUNTRY_TO_LANGUAGE
-  - COUNTRY_TO_CAPITAL
-  - COUNTRY_TO_FLAG
-  - FLAG_TO_COUNTRY
-- Add score tracking
-- Implement answer validation
-- Add feedback for correct/incorrect answers
+### Testing Strategy
+- Unit tests:
+  - Quiz generation logic
+  - Score calculation
+  - Answer validation
+- Integration tests:
+  - Game flow
+  - Language switching
+  - Theme switching
+- E2E tests (Playwright):
+  - Quiz gameplay scenarios
+  - Language switching
+  - Theme switching
 
-## 7. UI/UX Features
-- Responsive design using Chakra UI
-- Loading states
-- Error handling
-- Animations for transitions
-- Score display
-- Progress tracking
-- Option to select number of choices (3-6)
-
-## 8. Game Flow
-```
-Start
-└── Select Quiz Type
-    └── Generate Question
-        └── Display Options
-            └── User Selects Answer
-                └── Show Result
-                    └── Next Question or Change Type
-```
-
-## 9. Testing
-- Unit tests for quiz generation logic
-- Component tests for UI elements
-- Integration tests for game flow
-- Data validation tests
-
-## 10. Optimization & Polish
-- Preload and cache flag images during initial load
-- Implement error boundaries
-- Add loading skeletons
+### Polish & Optimization
+- Implement Material UI theme customization
+- Add loading skeletons using MUI Skeleton
 - Progressive image loading for flags
-- Optimize JSON structure for minimal bundle size
+- Optimize bundle size with tree-shaking
+- Add animations using MUI Transitions for:
+  - Answer selection
+  - Score updates
+  - Question transitions
 
-## 11. Deployment
+### Deployment
 - Build optimization
 - Environment configuration
-- Deploy to hosting platform (e.g., Vercel, Netlify)
-- Setup automated data update pipeline (if needed)
+- Deploy to hosting platform (Vercel/Netlify)
+- Setup automated data update pipeline
 
-## Development Phases
+## 🎯 Future Enhancements
+- Add difficulty levels
+- Implement multiplayer mode
+- Add leaderboard
+- Create achievement system
+- Add sound effects
+- Implement PWA support
 
-### Phase 0: Data Preparation (Day 1)
-- Create and run data scraper
-- Clean and validate data
-- Prepare static JSON file
+## Development Timeline
 
-### Phase 1: Foundation (Days 2-3)
-- Project setup
-- Core types and services implementation
-- Basic UI components
+### Phase 1: Foundation (Days 1-3)
+- ✅ Project setup
+- ✅ Data preparation
+- ✅ Basic UI components
+- 🚧 i18n setup
 
 ### Phase 2: Core Features (Days 4-5)
-- Quiz logic implementation
-- UI/UX implementation
-- Internationalization
+- Core types implementation
+- Quiz implementation
+- Complete i18n features
+- Theme implementation
 
 ### Phase 3: Polish (Days 6-7)
 - Testing
-- Optimization
+- Performance optimization
 - Deployment 
