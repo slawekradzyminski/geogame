@@ -5,19 +5,6 @@
 ### Project Setup & Dependencies
 - ✅ Create Vite React TypeScript project
 - ✅ Install required dependencies:
-  ```json
-  {
-    "dependencies": {
-      "react-i18next": "^14.0.0",
-      "i18next": "^23.7.0",
-      "@mui/material": "^5.15.0",
-      "@mui/icons-material": "^5.15.0",
-      "@emotion/react": "^11.11.0",
-      "@emotion/styled": "^11.11.0",
-      "framer-motion": "^10.16.0"
-    }
-  }
-  ```
 
 ### Data Preparation
 - ✅ Create and run data scraper
@@ -180,7 +167,7 @@ src/
 - ✅ Project setup
 - ✅ Data preparation
 - ✅ Basic UI components
-- 🚧 i18n setup
+- ✅ i18n setup
 
 ### Phase 2: Core Features (Days 4-5)
 - Core types implementation
@@ -191,4 +178,49 @@ src/
 ### Phase 3: Polish (Days 6-7)
 - Testing
 - Performance optimization
-- Deployment 
+- Deployment
+
+## Data Sources
+
+### Countries
+- Using data from REST Countries API
+- Stored in `src/data/countries.en.json` and `src/data/countries.pl.json`
+- Contains country information including:
+  - Name (in English and Polish)
+  - Capital city
+  - Flag URL
+  - Languages
+
+### Cities
+- Using data from GeoNames API
+- Stored in `src/data/cities.json`
+- Contains 1000 largest cities worldwide
+- Data includes:
+  - City name (in English and Polish)
+  - Country code
+  - Population
+  - Capital status
+- Polish translations for:
+  - European cities
+  - Major North American cities
+  - Major world cities with traditional Polish names
+- Configuration:
+  - Requires GeoNames API username (stored in `src/config.ts`)
+  - Script: `src/scripts/fetchCities.ts`
+  - Translations: `src/data/cityTranslations.ts`
+
+## Features (TODO)
+1. Quiz modes:
+   - Capitals
+   - Major cities
+   - Flags
+   - Languages
+2. Difficulty levels
+3. Score tracking
+4. Language switching (EN/PL)
+
+## Technical Stack (TODO)
+- Frontend framework
+- State management
+- Styling solution
+- Testing framework 
