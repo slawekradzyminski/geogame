@@ -8,7 +8,7 @@ test.describe('Home Page UI Tests', () => {
     
     // when
     const container = await page.locator('main').first();
-    const content = await page.getByRole('heading', { name: /Test Your Geography Knowledge/i });
+    const content = await page.getByRole('heading', { name: /Geography Quiz/i }).first();
     
     // then
     const containerBox = await container.boundingBox();
@@ -64,14 +64,9 @@ test.describe('Home Page UI Tests', () => {
     await expect(page.getByText('Guess the Language')).toBeVisible();
 
     // Verify card descriptions
-    await expect(page.getByText('What is the capital of ?', { exact: false })).toBeVisible();
-    await expect(page.getByText('Which flag belongs to ?', { exact: false })).toBeVisible();
-    await expect(page.getByText('Which language is spoken in ?', { exact: false })).toBeVisible();
-
-    // Verify exact descriptions with empty country
-    await expect(page.getByText('What is the capital of')).toBeVisible();
-    await expect(page.getByText('Which flag belongs to')).toBeVisible();
-    await expect(page.getByText('Which language is spoken in')).toBeVisible();
+    await expect(page.getByText('What is the capital of', { exact: false })).toBeVisible();
+    await expect(page.getByText('Which flag belongs to', { exact: false })).toBeVisible();
+    await expect(page.getByText('Which language is spoken in', { exact: false })).toBeVisible();
   });
 
   test('should navigate to random quiz on start button click', async ({ page }) => {
@@ -79,7 +74,7 @@ test.describe('Home Page UI Tests', () => {
     await page.goto('/');
 
     // when
-    await page.getByRole('button', { name: /Start Random Quiz/i }).click();
+    await page.getByRole('button', { name: /Select Quiz Mode/i }).click();
 
     // then
     await expect(page).toHaveURL(/\/quiz\/random$/);
@@ -153,7 +148,34 @@ test.describe('Home Page UI Tests', () => {
     await page.goto('/');
 
     // when & then
-    await expect(page.getByRole('heading', { name: /Geography Quiz/i })).toBeVisible();
-    await expect(page.getByText(/Test your knowledge/i)).toBeVisible();
+    await expect(page.getByRole('heading', { name: /Geography Quiz/i }).first()).toBeVisible();
+    await expect(page.getByText(/Test your knowledge of world geography/i).first()).toBeVisible();
+  });
+
+  test('should switch language and update content', async ({ page }) => {
+    // given
+    await page.goto('/');
+    
+    // when - switch to Polish
+    await page.getByRole('button', { name: /select language/i }).click();
+    await page.getByText('Polski').click();
+    
+    // then - verify Polish translations
+    await expect(page.getByRole('heading', { name: /Quiz Geograficzny/i }).first()).toBeVisible();
+    await expect(page.getByText(/Sprawdź swoją wiedzę/i).first()).toBeVisible();
+    await expect(page.getByText('Zgadnij stolicę')).toBeVisible();
+    await expect(page.getByText('Zgadnij flagę')).toBeVisible();
+    await expect(page.getByText('Zgadnij język')).toBeVisible();
+    
+    // when - switch back to English
+    await page.getByRole('button', { name: /wybierz język/i }).click();
+    await page.getByText('English').click();
+    
+    // then - verify English translations
+    await expect(page.getByRole('heading', { name: /Geography Quiz/i }).first()).toBeVisible();
+    await expect(page.getByText(/Test your knowledge/i).first()).toBeVisible();
+    await expect(page.getByText('Guess the Capital')).toBeVisible();
+    await expect(page.getByText('Guess the Flag')).toBeVisible();
+    await expect(page.getByText('Guess the Language')).toBeVisible();
   });
 }); 

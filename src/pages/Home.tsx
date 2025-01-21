@@ -16,6 +16,7 @@ import PublicIcon from '@mui/icons-material/Public';
 import FlagIcon from '@mui/icons-material/Flag';
 import TranslateIcon from '@mui/icons-material/Translate';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
+import LanguageSwitcher from '../components/LanguageSwitcher';
 
 interface QuizOptionProps {
   icon: React.ComponentType<SvgIconProps>;
@@ -64,7 +65,7 @@ const QuizOption = ({ icon: Icon, title, description, onClick, color }: QuizOpti
 
 export default function Home() {
   const navigate = useNavigate();
-  const { t } = useTranslation('quiz');
+  const { t } = useTranslation(['common', 'quiz']);
   const theme = useTheme();
 
   const startQuiz = (mode: string) => {
@@ -82,6 +83,17 @@ export default function Home() {
         py: { xs: 4, md: 6 }
       }}
     >
+      <Box 
+        sx={{ 
+          width: '100%', 
+          display: 'flex', 
+          justifyContent: 'flex-end',
+          mb: 2
+        }}
+      >
+        <LanguageSwitcher />
+      </Box>
+
       <Box sx={{ width: '100%', maxWidth: 800, mb: 8 }}>
         <Typography
           component="h1"
@@ -96,14 +108,14 @@ export default function Home() {
             WebkitTextFillColor: 'transparent',
           }}
         >
-          Test Your Geography Knowledge
+          {t('app.title')}
         </Typography>
         <Typography 
           variant="subtitle1" 
           color="text.secondary" 
           sx={{ mb: 4, textAlign: 'center' }}
         >
-          Challenge yourself with our interactive geography quiz. Learn about capitals, flags, and languages from around the world.
+          {t('app.description')}
         </Typography>
         <Box sx={{ display: 'flex', justifyContent: 'center' }}>
           <Button
@@ -117,14 +129,14 @@ export default function Home() {
               mb: { xs: 4, md: 6 } 
             }}
           >
-            Start Random Quiz
-        </Button>
+            {t('quiz:modes.select')}
+          </Button>
         </Box>
       </Box>
 
       <Box sx={{ width: '100%', maxWidth: 1200 }}>
         <Typography variant="h4" component="h2" textAlign="center" gutterBottom>
-          Choose Your Challenge
+          {t('quiz:modes.select')}
         </Typography>
         <Typography 
           variant="subtitle1" 
@@ -132,7 +144,7 @@ export default function Home() {
           textAlign="center" 
           sx={{ mb: 6 }}
         >
-          Select from our different quiz modes and test your knowledge in various areas of geography.
+          {t('app.description')}
         </Typography>
 
         <Grid 
@@ -143,22 +155,22 @@ export default function Home() {
         >
           <QuizOption
             icon={PublicIcon}
-            title={t('modes.capital')}
-            description={t('questions.capital', { country: '' })}
+            title={t('quiz:modes.capital')}
+            description={t('quiz:questions.capital', { country: '' })}
             onClick={() => startQuiz('capital')}
             color={theme.palette.primary.main}
           />
           <QuizOption
             icon={FlagIcon}
-            title={t('modes.flag')}
-            description={t('questions.flag', { country: '' })}
+            title={t('quiz:modes.flag')}
+            description={t('quiz:questions.flag', { country: '' })}
             onClick={() => startQuiz('flag')}
             color={theme.palette.secondary.main}
           />
           <QuizOption
             icon={TranslateIcon}
-            title={t('modes.language')}
-            description={t('questions.language', { country: '' })}
+            title={t('quiz:modes.language')}
+            description={t('quiz:questions.language', { country: '' })}
             onClick={() => startQuiz('language')}
             color={theme.palette.primary.dark}
           />

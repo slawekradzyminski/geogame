@@ -31,6 +31,19 @@
 - ✅ Add consistent width constraints using MUI Container
 - ✅ Create responsive home page with MUI components
 
+### Internationalization
+- ✅ Configure i18n
+  - ✅ Basic setup
+  - ✅ Translation files structure
+  - ✅ Dynamic language loading
+  - ✅ Language switcher component
+- ✅ Add translations for:
+  - ✅ Basic UI elements
+  - ✅ Quiz modes and descriptions
+  - ❌ Quiz questions (dynamic content)
+  - ❌ Quiz feedback
+  - ❌ Error messages
+
 ### Testing
 - ✅ E2E tests for homepage:
   - Layout and responsiveness
@@ -39,19 +52,6 @@
   - Basic i18n features
 
 ## 🚧 In Progress
-
-### Internationalization
-- 🚧 Configure i18n
-  - ✅ Basic setup
-  - ✅ Translation files structure
-  - ❌ Language switcher
-  - ❌ Dynamic language loading
-  - ❌ Polish translations for UI elements
-- 🚧 Add translations for:
-  - ✅ Basic UI elements
-  - ❌ Quiz questions
-  - ❌ Quiz feedback
-  - ❌ Error messages
 
 ### Theme Implementation
 - Configure theme provider
