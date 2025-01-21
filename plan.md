@@ -61,93 +61,110 @@
 
 ## 🚧 In Progress
 
-### Core Types & Services
-- Create types directory
-- Implement interfaces:
-  - Country interface
-  - QuizType enum
-  - QuizQuestion interface
-  - Quiz state interface
-- Add type guards and validation
+### Capital Quiz Implementation
+- Data preparation:
+  - Create city database with translations
+  - Ensure data includes capitals and other major cities
+  - Store in JSON format similar to countries data
 
-### Quiz Implementation 🎮
-- Create QuizContext for game state management
-- Implement quiz logic:
-  - Random country selection
-  - Answer options generation
+- Quiz Flow Implementation:
+  - Create QuizContext for game state management:
+    - Current question number (1-10)
+    - Score tracking
+    - Answer history for summary
+  - Implement quiz logic:
+    - Random country selection (no repeats)
+    - Generate 4 random city options (including correct capital)
+    - Track selected answers for summary
+
+- Quiz UI Components:
+  - Question display:
+    - Country name
+    - Flag display (moved from assets to public)
+    - 4 answer options as buttons
+  - Progress indicators:
+    - Question counter (e.g., "7/10")
+    - Current score
+    - Circular timer (5 seconds)
+    - "Next" button for manual advance
+  - Answer feedback:
+    - Green highlight for correct answer
+    - Red highlight for wrong answer
+    - Toast notification in top-right corner
+  - Summary screen:
+    - Final score presentation
+    - Question-by-question breakdown:
+      - Country name and flag
+      - Selected answer
+      - Correct answer
+      - Visual correct/incorrect indicator
+
+### Testing
+- E2E tests for capital quiz:
+  - Quiz flow (10 questions)
+  - Answer selection
+  - Timer functionality
+  - Manual question advance
   - Score tracking
-  - Progress tracking
-- Add quiz components:
-  - Question display
-  - Answer options
-  - Progress indicator
-  - Score display
-  - Results summary
+  - Summary screen accuracy
 
-### Quiz Modes
-- Capitals quiz:
-  - Show country name, guess capital
-  - Display map preview
-- Flags quiz:
-  - Show flag, guess country name
-  - Add flag images handling
-- Languages quiz:
-  - Show country name, guess official language(s)
-  - Handle multiple correct answers
+## 📋 Upcoming Tasks (Prioritized)
 
-### Project Structure
+### Flag Quiz Implementation
+[moved to future implementation]
+
+### Language Quiz Implementation
+[moved to future implementation]
+
+## Project Structure Update
 ```
 src/
 ├── data/
-│   └── countries.json
-├── scripts/
-│   ├── scrapeData.ts
-│   └── validateData.ts
+│   ├── countries.json
+│   └── cities.json
+├── types/
+│   ├── quiz.ts
+│   └── geography.ts
+├── context/
+│   └── QuizContext.tsx
 ├── components/
 │   ├── Layout/
 │   │   ├── Header.tsx
 │   │   ├── ThemeProvider.tsx
 │   │   └── LanguageSwitcher.tsx
 │   ├── Quiz/
-│   │   ├── QuizCard.tsx
-│   │   ├── QuestionDisplay.tsx
-│   │   ├── AnswerOptions.tsx
-│   │   └── QuizTypeSelector.tsx
+│   │   ├── CapitalQuiz/
+│   │   │   ├── QuestionDisplay.tsx
+│   │   │   ├── AnswerOptions.tsx
+│   │   │   ├── ProgressIndicator.tsx
+│   │   │   └── Summary.tsx
+│   │   └── common/
+│   │       ├── Flag.tsx
+│   │       ├── Timer.tsx
+│   │       └── Toast.tsx
 │   └── common/
 │       ├── CustomButton.tsx
 │       ├── LoadingSpinner.tsx
 │       └── ErrorAlert.tsx
 ```
 
-### Testing Strategy
-- Unit tests:
-  - Quiz generation logic
-  - Score calculation
-  - Answer validation
-- Integration tests:
-  - Game flow
-  - Language switching
-  - Theme switching
-- E2E tests (Playwright):
-  - Quiz gameplay scenarios
-  - Language switching
-  - Theme switching
+## Development Timeline
 
-### Polish & Optimization
-- Implement Material UI theme customization
-- Add loading skeletons using MUI Skeleton
-- Progressive image loading for flags
-- Optimize bundle size with tree-shaking
-- Add animations using MUI Transitions for:
-  - Answer selection
-  - Score updates
-  - Question transitions
+### Phase 1: Foundation (Days 1-3)
+- ✅ Project setup
+- ✅ Data preparation
+- ✅ Basic UI components
+- ✅ i18n setup
+- ✅ Theme implementation
 
-### Deployment
-- Build optimization
-- Environment configuration
-- Deploy to hosting platform (Vercel/Netlify)
-- Setup automated data update pipeline
+### Phase 2: Capital Quiz (Days 4-5)
+- 🚧 City data preparation
+- Quiz implementation
+- Testing
+- Polish & bug fixes
+
+### Phase 3: Additional Quiz Types (Days 6-7)
+[postponed for later iterations]
 
 ## 🎯 Future Enhancements
 - Add difficulty levels
