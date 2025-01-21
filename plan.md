@@ -44,22 +44,22 @@
   - ❌ Quiz feedback
   - ❌ Error messages
 
+### Theme Implementation
+- ✅ Configure theme provider
+- ✅ Implement dark/light mode toggle
+- ✅ Add theme switcher component
+- ✅ Create consistent color palette
+- ✅ Remove Chakra UI in favor of Material UI
+
 ### Testing
 - ✅ E2E tests for homepage:
   - Layout and responsiveness
   - Navigation flows
   - Interactive elements
   - Basic i18n features
+  - Theme switching
 
 ## 🚧 In Progress
-
-### Theme Implementation
-- Configure theme provider
-- Implement dark/light mode toggle
-- Add theme switcher component
-- Create consistent color palette
-
-## 📋 Upcoming Tasks
 
 ### Core Types & Services
 - Create types directory
