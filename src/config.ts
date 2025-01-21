@@ -1,0 +1,1 @@
+export const GEONAMES_USERNAME = 'YOUR_USERNAME'; 
