@@ -1,59 +1,44 @@
 import { ReactNode } from 'react';
-import { Box, Flex, HStack, IconButton, useColorMode } from '@chakra-ui/react';
-import { SunIcon, MoonIcon } from '@chakra-ui/icons';
-import { useTranslation } from 'react-i18next';
+import { Box, Container, IconButton, Stack } from '@mui/material';
+import Brightness4Icon from '@mui/icons-material/Brightness4';
+import Brightness7Icon from '@mui/icons-material/Brightness7';
 import LanguageSwitcher from './LanguageSwitcher';
+import { useColorMode } from '../theme/ThemeContext';
 
 interface LayoutProps {
   children: ReactNode;
 }
 
-export const Layout = ({ children }: LayoutProps) => {
-  const { colorMode, toggleColorMode } = useColorMode();
-  const { t } = useTranslation();
+export default function Layout({ children }: LayoutProps) {
+  const { toggleColorMode, mode } = useColorMode();
 
   return (
-    <Flex direction="column" minH="100vh" overflow="hidden">
-      <Flex
-        as="header"
-        align="center"
-        justify="space-between"
-        py={{ base: 3, md: 4 }}
-        px={{ base: 4, md: 8 }}
-        borderBottomWidth={1}
-        bg={colorMode === 'light' ? 'white' : 'gray.800'}
-        position="sticky"
-        top={0}
-        zIndex={1}
-        boxShadow="sm"
-      >
-        <Box as="nav">
-          {/* Navigation items can be added here */}
-        </Box>
-        <HStack spacing={{ base: 2, md: 4 }}>
+    <Box
+      sx={{
+        minHeight: '100vh',
+        bgcolor: 'background.default',
+        color: 'text.primary'
+      }}
+    >
+      <Container maxWidth="xl">
+        <Stack
+          direction="row"
+          spacing={2}
+          sx={{
+            py: 2,
+            justifyContent: 'flex-end',
+            alignItems: 'center'
+          }}
+        >
+          <IconButton onClick={toggleColorMode} color="inherit" aria-label="toggle theme">
+            {mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
+          </IconButton>
           <LanguageSwitcher />
-          <IconButton
-            aria-label={t('settings.theme.' + colorMode)}
-            icon={colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
-            onClick={toggleColorMode}
-            size={{ base: 'sm', md: 'md' }}
-          />
-        </HStack>
-      </Flex>
-
-      <Box 
-        as="main" 
-        flex="1"
-        bg={colorMode === 'light' ? 'gray.50' : 'gray.900'}
-        overflow="auto"
-        display="flex"
-        alignItems="center"
-        justifyContent="center"
-        px={{ base: 2, sm: 4, md: 6, lg: 8 }}
-        py={{ base: 4, md: 6, lg: 8 }}
-      >
-        {children}
-      </Box>
-    </Flex>
+        </Stack>
+        <Box component="main">
+          {children}
+        </Box>
+      </Container>
+    </Box>
   );
-}; 
+} 
