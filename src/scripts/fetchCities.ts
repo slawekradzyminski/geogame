@@ -17,10 +17,7 @@ interface GeoNamesCity {
 
 interface City {
   id: string;
-  name: {
-    en: string;
-    pl: string;
-  };
+  name: string;
   country: string;
   population: number;
   isCapital: boolean;
@@ -62,12 +59,17 @@ async function main() {
     const cities = await fetchCities();
     
     console.log('Processing cities...');
-    const citiesWithTranslations: City[] = cities.map((city) => ({
+    const citiesEn: City[] = cities.map((city) => ({
       id: city.name.toLowerCase().replace(/\s+/g, '-'),
-      name: {
-        en: city.name,
-        pl: getPolishName(city)
-      },
+      name: city.name,
+      country: city.countryCode.toLowerCase(),
+      population: city.population,
+      isCapital: false
+    }));
+
+    const citiesPl: City[] = cities.map((city) => ({
+      id: city.name.toLowerCase().replace(/\s+/g, '-'),
+      name: getPolishName(city),
       country: city.countryCode.toLowerCase(),
       population: city.population,
       isCapital: false
@@ -76,8 +78,12 @@ async function main() {
     // Save to files
     const dataDir = join(__dirname, '..', 'data');
     await writeFile(
-      join(dataDir, 'cities.json'),
-      JSON.stringify(citiesWithTranslations, null, 2)
+      join(dataDir, 'cities.en.json'),
+      JSON.stringify(citiesEn, null, 2)
+    );
+    await writeFile(
+      join(dataDir, 'cities.pl.json'),
+      JSON.stringify(citiesPl, null, 2)
     );
 
     console.log('Cities data has been saved!');
