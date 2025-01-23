@@ -1,4 +1,4 @@
-import { Box, Typography, CircularProgress, Paper, Grid } from '@mui/material';
+import { Box, Typography, CircularProgress, Grid } from '@mui/material';
 import { useCapitalQuiz } from '../../hooks/useCapitalQuiz';
 import { useTranslation } from 'react-i18next';
 import { useTheme } from '@mui/material/styles';
@@ -69,14 +69,14 @@ export const CapitalQuizQuestion = () => {
         >
           {t('whatIsCapital', { country: question.name })}
         </Typography>
-        <Paper className="flag-paper" elevation={3} sx={{ maxWidth: '300px', margin: '0 auto', mb: 4 }}>
+        <div className="flag-container">
           <img 
             src={question.flag} 
             alt={`${question.name} flag`}
             className="flag-image"
             data-testid="country-flag"
           />
-        </Paper>
+        </div>
       </Box>
 
       <Grid container spacing={2}>

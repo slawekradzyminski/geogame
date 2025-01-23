@@ -15,9 +15,8 @@
 }
 
 .flag-container {
-  margin: 32px 0;
-  display: flex;
-  justify-content: center;
+  margin: 32px auto;
+  max-width: 300px;
 }
 
 .flag-paper {
