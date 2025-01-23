@@ -19,13 +19,24 @@
   },
   "questions": {
     "capital": "Jaka jest stolica {{country}}?",
-    "flag": "Która flaga należy do {{country}}?",
-    "language": "Jakim językiem mówi się w {{country}}?"
+    "flag": "Do jakiego kraju należy ta flaga?",
+    "language": "Jaki język jest używany w {{country}}?"
   },
   "feedback": {
     "correct": "Poprawnie! {{type}} kraju {{country}} to {{answer}}",
     "incorrect": "Niepoprawnie! {{type}} kraju {{country}} to {{answer}}",
     "streak": "Masz serię {{count}} poprawnych odpowiedzi!",
-    "perfect": "Doskonały wynik! Wszystkie odpowiedzi poprawne!"
-  }
+    "perfect": "Perfekcyjny wynik! Wszystkie odpowiedzi poprawne!"
+  },
+  "question": "Pytanie",
+  "whatIsCapital": "Jaka jest stolica {{country}}?",
+  "identifyCity": "Które miasto to {{city}}?",
+  "summary": "Podsumowanie Quizu",
+  "finalScore": "Wynik końcowy",
+  "accuracy": "Dokładność",
+  "correctAnswer": "Poprawna odpowiedź",
+  "yourAnswer": "Twoja odpowiedź",
+  "noAnswer": "Brak odpowiedzi",
+  "timeSpent": "Czas odpowiedzi",
+  "playAgain": "Zagraj ponownie"
 } 
