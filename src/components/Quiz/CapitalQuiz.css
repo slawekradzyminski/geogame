@@ -1,0 +1,14 @@
+.quiz-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.language-switcher-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.quiz-paper {
+  min-height: 70vh;
+} 

@@ -1,7 +1,8 @@
-import { Box, Typography, Button, Grid, Paper, alpha } from '@mui/material';
+import { Box, Typography, Button, Grid, Paper } from '@mui/material';
 import { useCapitalQuiz } from '../../hooks/useCapitalQuiz';
 import { useTranslation } from 'react-i18next';
-import { useTheme } from '@mui/material/styles';
+import { useTheme, alpha } from '@mui/material/styles';
+import './CapitalQuizSummary.css';
 
 export const CapitalQuizSummary = () => {
   const { state, resetQuiz } = useCapitalQuiz();
@@ -13,21 +14,17 @@ export const CapitalQuizSummary = () => {
   return (
     <Box 
       data-testid="quiz-summary"
-      p={4} 
-      display="flex" 
-      flexDirection="column" 
-      minHeight="70vh"
+      className="summary-container"
       sx={{
         background: `linear-gradient(45deg, ${alpha(theme.palette.primary.main, 0.05)}, ${alpha(theme.palette.secondary.main, 0.05)})`,
-        borderRadius: 2
       }}
     >
-      <Box mb={6} textAlign="center">
+      <div className="summary-header">
         <Typography
           variant="h3"
           gutterBottom
+          className="summary-title"
           sx={{
-            fontWeight: 800,
             background: `-webkit-linear-gradient(45deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
@@ -38,6 +35,7 @@ export const CapitalQuizSummary = () => {
         <Typography 
           variant="h4" 
           gutterBottom
+          className="summary-score"
           sx={{ color: theme.palette.text.secondary }}
         >
           {t('finalScore')}: {state.score}/{state.answers.length}
@@ -48,63 +46,49 @@ export const CapitalQuizSummary = () => {
         >
           {t('accuracy')}: {accuracy.toFixed(1)}%
         </Typography>
-      </Box>
+      </div>
 
       <Grid container spacing={3} sx={{ mb: 6 }}>
         {state.answers.map((answer) => (
           <Grid item xs={12} key={answer.questionId}>
             <Paper
               elevation={3}
-              sx={{
-                p: 3,
-                background: 'white',
-                borderRadius: 2,
-                transition: 'transform 0.3s ease',
-                '&:hover': {
-                  transform: 'scale(1.02)'
-                }
-              }}
+              className="answer-card"
             >
               <Typography variant="h6" gutterBottom>
                 {t('whatIsCapital', { country: answer.countryName })}
               </Typography>
-              <Box display="flex" flexDirection="column" gap={1}>
+              <div className="answer-details">
                 <Typography color="text.secondary">
                   {t('correctAnswer')}: {answer.correctAnswer}
                 </Typography>
                 <Typography color={answer.isCorrect ? 'success.main' : 'error.main'}>
                   {t('yourAnswer')}: {answer.selectedAnswer || t('noAnswer')}
                 </Typography>
-              </Box>
+              </div>
             </Paper>
           </Grid>
         ))}
       </Grid>
 
-      <Box display="flex" justifyContent="center">
+      <div className="play-again-container">
         <Button
           variant="contained"
           size="large"
           onClick={resetQuiz}
           data-testid="play-again-button"
+          className="play-again-button"
           sx={{
-            py: 2,
-            px: 4,
-            fontSize: '1.2rem',
-            fontWeight: 600,
-            borderRadius: 2,
             background: `linear-gradient(45deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
             boxShadow: `0 8px 16px ${alpha(theme.palette.primary.main, 0.2)}`,
-            transition: 'all 0.3s ease',
             '&:hover': {
-              transform: 'translateY(-4px)',
               boxShadow: `0 12px 20px ${alpha(theme.palette.primary.main, 0.3)}`,
             }
           }}
         >
           {t('playAgain')}
         </Button>
-      </Box>
+      </div>
     </Box>
   );
 }; 

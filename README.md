@@ -61,8 +61,12 @@ The project plan is maintained in `PLAN.md`. This file contains:
 - Modern React patterns (hooks, functional components)
 - Material UI for components
 - Tests provided as comments with given/when/then structure
+- CSS is kept in separate files next to components (e.g., `Component.tsx` and `Component.css`)
+- Arrow functions are preferred over function declarations
 
 ### AI Tips
 - The main branch is kept stable with frequent commits
 - Test failures related to git commands (like `git --no-pager diff`) are often due to line ending issues or formatting differences
 - Always read the test output carefully to identify the root cause of failures
+- Keep component styles in separate CSS files to improve maintainability
+- Use arrow function syntax for component definitions and hooks

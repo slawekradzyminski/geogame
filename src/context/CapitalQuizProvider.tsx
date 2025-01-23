@@ -12,7 +12,7 @@ const initialState: QuizState = {
   isFinished: false,
 };
 
-export function CapitalQuizProvider({ children }: { children: React.ReactNode }) {
+export const CapitalQuizProvider = ({ children }: { children: React.ReactNode }) => {
   const [state, setState] = useState<QuizState>(initialState);
   const [question, setQuestion] = useState<QuizQuestion | null>(null);
   const [usedQuestions, setUsedQuestions] = useState<Set<string>>(new Set());
@@ -64,7 +64,7 @@ export function CapitalQuizProvider({ children }: { children: React.ReactNode })
     }
   }, [countriesData, question, state.isFinished, generateNewQuestion]);
 
-  function getRandomItems<T>(items: T[], count: number): T[] {
+  const getRandomItems = <T,>(items: T[], count: number): T[] => {
     const available = [...items];
     const result: T[] = [];
     while (result.length < count && available.length > 0) {
@@ -73,9 +73,9 @@ export function CapitalQuizProvider({ children }: { children: React.ReactNode })
       available.splice(index, 1);
     }
     return result;
-  }
+  };
 
-  function submitAnswer(selectedAnswer: string) {
+  const submitAnswer = (selectedAnswer: string) => {
     if (!question) return;
 
     const isCorrect = selectedAnswer === question.correctAnswer;
@@ -101,17 +101,17 @@ export function CapitalQuizProvider({ children }: { children: React.ReactNode })
     setQuestion(null);
   }
 
-  function nextQuestion() {
+  const nextQuestion = () => {
     if (state.currentQuestionNumber <= QUESTIONS_PER_QUIZ) {
       generateNewQuestion();
     }
   }
 
-  function setLanguage(language: Language) {
+  const setLanguage = (language: Language) => {
     setState(prev => ({ ...prev, language }));
   }
 
-  function resetQuiz() {
+  const resetQuiz = () => {
     setState(initialState);
     setQuestion(null);
     setUsedQuestions(new Set());
