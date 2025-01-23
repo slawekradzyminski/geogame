@@ -1,13 +1,18 @@
-import { Box, Typography, Button, Grid, CircularProgress, Paper } from '@mui/material';
+import { Box, Typography, CircularProgress, Paper, Grid } from '@mui/material';
 import { useCapitalQuiz } from '../../hooks/useCapitalQuiz';
 import { useTranslation } from 'react-i18next';
-import { useTheme, alpha } from '@mui/material/styles';
+import { useTheme } from '@mui/material/styles';
+import { useState } from 'react';
 import './CapitalQuizQuestion.css';
+
+const ANSWER_LETTERS = ['A', 'B', 'C', 'D'];
 
 export const CapitalQuizQuestion = () => {
   const { state, question, submitAnswer } = useCapitalQuiz();
   const { t } = useTranslation(['quiz']);
   const theme = useTheme();
+  const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
+  const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
 
   if (!question) {
     return (
@@ -17,67 +22,75 @@ export const CapitalQuizQuestion = () => {
     );
   }
 
+  const handleAnswerClick = async (answer: string) => {
+    setSelectedAnswer(answer);
+    const correct = answer === question.correctAnswer;
+    setIsCorrect(correct);
+    
+    setTimeout(() => {
+      submitAnswer(answer);
+      setSelectedAnswer(null);
+      setIsCorrect(null);
+    }, 2000);
+  };
+
+  const getButtonClass = (option: string) => {
+    if (selectedAnswer === null) return 'answer-button';
+    if (selectedAnswer === option) return isCorrect ? 'answer-button correct' : 'answer-button wrong';
+    if (option === question.correctAnswer) return 'answer-button correct';
+    return 'answer-button disabled';
+  };
+
   return (
     <Box 
       data-testid="quiz-question" 
       className="question-container"
       sx={{
-        background: `linear-gradient(45deg, ${alpha(theme.palette.primary.main, 0.05)}, ${alpha(theme.palette.secondary.main, 0.05)})`,
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 3,
+        maxWidth: '800px',
+        margin: '0 auto',
+        padding: 4,
       }}
     >
       <Box textAlign="center">
         <Typography
-          variant="h3"
+          variant="h4"
           gutterBottom
-          className="question-title"
-          sx={{
-            background: `-webkit-linear-gradient(45deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-          }}
+          sx={{ color: theme.palette.primary.main }}
         >
           {t('question')} {state.currentQuestionNumber}/10
         </Typography>
         <Typography 
-          variant="h4" 
+          variant="h5" 
           gutterBottom
-          className="question-subtitle"
-          sx={{ color: theme.palette.text.secondary }}
+          sx={{ color: theme.palette.text.secondary, mb: 3 }}
         >
           {t('whatIsCapital', { country: question.name })}
         </Typography>
-        <div className="flag-container">
-          <Paper className="flag-paper" elevation={8}>
-            <img 
-              src={question.flag} 
-              alt={`${question.name} flag`}
-              className="flag-image"
-              data-testid="country-flag"
-            />
-          </Paper>
-        </div>
+        <Paper className="flag-paper" elevation={3} sx={{ maxWidth: '300px', margin: '0 auto', mb: 4 }}>
+          <img 
+            src={question.flag} 
+            alt={`${question.name} flag`}
+            className="flag-image"
+            data-testid="country-flag"
+          />
+        </Paper>
       </Box>
 
-      <Grid container spacing={3} justifyContent="center">
+      <Grid container spacing={2}>
         {question.options.map((option, index) => (
           <Grid item xs={12} sm={6} key={option}>
-            <Button
-              variant="contained"
-              fullWidth
-              size="large"
-              onClick={() => submitAnswer(option)}
+            <button
+              onClick={() => handleAnswerClick(option)}
+              disabled={selectedAnswer !== null}
               data-testid={`answer-option-${index}`}
-              className="answer-button"
-              sx={{
-                background: `linear-gradient(45deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
-                boxShadow: `0 8px 16px ${alpha(theme.palette.primary.main, 0.2)}`,
-                '&:hover': {
-                  boxShadow: `0 12px 20px ${alpha(theme.palette.primary.main, 0.3)}`,
-                }
-              }}
+              className={getButtonClass(option)}
             >
-              {option}
-            </Button>
+              <span className="answer-letter">{ANSWER_LETTERS[index]}</span>
+              <span className="answer-text">{option}</span>
+            </button>
           </Grid>
         ))}
       </Grid>

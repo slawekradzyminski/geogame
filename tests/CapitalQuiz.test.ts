@@ -13,7 +13,9 @@ test.describe('Capital Quiz', () => {
     const options = await page.getByTestId('answer-option-0').all();
     
     // when
+    await page.waitForSelector('[data-testid="answer-option-0"]:not([disabled])', { timeout: 2000 });
     await options[0].click();
+    await page.waitForTimeout(2100); // Wait for animation and state update
     
     // then
     const newQuestionText = await page.getByTestId('quiz-question').getByRole('heading').first().textContent();
@@ -26,10 +28,9 @@ test.describe('Capital Quiz', () => {
     
     // when
     for (let i = 0; i < 10; i++) {
+      await page.waitForSelector('[data-testid="answer-option-0"]:not([disabled])', { timeout: 2000 });
       await page.getByTestId('answer-option-0').click();
-      if (i < 9) {
-        await page.waitForTimeout(500); // increased timeout for stability
-      }
+      await page.waitForTimeout(2100); // Wait for animation and state update
     }
     
     // then
@@ -41,10 +42,9 @@ test.describe('Capital Quiz', () => {
     // given
     await page.waitForSelector('[data-testid="quiz-question"]', { timeout: 2000 });
     for (let i = 0; i < 10; i++) {
+      await page.waitForSelector('[data-testid="answer-option-0"]:not([disabled])', { timeout: 2000 });
       await page.getByTestId('answer-option-0').click();
-      if (i < 9) {
-        await page.waitForTimeout(500);
-      }
+      await page.waitForTimeout(2100); // Wait for animation and state update
     }
     
     // when
