@@ -11,7 +11,7 @@
     "scrape-data": "tsx src/scripts/scrapeData.ts",
     "validate-data": "tsx src/scripts/validateData.ts",
     "prepare-data": "npm run scrape-data && npm run validate-data",
-    "test": "playwright test --reporter=list",
+    "test": "NODE_OPTIONS='--no-warnings' playwright test --reporter=list",
     "fetch-cities": "tsx src/scripts/fetchCities.ts"
   },
   "dependencies": {

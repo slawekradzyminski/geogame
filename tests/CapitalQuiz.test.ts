@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import countriesPL from '../src/data/countries.pl.json' assert { type: 'json' };
 
 test.describe('Capital Quiz', () => {
   // given
@@ -162,5 +163,33 @@ test.describe('Capital Quiz', () => {
     expect(await summaryHeadingPL.textContent()).toMatch(/podsumowanie/i);
     await expect(page.getByText(/wynik końcowy/i)).toBeVisible();
     await expect(page.getByTestId('play-again-button')).toBeVisible();
+  });
+
+  test('should display Polish cities when language is Polish', async ({ page }) => {
+    // given
+    await page.goto('/quiz/capital');
+    await page.waitForSelector('[data-testid="quiz-question"]', { timeout: 2000 });
+    
+    // when
+    await page.getByRole('button', { name: /select language/i }).click();
+    await page.getByText('Polski').click();
+    await page.waitForLoadState('networkidle');
+    await page.waitForTimeout(1000); // wait for translations to load
+    
+    // then
+    const cityOptions = await Promise.all(
+      [0, 1, 2, 3].map(async (index) => 
+        page.getByTestId(`answer-option-${index}`).textContent()
+      )
+    );
+
+    // Get capitals from Polish data
+    const polishCapitals = countriesPL.map(country => country.capital);
+    
+    // Verify that all cities are in Polish
+    const hasPolishCity = cityOptions.every(city => 
+      polishCapitals.some(polishCity => city?.includes(polishCity))
+    );
+    expect(hasPolishCity).toBe(true);
   });
 }); 
