@@ -859,7 +859,7 @@
   {
     "id": "ukraine",
     "name": "Ukraina",
-    "capital": "Kyiv",
+    "capital": "Kijów",
     "flagUrl": "assets/flags/ukraine.svg",
     "languages": [
       "ukraiński"
@@ -1796,7 +1796,7 @@
   {
     "id": "united-states-minor-outlying-islands",
     "name": "Dalekie Wyspy Mniejsze Stanów Zjednoczonych",
-    "capital": "Washington DC",
+    "capital": "Waszyngton",
     "flagUrl": "assets/flags/united-states-minor-outlying-islands.svg",
     "languages": [
       "angielski"
@@ -2078,7 +2078,7 @@
   {
     "id": "iran",
     "name": "Iran",
-    "capital": "Tehran",
+    "capital": "Teheran",
     "flagUrl": "assets/flags/iran.svg",
     "languages": [
       "perski"

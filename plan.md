@@ -2,107 +2,55 @@
 
 ## ✅ Completed Tasks
 
-### Project Setup & Dependencies
-- ✅ Create Vite React TypeScript project
-- ✅ Install required dependencies
+### Core Features
+- ✅ Project setup & dependencies
+- ✅ Data preparation and scraping
+- ✅ Layout & UI Foundation with Material UI
+- ✅ Internationalization (EN/PL)
+- ✅ Theme implementation
+- ✅ Testing setup and E2E tests
 
-### Data Preparation
-- ✅ Create and run data scraper
-- ✅ Clean and validate data
-- ✅ Create separate files for EN and PL data
-- ✅ Store as static JSON
+### Capital Quiz Implementation
+- ✅ Data preparation and city database
+- ✅ Quiz flow and state management
+- ✅ Quiz logic with random selection
+- ✅ UI components and feedback
+- ✅ Summary screen
+- ✅ Full test coverage
 
-### Layout & UI Foundation
-- ✅ Set up Material UI
-- ✅ Implement responsive layout using MUI Grid and Box
-- ✅ Add consistent width constraints using MUI Container
-- ✅ Create responsive home page with MUI components
-
-### Internationalization
-- ✅ Configure i18n
-  - ✅ Basic setup
-  - ✅ Translation files structure
-  - ✅ Dynamic language loading
-  - ✅ Language switcher component
-- ✅ Add translations for:
-  - ✅ Basic UI elements
-  - ✅ Quiz modes and descriptions
-  - ✅ Quiz questions (dynamic content)
-  - ✅ Quiz feedback
-  - ✅ Error messages
-
-### Theme Implementation
-- ✅ Configure theme provider
-- ✅ Implement dark/light mode toggle
-- ✅ Add theme switcher component
-- ✅ Create consistent color palette
-- ✅ Remove Chakra UI in favor of Material UI
-
-### Testing
-- ✅ E2E tests for homepage:
-  - Layout and responsiveness
-  - Navigation flows
-  - Interactive elements
-  - Basic i18n features
-  - Theme switching
-
-### Capital Quiz Implementation (✅ Completed)
-- ✅ Data preparation:
-  - ✅ Create city database with translations
-  - ✅ Ensure data includes capitals and other major cities
-  - ✅ Store in JSON format similar to countries data
-
-- ✅ Quiz Flow Implementation:
-  - ✅ Create QuizContext for game state management
-  - ✅ Current question number (1-10)
-  - ✅ Score tracking
-  - ✅ Answer history for summary
-
-- ✅ Quiz Logic:
-  - ✅ Random country selection (no repeats)
-  - ✅ Generate 4 random city options (including correct capital)
-  - ✅ Track selected answers for summary
-  - ✅ Proper handling of translations (EN/PL)
-
-- ✅ Quiz UI Components:
-  - ✅ Question display:
-    - ✅ Country name
-    - ✅ Flag display
-    - ✅ 4 answer options in 2x2 grid
-  - ✅ Progress indicators:
-    - ✅ Question counter (e.g., "7/10")
-    - ✅ Current score
-  - ✅ Answer feedback:
-    - ✅ Green highlight for correct answer
-    - ✅ Red highlight for wrong answer
-  - ✅ Summary screen:
-    - ✅ Final score presentation
-    - ✅ Question-by-question breakdown
-    - ✅ Play again button
-
-## 🐛 Known Bugs
-- Button styles after selecting an answer need improvement:
-  - Currently using native buttons with CSS classes
-  - Need to ensure consistent appearance across browsers
-  - Consider using Material UI Button with custom styling
-
-## 📋 Upcoming Tasks (Prioritized)
+## 📋 Next Phase: Flag Quiz
 
 ### Flag Quiz Implementation
-[moved to future implementation]
-
-### Language Quiz Implementation
-[moved to future implementation]
+- Create flag quiz data structure
+- Implement quiz flow similar to capital quiz
+- Add flag-specific UI components
+- Ensure proper flag display and loading
+- Add translations for flag-related content
+- Implement E2E tests
 
 ## 🎯 Future Enhancements
-- Add difficulty levels
-- Implement multiplayer mode
-- Add leaderboard
-- Create achievement system
-- Add sound effects
-- Implement PWA support
-- Flag Quiz implementation
 - Language Quiz implementation
+- Difficulty levels
+- Multiplayer mode
+- Leaderboard
+- Achievement system
+- Sound effects
+- PWA support
+
+## Project Structure
+```
+src/
+├── data/
+├── types/
+├── context/
+├── components/
+│   ├── Layout/
+│   ├── Quiz/
+│   │   ├── CapitalQuiz/
+│   │   ├── FlagQuiz/    [Next]
+│   │   └── common/
+│   └── common/
+```
 
 ## Development Timeline
 
