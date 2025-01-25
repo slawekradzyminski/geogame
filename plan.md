@@ -46,7 +46,7 @@
   - Basic i18n features
   - Theme switching
 
-### Capital Quiz Implementation
+### Capital Quiz Implementation (✅ Completed)
 - ✅ Data preparation:
   - ✅ Create city database with translations
   - ✅ Ensure data includes capitals and other major cities
@@ -62,6 +62,7 @@
   - ✅ Random country selection (no repeats)
   - ✅ Generate 4 random city options (including correct capital)
   - ✅ Track selected answers for summary
+  - ✅ Proper handling of translations (EN/PL)
 
 - ✅ Quiz UI Components:
   - ✅ Question display:
@@ -100,6 +101,8 @@
 - Create achievement system
 - Add sound effects
 - Implement PWA support
+- Flag Quiz implementation
+- Language Quiz implementation
 
 ## Development Timeline
 
@@ -110,14 +113,19 @@
 - ✅ i18n setup
 - ✅ Theme implementation
 
-### Phase 2: Capital Quiz (🚧 In Progress)
+### Phase 2: Capital Quiz (✅ Completed)
 - ✅ City data preparation
 - ✅ Quiz implementation
 - ✅ Testing
-- 🚧 Polish & bug fixes
+- ✅ Polish & bug fixes
 
-### Phase 3: Additional Quiz Types (📅 Future)
-[postponed for later iterations]
+### Phase 3: Additional Features (📅 Future)
+- Flag Quiz implementation
+- Language Quiz implementation
+- Difficulty levels
+- Multiplayer mode
+- Leaderboard
+- Achievements
 
 ## Project Structure Update
 ```
