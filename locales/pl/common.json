@@ -1,0 +1,36 @@
+{
+  "app": {
+    "title": "Quiz Geograficzny",
+    "description": "Sprawdź swoją wiedzę o geografii świata"
+  },
+  "nav": {
+    "home": "Strona główna",
+    "quiz": "Quiz",
+    "settings": "Ustawienia",
+    "about": "O aplikacji"
+  },
+  "language": {
+    "en": "Angielski",
+    "pl": "Polski",
+    "select": "Wybierz język"
+  },
+  "settings": {
+    "theme": {
+      "light": "Jasny",
+      "dark": "Ciemny",
+      "system": "Systemowy"
+    }
+  },
+  "common": {
+    "loading": "Ładowanie...",
+    "error": "Błąd",
+    "retry": "Spróbuj ponownie",
+    "save": "Zapisz",
+    "cancel": "Anuluj",
+    "next": "Dalej",
+    "back": "Wstecz",
+    "submit": "Zatwierdź",
+    "correct": "Poprawnie!",
+    "incorrect": "Niepoprawnie!"
+  }
+} 

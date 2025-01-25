@@ -1,0 +1,42 @@
+{
+  "modes": {
+    "capital": "Guess the Capital",
+    "flag": "Guess the Flag",
+    "language": "Guess the Language",
+    "select": "Select Quiz Mode"
+  },
+  "difficulty": {
+    "easy": "Easy",
+    "medium": "Medium",
+    "hard": "Hard",
+    "select": "Select Difficulty"
+  },
+  "score": {
+    "current": "Current Score",
+    "best": "Best Score",
+    "streak": "Current Streak",
+    "bestStreak": "Best Streak"
+  },
+  "questions": {
+    "capital": "What is the capital of {{country}}?",
+    "flag": "Which flag belongs to {{country}}?",
+    "language": "Which language is spoken in {{country}}?"
+  },
+  "feedback": {
+    "correct": "Correct! The {{type}} of {{country}} is {{answer}}",
+    "incorrect": "Incorrect! The {{type}} of {{country}} is {{answer}}",
+    "streak": "You're on a {{count}} question streak!",
+    "perfect": "Perfect score! You got all questions right!"
+  },
+  "question": "Question",
+  "whatIsCapital": "What is the capital of {{country}}?",
+  "identifyCity": "Which city is {{city}}?",
+  "summary": "Quiz Summary",
+  "finalScore": "Final Score",
+  "accuracy": "Accuracy",
+  "correctAnswer": "Correct Answer",
+  "yourAnswer": "Your Answer",
+  "noAnswer": "No Answer",
+  "timeSpent": "Time Spent",
+  "playAgain": "Play Again"
+} 

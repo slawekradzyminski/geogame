@@ -1,0 +1,36 @@
+{
+  "app": {
+    "title": "Geography Quiz",
+    "description": "Test your knowledge of world geography"
+  },
+  "nav": {
+    "home": "Home",
+    "quiz": "Quiz",
+    "settings": "Settings",
+    "about": "About"
+  },
+  "language": {
+    "en": "English",
+    "pl": "Polish",
+    "select": "Select language"
+  },
+  "settings": {
+    "theme": {
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Retry",
+    "save": "Save",
+    "cancel": "Cancel",
+    "next": "Next",
+    "back": "Back",
+    "submit": "Submit",
+    "correct": "Correct!",
+    "incorrect": "Incorrect!"
+  }
+} 

@@ -1,0 +1,42 @@
+{
+  "modes": {
+    "capital": "Zgadnij stolicę",
+    "flag": "Zgadnij flagę",
+    "language": "Zgadnij język",
+    "select": "Wybierz tryb quizu"
+  },
+  "difficulty": {
+    "easy": "Łatwy",
+    "medium": "Średni",
+    "hard": "Trudny",
+    "select": "Wybierz poziom trudności"
+  },
+  "score": {
+    "current": "Aktualny wynik",
+    "best": "Najlepszy wynik",
+    "streak": "Aktualna seria",
+    "bestStreak": "Najlepsza seria"
+  },
+  "questions": {
+    "capital": "Jaka jest stolica {{country}}?",
+    "flag": "Do jakiego kraju należy ta flaga?",
+    "language": "Jaki język jest używany w {{country}}?"
+  },
+  "feedback": {
+    "correct": "Poprawnie! {{type}} kraju {{country}} to {{answer}}",
+    "incorrect": "Niepoprawnie! {{type}} kraju {{country}} to {{answer}}",
+    "streak": "Masz serię {{count}} poprawnych odpowiedzi!",
+    "perfect": "Perfekcyjny wynik! Wszystkie odpowiedzi poprawne!"
+  },
+  "question": "Pytanie",
+  "whatIsCapital": "Jaka jest stolica tego kraju? {{country}}",
+  "identifyCity": "Które miasto to {{city}}?",
+  "summary": "Podsumowanie Quizu",
+  "finalScore": "Wynik końcowy",
+  "accuracy": "Dokładność",
+  "correctAnswer": "Poprawna odpowiedź",
+  "yourAnswer": "Twoja odpowiedź",
+  "noAnswer": "Brak odpowiedzi",
+  "timeSpent": "Czas odpowiedzi",
+  "playAgain": "Zagraj ponownie"
+} 
