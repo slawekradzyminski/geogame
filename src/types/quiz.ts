@@ -5,7 +5,7 @@ export interface QuizQuestion {
   name: string;
   correctAnswer: string;
   options: string[];
-  flag: string;  // Always show flag for visual enhancement
+  flag?: string;
 }
 
 export interface Answer {

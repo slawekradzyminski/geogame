@@ -1,4 +1,4 @@
-import { createContext } from 'react';
+import React from 'react';
 import { QuizContextType } from '../types/quiz';
 
-export const CapitalQuizContext = createContext<QuizContextType | null>(null);
+export const CapitalQuizContext = React.createContext<QuizContextType | undefined>(undefined);
