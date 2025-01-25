@@ -2,9 +2,12 @@ export type Language = 'en' | 'pl';
 
 export interface QuizQuestion {
   id: string;
-  name: string;
-  correctAnswer: string;
-  options: string[];
+  nameEN: string;
+  namePL: string;
+  correctAnswerEN: string;
+  correctAnswerPL: string;
+  optionsEN: string[];
+  optionsPL: string[];
   flag?: string;
 }
 

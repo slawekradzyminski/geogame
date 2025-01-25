@@ -4,12 +4,13 @@ import { useTranslation } from 'react-i18next';
 import { useTheme } from '@mui/material/styles';
 import { useState } from 'react';
 import './CapitalQuizQuestion.css';
+import { Language } from '../../types/quiz';
 
 const ANSWER_LETTERS = ['A', 'B', 'C', 'D'];
 
 export const CapitalQuizQuestion = () => {
   const { state, question, submitAnswer } = useCapitalQuiz();
-  const { t } = useTranslation(['quiz']);
+  const { t, i18n } = useTranslation(['quiz']);
   const theme = useTheme();
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
@@ -22,9 +23,14 @@ export const CapitalQuizQuestion = () => {
     );
   }
 
+  const currentLanguage = i18n.language as Language;
+  const countryName = currentLanguage === 'pl' ? question.namePL : question.nameEN;
+  const options = currentLanguage === 'pl' ? question.optionsPL : question.optionsEN;
+  const correctAnswer = currentLanguage === 'pl' ? question.correctAnswerPL : question.correctAnswerEN;
+  
   const handleAnswerClick = async (answer: string) => {
     setSelectedAnswer(answer);
-    const correct = answer === question.correctAnswer;
+    const correct = answer === correctAnswer;
     setIsCorrect(correct);
     
     setTimeout(() => {
@@ -34,10 +40,11 @@ export const CapitalQuizQuestion = () => {
     }, 2000);
   };
 
+
   const getButtonClass = (option: string) => {
     if (selectedAnswer === null) return 'answer-button';
     if (selectedAnswer === option) return isCorrect ? 'answer-button correct' : 'answer-button wrong';
-    if (option === question.correctAnswer) return 'answer-button correct';
+    if (option === correctAnswer) return 'answer-button correct';
     return 'answer-button disabled';
   };
 
@@ -67,12 +74,12 @@ export const CapitalQuizQuestion = () => {
           gutterBottom
           sx={{ color: theme.palette.text.secondary, mb: 3 }}
         >
-          {t('whatIsCapital', { country: question.name })}
+          {t('whatIsCapital', { country: countryName })}
         </Typography>
         <div className="flag-container">
           <img 
             src={question.flag} 
-            alt={`${question.name} flag`}
+            alt={`${countryName} flag`}
             className="flag-image"
             data-testid="country-flag"
           />
@@ -80,7 +87,7 @@ export const CapitalQuizQuestion = () => {
       </Box>
 
       <Grid container spacing={2}>
-        {question.options.map((option, index) => (
+        {options.map((option, index) => (
           <Grid item xs={12} sm={6} key={option}>
             <button
               onClick={() => handleAnswerClick(option)}

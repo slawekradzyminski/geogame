@@ -5,6 +5,7 @@ import useCountries from '../hooks/useCountries';
 import useCities from '../hooks/useCities';
 import { generateNewQuestion } from '../utils/questionGenerator';
 import { QUESTIONS_PER_QUIZ } from '../types/quiz-provider';
+import { useTranslation } from 'react-i18next';
 
 const initialState: QuizState = {
   currentQuestionNumber: 1,
@@ -18,8 +19,11 @@ export const CapitalQuizProvider = ({ children }: { children: React.ReactNode })
   const [state, setState] = useState<QuizState>(initialState);
   const [question, setQuestion] = useState<QuizQuestion | null>(null);
   const [usedQuestions, setUsedQuestions] = useState<Set<string>>(new Set());
-  const countriesData = useCountries(state.language);
-  const citiesData = useCities(state.language);
+  const countriesData = useCountries();
+  const citiesData = useCities();
+  const { i18n } = useTranslation();
+
+  console.log(question)
 
   const createNewQuestion = useCallback(() => {
     if (!countriesData || !citiesData) return;
@@ -38,14 +42,17 @@ export const CapitalQuizProvider = ({ children }: { children: React.ReactNode })
   const submitAnswer = (selectedAnswer: string) => {
     if (!question) return;
 
-    const isCorrect = selectedAnswer === question.correctAnswer;
+    const currentLanguage = i18n.language as Language;
+    const isCorrect = selectedAnswer === (currentLanguage === 'pl' ? question.correctAnswerPL : question.correctAnswerEN);
+    const countryName = currentLanguage === 'pl' ? question.namePL : question.nameEN;
+    const correctAnswer = currentLanguage === 'pl' ? question.correctAnswerPL : question.correctAnswerEN;
 
     const answer: Answer = {
       questionId: question.id,
       selectedAnswer,
-      correctAnswer: question.correctAnswer,
+      correctAnswer,
       isCorrect,
-      countryName: question.name,
+      countryName,
     };
 
     setUsedQuestions((prev) => new Set([...prev, question.id]));

@@ -2,22 +2,28 @@ import { useState, useEffect } from 'react';
 import { Country } from '../types/quiz-data';
 import { Language } from '../types/quiz';
 
-const useCountries = (language: Language) => {
-  const [countriesData, setCountriesData] = useState<Country[] | null>(null);
+const useCountries = () => {
+  const [countriesMap, setCountriesMap] = useState<Map<Language, Country[]>>(new Map());
 
   useEffect(() => {
     async function loadCountries() {
       try {
-        const countries = await import(`../data/countries.${language}.json`);
-        setCountriesData(countries.default);
+        const [enCountries, plCountries] = await Promise.all([
+          import(`../data/countries.en.json`),
+          import(`../data/countries.pl.json`),
+        ]);
+        setCountriesMap(new Map<Language, Country[]>([
+          ['en', enCountries.default],
+          ['pl', plCountries.default],
+        ]));
       } catch (error) {
         console.error('Error loading countries data:', error);
       }
     }
     loadCountries();
-  }, [language]);
+  }, []);
 
-  return countriesData;
+  return countriesMap;
 };
 
 export default useCountries; 

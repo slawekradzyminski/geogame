@@ -29,7 +29,7 @@
     "perfect": "Perfekcyjny wynik! Wszystkie odpowiedzi poprawne!"
   },
   "question": "Pytanie",
-  "whatIsCapital": "Jaka jest stolica {{country}}?",
+  "whatIsCapital": "Jaka jest stolica tego kraju? {{country}}",
   "identifyCity": "Które miasto to {{city}}?",
   "summary": "Podsumowanie Quizu",
   "finalScore": "Wynik końcowy",
