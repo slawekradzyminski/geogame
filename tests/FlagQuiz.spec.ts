@@ -62,6 +62,7 @@ test.describe('Flag Quiz', () => {
     await page.getByText('Polski').click();
 
     // then
+    await page.waitForTimeout(500);
     const translatedQuestion = await page.getByTestId('quiz-question').textContent();
     expect(translatedQuestion).not.toBe(initialQuestion);
   });

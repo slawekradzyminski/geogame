@@ -5,9 +5,6 @@ import useCountries from '../hooks/useCountries';
 import { generateNewQuestion } from '../utils/flagQuestionGenerator';
 import { QUESTIONS_PER_QUIZ } from '../types/quiz-provider';
 import { useTranslation } from 'react-i18next';
-import { useCountriesData } from '../hooks/useCountriesData';
-import { QuizProvider } from './QuizProvider';
-import { FlagQuestionGenerator } from '../utils/flagQuestionGenerator';
 
 const initialState: QuizState = {
   currentQuestionNumber: 1,
@@ -17,22 +14,16 @@ const initialState: QuizState = {
   isFinished: false,
 };
 
-export const FlagQuizProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+export const FlagQuizProvider = ({ children }: { children: React.ReactNode }) => {
   const [state, setState] = useState<QuizState>(initialState);
   const [question, setQuestion] = useState<QuizQuestion | null>(null);
   const [usedQuestions, setUsedQuestions] = useState<Set<string>>(new Set());
-  const countriesData = useCountriesData();
+  const countriesData = useCountries();
   const { i18n } = useTranslation();
-
-  const generateQuestion = (usedQuestions: Set<string>) => {
-    if (!countriesData) return null;
-    const generator = new FlagQuestionGenerator(countriesData, usedQuestions);
-    return generator.generateQuestion();
-  };
 
   const createNewQuestion = useCallback(() => {
     if (!countriesData) return;
-    const newQuestion = generateQuestion(usedQuestions);
+    const newQuestion = generateNewQuestion(countriesData, usedQuestions);
     if (newQuestion) {
       setQuestion(newQuestion);
     }
@@ -98,11 +89,5 @@ export const FlagQuizProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     resetQuiz,
   };
 
-  return (
-    <QuizProvider generateQuestion={generateQuestion}>
-      <FlagQuizContext.Provider value={value}>
-        {children}
-      </FlagQuizContext.Provider>
-    </QuizProvider>
-  );
+  return <FlagQuizContext.Provider value={value}>{children}</FlagQuizContext.Provider>;
 }; 
