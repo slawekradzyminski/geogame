@@ -5,6 +5,21 @@ import { Container } from '@mui/material';
 import { theme } from './theme/theme';
 import Home from "./pages/Home";
 import { CapitalQuiz } from "./components/Quiz/CapitalQuiz";
+import { FlagQuiz } from "./components/Quiz/FlagQuiz";
+import { useParams } from 'react-router-dom';
+
+const QuizSelector = () => {
+  const { mode } = useParams();
+  
+  switch (mode) {
+    case 'flag':
+      return <FlagQuiz />;
+    case 'capital':
+      return <CapitalQuiz />;
+    default:
+      return <Home />;
+  }
+};
 
 function App() {
   return (
@@ -25,7 +40,7 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/quiz/:mode" element={<CapitalQuiz />} />
+            <Route path="/quiz/:mode" element={<QuizSelector />} />
           </Routes>
         </Router>
       </Container>
