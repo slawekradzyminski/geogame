@@ -56,12 +56,12 @@ export const FlagQuizSummary = () => {
               className="answer-card"
             >
               <Typography variant="h6" gutterBottom>
-                {t('flagQuiz.whatIsTheFlag', { country: answer.countryName })}
+                {t('questions.flag', { country: answer.countryName })}
               </Typography>
               <div className="answer-details">
                 <div className="flag-answer">
                   <Typography color="text.secondary" gutterBottom>
-                    {t('yourAnswer')}:
+                    {t('yourAnswer')}: {answer.isCorrect ? '✓' : '✗'}
                   </Typography>
                   <img 
                     src={answer.selectedAnswer} 
