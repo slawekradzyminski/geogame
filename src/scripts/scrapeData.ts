@@ -42,6 +42,7 @@ interface LocalizedCountryData {
   capital: string;
   flagUrl: string;
   languages: string[];
+  coordinates?: [number, number];
 }
 
 function translateLanguage(language: string): string {
@@ -117,20 +118,25 @@ async function transformCountry(country: RawCountryData): Promise<{ en: Localize
   // Download flag and get local path
   const flagUrl = await downloadFlag(country.flags.svg, id);
 
+  // Get coordinates from capitalInfo or undefined if not available
+  const coordinates = country.capitalInfo?.latlng;
+
   return {
     en: {
       id,
       name: country.name.common,
       capital,
       flagUrl,
-      languages: englishLanguages
+      languages: englishLanguages,
+      coordinates
     },
     pl: {
       id,
       name: country.translations.pol.common,
       capital: translateCapital(capital),
       flagUrl,
-      languages: polishLanguages
+      languages: polishLanguages,
+      coordinates
     }
   };
 }

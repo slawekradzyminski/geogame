@@ -6,6 +6,10 @@
     "flagUrl": "assets/flags/south-georgia.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      -54.28,
+      -36.5
     ]
   },
   {
@@ -15,6 +19,10 @@
     "flagUrl": "assets/flags/grenada.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      32.38,
+      -64.68
     ]
   },
   {
@@ -27,6 +35,10 @@
       "Swiss German",
       "Italian",
       "Romansh"
+    ],
+    "coordinates": [
+      46.92,
+      7.47
     ]
   },
   {
@@ -36,6 +48,10 @@
     "flagUrl": "assets/flags/sierra-leone.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      8.48,
+      -13.23
     ]
   },
   {
@@ -45,6 +61,10 @@
     "flagUrl": "assets/flags/hungary.svg",
     "languages": [
       "Hungarian"
+    ],
+    "coordinates": [
+      47.5,
+      19.08
     ]
   },
   {
@@ -54,6 +74,10 @@
     "flagUrl": "assets/flags/taiwan.svg",
     "languages": [
       "Chinese"
+    ],
+    "coordinates": [
+      25.03,
+      121.52
     ]
   },
   {
@@ -63,6 +87,10 @@
     "flagUrl": "assets/flags/wallis-and-futuna.svg",
     "languages": [
       "French"
+    ],
+    "coordinates": [
+      -13.95,
+      -171.93
     ]
   },
   {
@@ -72,6 +100,10 @@
     "flagUrl": "assets/flags/barbados.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      13.1,
+      -59.62
     ]
   },
   {
@@ -81,6 +113,10 @@
     "flagUrl": "assets/flags/pitcairn-islands.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      -25.07,
+      -130.08
     ]
   },
   {
@@ -90,6 +126,10 @@
     "flagUrl": "assets/flags/ivory-coast.svg",
     "languages": [
       "French"
+    ],
+    "coordinates": [
+      6.82,
+      -5.27
     ]
   },
   {
@@ -99,6 +139,10 @@
     "flagUrl": "assets/flags/tunisia.svg",
     "languages": [
       "Arabic"
+    ],
+    "coordinates": [
+      36.8,
+      10.18
     ]
   },
   {
@@ -108,6 +152,10 @@
     "flagUrl": "assets/flags/italy.svg",
     "languages": [
       "Italian"
+    ],
+    "coordinates": [
+      41.9,
+      12.48
     ]
   },
   {
@@ -117,6 +165,10 @@
     "flagUrl": "assets/flags/benin.svg",
     "languages": [
       "French"
+    ],
+    "coordinates": [
+      6.48,
+      2.62
     ]
   },
   {
@@ -126,6 +178,10 @@
     "flagUrl": "assets/flags/indonesia.svg",
     "languages": [
       "Indonesian"
+    ],
+    "coordinates": [
+      -6.17,
+      106.82
     ]
   },
   {
@@ -135,6 +191,10 @@
     "flagUrl": "assets/flags/cape-verde.svg",
     "languages": [
       "Portuguese"
+    ],
+    "coordinates": [
+      14.92,
+      -23.52
     ]
   },
   {
@@ -144,6 +204,10 @@
     "flagUrl": "assets/flags/saint-kitts-and-nevis.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      17.3,
+      -62.72
     ]
   },
   {
@@ -153,6 +217,10 @@
     "flagUrl": "assets/flags/laos.svg",
     "languages": [
       "Lao"
+    ],
+    "coordinates": [
+      17.97,
+      102.6
     ]
   },
   {
@@ -164,6 +232,10 @@
       "English",
       "Dutch",
       "Papiamento"
+    ],
+    "coordinates": [
+      12.14,
+      -68.27
     ]
   },
   {
@@ -174,6 +246,10 @@
     "languages": [
       "English",
       "Swahili"
+    ],
+    "coordinates": [
+      0.32,
+      32.55
     ]
   },
   {
@@ -183,6 +259,10 @@
     "flagUrl": "assets/flags/andorra.svg",
     "languages": [
       "Catalan"
+    ],
+    "coordinates": [
+      42.5,
+      1.52
     ]
   },
   {
@@ -193,6 +273,10 @@
     "languages": [
       "French",
       "Kirundi"
+    ],
+    "coordinates": [
+      -3.43,
+      29.93
     ]
   },
   {
@@ -212,6 +296,10 @@
       "Venda",
       "Xhosa",
       "Zulu"
+    ],
+    "coordinates": [
+      -25.7,
+      28.22
     ]
   },
   {
@@ -221,6 +309,10 @@
     "flagUrl": "assets/flags/france.svg",
     "languages": [
       "French"
+    ],
+    "coordinates": [
+      48.87,
+      2.33
     ]
   },
   {
@@ -230,6 +322,10 @@
     "flagUrl": "assets/flags/libya.svg",
     "languages": [
       "Arabic"
+    ],
+    "coordinates": [
+      32.88,
+      13.17
     ]
   },
   {
@@ -239,6 +335,10 @@
     "flagUrl": "assets/flags/mexico.svg",
     "languages": [
       "Spanish"
+    ],
+    "coordinates": [
+      19.43,
+      -99.13
     ]
   },
   {
@@ -248,6 +348,10 @@
     "flagUrl": "assets/flags/gabon.svg",
     "languages": [
       "French"
+    ],
+    "coordinates": [
+      0.38,
+      9.45
     ]
   },
   {
@@ -259,6 +363,10 @@
       "Carolinian",
       "Chamorro",
       "English"
+    ],
+    "coordinates": [
+      15.2,
+      145.75
     ]
   },
   {
@@ -268,6 +376,10 @@
     "flagUrl": "assets/flags/north-macedonia.svg",
     "languages": [
       "Macedonian"
+    ],
+    "coordinates": [
+      42,
+      21.43
     ]
   },
   {
@@ -277,6 +389,10 @@
     "flagUrl": "assets/flags/china.svg",
     "languages": [
       "Chinese"
+    ],
+    "coordinates": [
+      39.92,
+      116.38
     ]
   },
   {
@@ -286,6 +402,10 @@
     "flagUrl": "assets/flags/yemen.svg",
     "languages": [
       "Arabic"
+    ],
+    "coordinates": [
+      15.37,
+      44.19
     ]
   },
   {
@@ -295,6 +415,10 @@
     "flagUrl": "assets/flags/saint-barthélemy.svg",
     "languages": [
       "French"
+    ],
+    "coordinates": [
+      17.88,
+      -62.85
     ]
   },
   {
@@ -306,6 +430,10 @@
       "English",
       "French",
       "Guernésiais"
+    ],
+    "coordinates": [
+      49.45,
+      -2.54
     ]
   },
   {
@@ -315,6 +443,10 @@
     "flagUrl": "assets/flags/solomon-islands.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      -9.43,
+      159.95
     ]
   },
   {
@@ -324,6 +456,10 @@
     "flagUrl": "assets/flags/svalbard-and-jan-mayen.svg",
     "languages": [
       "Norwegian"
+    ],
+    "coordinates": [
+      78.22,
+      15.63
     ]
   },
   {
@@ -334,6 +470,10 @@
     "languages": [
       "Danish",
       "Faroese"
+    ],
+    "coordinates": [
+      62.01,
+      -6.77
     ]
   },
   {
@@ -344,6 +484,10 @@
     "languages": [
       "Russian",
       "Uzbek"
+    ],
+    "coordinates": [
+      41.32,
+      69.25
     ]
   },
   {
@@ -353,6 +497,10 @@
     "flagUrl": "assets/flags/egypt.svg",
     "languages": [
       "Arabic"
+    ],
+    "coordinates": [
+      30.05,
+      31.25
     ]
   },
   {
@@ -362,6 +510,10 @@
     "flagUrl": "assets/flags/senegal.svg",
     "languages": [
       "French"
+    ],
+    "coordinates": [
+      14.73,
+      -17.63
     ]
   },
   {
@@ -372,6 +524,10 @@
     "languages": [
       "Sinhala",
       "Tamil"
+    ],
+    "coordinates": [
+      6.89,
+      79.9
     ]
   },
   {
@@ -381,6 +537,10 @@
     "flagUrl": "assets/flags/palestine.svg",
     "languages": [
       "Arabic"
+    ],
+    "coordinates": [
+      31.9,
+      35.2
     ]
   },
   {
@@ -390,6 +550,10 @@
     "flagUrl": "assets/flags/bangladesh.svg",
     "languages": [
       "Bengali"
+    ],
+    "coordinates": [
+      23.72,
+      90.4
     ]
   },
   {
@@ -401,6 +565,10 @@
       "Aymara",
       "Quechua",
       "Spanish"
+    ],
+    "coordinates": [
+      -12.05,
+      -77.05
     ]
   },
   {
@@ -413,6 +581,10 @@
       "Chinese",
       "Malay",
       "Tamil"
+    ],
+    "coordinates": [
+      1.28,
+      103.85
     ]
   },
   {
@@ -422,6 +594,10 @@
     "flagUrl": "assets/flags/turkey.svg",
     "languages": [
       "Turkish"
+    ],
+    "coordinates": [
+      39.93,
+      32.87
     ]
   },
   {
@@ -433,6 +609,10 @@
       "Dari",
       "Pashto",
       "Turkmen"
+    ],
+    "coordinates": [
+      34.52,
+      69.18
     ]
   },
   {
@@ -443,6 +623,10 @@
     "languages": [
       "Dutch",
       "Papiamento"
+    ],
+    "coordinates": [
+      12.52,
+      -70.03
     ]
   },
   {
@@ -453,6 +637,10 @@
     "languages": [
       "English",
       "Cook Islands Māori"
+    ],
+    "coordinates": [
+      -21.2,
+      -159.77
     ]
   },
   {
@@ -462,6 +650,10 @@
     "flagUrl": "assets/flags/united-kingdom.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      51.5,
+      -0.08
     ]
   },
   {
@@ -471,6 +663,10 @@
     "flagUrl": "assets/flags/zambia.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      -15.42,
+      28.28
     ]
   },
   {
@@ -481,6 +677,10 @@
     "languages": [
       "Finnish",
       "Swedish"
+    ],
+    "coordinates": [
+      60.17,
+      24.93
     ]
   },
   {
@@ -490,6 +690,10 @@
     "flagUrl": "assets/flags/niger.svg",
     "languages": [
       "French"
+    ],
+    "coordinates": [
+      13.52,
+      2.12
     ]
   },
   {
@@ -499,6 +703,10 @@
     "flagUrl": "assets/flags/christmas-island.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      -10.42,
+      105.68
     ]
   },
   {
@@ -510,6 +718,10 @@
       "English",
       "Samoan",
       "Tokelauan"
+    ],
+    "coordinates": [
+      -9.38,
+      -171.22
     ]
   },
   {
@@ -520,6 +732,10 @@
     "languages": [
       "Portuguese",
       "Upper Guinea Creole"
+    ],
+    "coordinates": [
+      11.85,
+      -15.58
     ]
   },
   {
@@ -529,6 +745,10 @@
     "flagUrl": "assets/flags/azerbaijan.svg",
     "languages": [
       "Azerbaijani"
+    ],
+    "coordinates": [
+      40.38,
+      49.87
     ]
   },
   {
@@ -538,6 +758,10 @@
     "flagUrl": "assets/flags/réunion.svg",
     "languages": [
       "French"
+    ],
+    "coordinates": [
+      -20.88,
+      55.45
     ]
   },
   {
@@ -548,6 +772,10 @@
     "languages": [
       "Arabic",
       "French"
+    ],
+    "coordinates": [
+      11.58,
+      43.15
     ]
   },
   {
@@ -557,6 +785,10 @@
     "flagUrl": "assets/flags/north-korea.svg",
     "languages": [
       "Korean"
+    ],
+    "coordinates": [
+      39.02,
+      125.75
     ]
   },
   {
@@ -568,6 +800,10 @@
       "English",
       "French",
       "Mauritian Creole"
+    ],
+    "coordinates": [
+      -20.15,
+      57.48
     ]
   },
   {
@@ -577,6 +813,10 @@
     "flagUrl": "assets/flags/montserrat.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      16.7,
+      -62.22
     ]
   },
   {
@@ -586,6 +826,10 @@
     "flagUrl": "assets/flags/united-states-virgin-islands.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      18.35,
+      -64.93
     ]
   },
   {
@@ -595,6 +839,10 @@
     "flagUrl": "assets/flags/colombia.svg",
     "languages": [
       "Spanish"
+    ],
+    "coordinates": [
+      4.71,
+      -74.07
     ]
   },
   {
@@ -604,6 +852,10 @@
     "flagUrl": "assets/flags/greece.svg",
     "languages": [
       "Greek"
+    ],
+    "coordinates": [
+      37.98,
+      23.73
     ]
   },
   {
@@ -613,6 +865,10 @@
     "flagUrl": "assets/flags/croatia.svg",
     "languages": [
       "Croatian"
+    ],
+    "coordinates": [
+      45.8,
+      16
     ]
   },
   {
@@ -623,6 +879,10 @@
     "languages": [
       "Arabic",
       "Berber"
+    ],
+    "coordinates": [
+      34.02,
+      -6.82
     ]
   },
   {
@@ -632,6 +892,10 @@
     "flagUrl": "assets/flags/algeria.svg",
     "languages": [
       "Arabic"
+    ],
+    "coordinates": [
+      36.75,
+      3.05
     ]
   },
   {
@@ -641,6 +905,10 @@
     "flagUrl": "assets/flags/netherlands.svg",
     "languages": [
       "Dutch"
+    ],
+    "coordinates": [
+      52.35,
+      4.92
     ]
   },
   {
@@ -651,6 +919,10 @@
     "languages": [
       "Arabic",
       "English"
+    ],
+    "coordinates": [
+      15.6,
+      32.53
     ]
   },
   {
@@ -662,6 +934,10 @@
       "English",
       "Fijian",
       "Fiji Hindi"
+    ],
+    "coordinates": [
+      -18.13,
+      178.42
     ]
   },
   {
@@ -671,6 +947,10 @@
     "flagUrl": "assets/flags/liechtenstein.svg",
     "languages": [
       "German"
+    ],
+    "coordinates": [
+      47.13,
+      9.52
     ]
   },
   {
@@ -680,6 +960,10 @@
     "flagUrl": "assets/flags/nepal.svg",
     "languages": [
       "Nepali"
+    ],
+    "coordinates": [
+      27.72,
+      85.32
     ]
   },
   {
@@ -690,6 +974,10 @@
     "languages": [
       "English",
       "Spanish"
+    ],
+    "coordinates": [
+      18.47,
+      -66.12
     ]
   },
   {
@@ -699,6 +987,10 @@
     "flagUrl": "assets/flags/georgia.svg",
     "languages": [
       "Georgian"
+    ],
+    "coordinates": [
+      41.68,
+      44.83
     ]
   },
   {
@@ -709,6 +1001,10 @@
     "languages": [
       "English",
       "Urdu"
+    ],
+    "coordinates": [
+      33.68,
+      73.05
     ]
   },
   {
@@ -718,6 +1014,10 @@
     "flagUrl": "assets/flags/monaco.svg",
     "languages": [
       "French"
+    ],
+    "coordinates": [
+      43.73,
+      7.42
     ]
   },
   {
@@ -728,6 +1028,10 @@
     "languages": [
       "English",
       "Tswana"
+    ],
+    "coordinates": [
+      -24.63,
+      25.9
     ]
   },
   {
@@ -738,6 +1042,10 @@
     "languages": [
       "Arabic",
       "French"
+    ],
+    "coordinates": [
+      33.87,
+      35.5
     ]
   },
   {
@@ -749,6 +1057,10 @@
       "English",
       "Hiri Motu",
       "Tok Pisin"
+    ],
+    "coordinates": [
+      -9.45,
+      147.18
     ]
   },
   {
@@ -758,6 +1070,10 @@
     "flagUrl": "assets/flags/mayotte.svg",
     "languages": [
       "French"
+    ],
+    "coordinates": [
+      -12.78,
+      45.22
     ]
   },
   {
@@ -767,6 +1083,10 @@
     "flagUrl": "assets/flags/dominican-republic.svg",
     "languages": [
       "Spanish"
+    ],
+    "coordinates": [
+      18.47,
+      -69.9
     ]
   },
   {
@@ -777,6 +1097,10 @@
     "languages": [
       "English",
       "Norfuk"
+    ],
+    "coordinates": [
+      -29.05,
+      167.97
     ]
   },
   {
@@ -786,6 +1110,10 @@
     "flagUrl": "assets/flags/qatar.svg",
     "languages": [
       "Arabic"
+    ],
+    "coordinates": [
+      25.28,
+      51.53
     ]
   },
   {
@@ -796,6 +1124,10 @@
     "languages": [
       "French",
       "Malagasy"
+    ],
+    "coordinates": [
+      -18.92,
+      47.52
     ]
   },
   {
@@ -807,6 +1139,10 @@
       "English",
       "Hindi",
       "Tamil"
+    ],
+    "coordinates": [
+      28.6,
+      77.2
     ]
   },
   {
@@ -816,6 +1152,10 @@
     "flagUrl": "assets/flags/syria.svg",
     "languages": [
       "Arabic"
+    ],
+    "coordinates": [
+      33.5,
+      36.3
     ]
   },
   {
@@ -825,6 +1165,10 @@
     "flagUrl": "assets/flags/montenegro.svg",
     "languages": [
       "Montenegrin"
+    ],
+    "coordinates": [
+      42.43,
+      19.27
     ]
   },
   {
@@ -835,6 +1179,10 @@
     "languages": [
       "English",
       "Swazi"
+    ],
+    "coordinates": [
+      -26.32,
+      31.13
     ]
   },
   {
@@ -845,6 +1193,10 @@
     "languages": [
       "Guaraní",
       "Spanish"
+    ],
+    "coordinates": [
+      -25.28,
+      -57.57
     ]
   },
   {
@@ -854,6 +1206,10 @@
     "flagUrl": "assets/flags/el-salvador.svg",
     "languages": [
       "Spanish"
+    ],
+    "coordinates": [
+      13.7,
+      -89.2
     ]
   },
   {
@@ -863,6 +1219,10 @@
     "flagUrl": "assets/flags/ukraine.svg",
     "languages": [
       "Ukrainian"
+    ],
+    "coordinates": [
+      50.43,
+      30.52
     ]
   },
   {
@@ -873,6 +1233,10 @@
     "languages": [
       "English",
       "Manx"
+    ],
+    "coordinates": [
+      54.15,
+      -4.48
     ]
   },
   {
@@ -890,6 +1254,10 @@
       "Lozi",
       "Ndonga",
       "Tswana"
+    ],
+    "coordinates": [
+      -22.57,
+      17.08
     ]
   },
   {
@@ -899,6 +1267,10 @@
     "flagUrl": "assets/flags/united-arab-emirates.svg",
     "languages": [
       "Arabic"
+    ],
+    "coordinates": [
+      24.47,
+      54.37
     ]
   },
   {
@@ -908,6 +1280,10 @@
     "flagUrl": "assets/flags/bulgaria.svg",
     "languages": [
       "Bulgarian"
+    ],
+    "coordinates": [
+      42.68,
+      23.32
     ]
   },
   {
@@ -917,6 +1293,10 @@
     "flagUrl": "assets/flags/greenland.svg",
     "languages": [
       "Greenlandic"
+    ],
+    "coordinates": [
+      64.18,
+      -51.75
     ]
   },
   {
@@ -926,6 +1306,10 @@
     "flagUrl": "assets/flags/germany.svg",
     "languages": [
       "German"
+    ],
+    "coordinates": [
+      52.52,
+      13.4
     ]
   },
   {
@@ -935,6 +1319,10 @@
     "flagUrl": "assets/flags/cambodia.svg",
     "languages": [
       "Khmer"
+    ],
+    "coordinates": [
+      11.55,
+      104.92
     ]
   },
   {
@@ -946,6 +1334,10 @@
       "Arabic",
       "Aramaic",
       "Sorani"
+    ],
+    "coordinates": [
+      33.33,
+      44.4
     ]
   },
   {
@@ -955,6 +1347,10 @@
     "flagUrl": "assets/flags/french-southern-and-antarctic-lands.svg",
     "languages": [
       "French"
+    ],
+    "coordinates": [
+      48.81,
+      -1.4
     ]
   },
   {
@@ -964,6 +1360,10 @@
     "flagUrl": "assets/flags/sweden.svg",
     "languages": [
       "Swedish"
+    ],
+    "coordinates": [
+      59.33,
+      18.05
     ]
   },
   {
@@ -973,6 +1373,10 @@
     "flagUrl": "assets/flags/cuba.svg",
     "languages": [
       "Spanish"
+    ],
+    "coordinates": [
+      23.12,
+      -82.35
     ]
   },
   {
@@ -983,6 +1387,10 @@
     "languages": [
       "Kyrgyz",
       "Russian"
+    ],
+    "coordinates": [
+      42.87,
+      74.6
     ]
   },
   {
@@ -992,6 +1400,10 @@
     "flagUrl": "assets/flags/russia.svg",
     "languages": [
       "Russian"
+    ],
+    "coordinates": [
+      55.75,
+      37.6
     ]
   },
   {
@@ -1002,6 +1414,10 @@
     "languages": [
       "English",
       "Malay"
+    ],
+    "coordinates": [
+      3.17,
+      101.7
     ]
   },
   {
@@ -1011,6 +1427,10 @@
     "flagUrl": "assets/flags/são-tomé-and-príncipe.svg",
     "languages": [
       "Portuguese"
+    ],
+    "coordinates": [
+      0.34,
+      6.73
     ]
   },
   {
@@ -1021,6 +1441,10 @@
     "languages": [
       "Greek",
       "Turkish"
+    ],
+    "coordinates": [
+      35.17,
+      33.37
     ]
   },
   {
@@ -1031,6 +1455,10 @@
     "languages": [
       "English",
       "French"
+    ],
+    "coordinates": [
+      45.42,
+      -75.7
     ]
   },
   {
@@ -1041,6 +1469,10 @@
     "languages": [
       "English",
       "Chewa"
+    ],
+    "coordinates": [
+      -13.97,
+      33.78
     ]
   },
   {
@@ -1050,6 +1482,10 @@
     "flagUrl": "assets/flags/saudi-arabia.svg",
     "languages": [
       "Arabic"
+    ],
+    "coordinates": [
+      24.65,
+      46.7
     ]
   },
   {
@@ -1061,6 +1497,10 @@
       "Bosnian",
       "Croatian",
       "Serbian"
+    ],
+    "coordinates": [
+      43.87,
+      18.42
     ]
   },
   {
@@ -1070,6 +1510,10 @@
     "flagUrl": "assets/flags/ethiopia.svg",
     "languages": [
       "Amharic"
+    ],
+    "coordinates": [
+      9.03,
+      38.7
     ]
   },
   {
@@ -1082,6 +1526,10 @@
       "Catalan",
       "Basque",
       "Galician"
+    ],
+    "coordinates": [
+      40.4,
+      -3.68
     ]
   },
   {
@@ -1091,6 +1539,10 @@
     "flagUrl": "assets/flags/slovenia.svg",
     "languages": [
       "Slovene"
+    ],
+    "coordinates": [
+      46.05,
+      14.52
     ]
   },
   {
@@ -1100,6 +1552,10 @@
     "flagUrl": "assets/flags/oman.svg",
     "languages": [
       "Arabic"
+    ],
+    "coordinates": [
+      23.62,
+      58.58
     ]
   },
   {
@@ -1109,6 +1565,10 @@
     "flagUrl": "assets/flags/saint-pierre-and-miquelon.svg",
     "languages": [
       "French"
+    ],
+    "coordinates": [
+      46.77,
+      -56.18
     ]
   },
   {
@@ -1118,6 +1578,10 @@
     "flagUrl": "assets/flags/san-marino.svg",
     "languages": [
       "Italian"
+    ],
+    "coordinates": [
+      43.94,
+      12.45
     ]
   },
   {
@@ -1128,6 +1592,10 @@
     "languages": [
       "English",
       "Sotho"
+    ],
+    "coordinates": [
+      -29.32,
+      27.48
     ]
   },
   {
@@ -1138,6 +1606,10 @@
     "languages": [
       "English",
       "Marshallese"
+    ],
+    "coordinates": [
+      7.1,
+      171.38
     ]
   },
   {
@@ -1149,6 +1621,10 @@
       "English",
       "French",
       "Dutch"
+    ],
+    "coordinates": [
+      18.02,
+      -63.03
     ]
   },
   {
@@ -1158,6 +1634,10 @@
     "flagUrl": "assets/flags/iceland.svg",
     "languages": [
       "Icelandic"
+    ],
+    "coordinates": [
+      64.15,
+      -21.95
     ]
   },
   {
@@ -1169,6 +1649,10 @@
       "German",
       "French",
       "Luxembourgish"
+    ],
+    "coordinates": [
+      49.6,
+      6.12
     ]
   },
   {
@@ -1179,6 +1663,10 @@
     "languages": [
       "Guaraní",
       "Spanish"
+    ],
+    "coordinates": [
+      -34.58,
+      -58.67
     ]
   },
   {
@@ -1188,6 +1676,10 @@
     "flagUrl": "assets/flags/turks-and-caicos-islands.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      21.46,
+      -71.14
     ]
   },
   {
@@ -1198,6 +1690,10 @@
     "languages": [
       "English",
       "Nauru"
+    ],
+    "coordinates": [
+      -0.55,
+      166.92
     ]
   },
   {
@@ -1207,6 +1703,10 @@
     "flagUrl": "assets/flags/cocos-(keeling)-islands.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      -12.17,
+      96.83
     ]
   },
   {
@@ -1218,6 +1718,10 @@
       "Berber",
       "Hassaniya",
       "Spanish"
+    ],
+    "coordinates": [
+      -13.28,
+      27.14
     ]
   },
   {
@@ -1227,6 +1731,10 @@
     "flagUrl": "assets/flags/dominica.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      15.3,
+      -61.4
     ]
   },
   {
@@ -1236,6 +1744,10 @@
     "flagUrl": "assets/flags/costa-rica.svg",
     "languages": [
       "Spanish"
+    ],
+    "coordinates": [
+      9.93,
+      -84.09
     ]
   },
   {
@@ -1245,6 +1757,10 @@
     "flagUrl": "assets/flags/australia.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      -35.27,
+      149.13
     ]
   },
   {
@@ -1254,6 +1770,10 @@
     "flagUrl": "assets/flags/thailand.svg",
     "languages": [
       "Thai"
+    ],
+    "coordinates": [
+      13.75,
+      100.52
     ]
   },
   {
@@ -1264,6 +1784,10 @@
     "languages": [
       "French",
       "Haitian Creole"
+    ],
+    "coordinates": [
+      18.53,
+      -72.33
     ]
   },
   {
@@ -1274,6 +1798,10 @@
     "languages": [
       "English",
       "Tuvaluan"
+    ],
+    "coordinates": [
+      -8.52,
+      179.22
     ]
   },
   {
@@ -1283,6 +1811,10 @@
     "flagUrl": "assets/flags/honduras.svg",
     "languages": [
       "Spanish"
+    ],
+    "coordinates": [
+      14.1,
+      -87.22
     ]
   },
   {
@@ -1294,6 +1826,10 @@
       "French",
       "Portuguese",
       "Spanish"
+    ],
+    "coordinates": [
+      3.75,
+      8.78
     ]
   },
   {
@@ -1303,6 +1839,10 @@
     "flagUrl": "assets/flags/saint-lucia.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      14,
+      -61
     ]
   },
   {
@@ -1312,6 +1852,10 @@
     "flagUrl": "assets/flags/french-polynesia.svg",
     "languages": [
       "French"
+    ],
+    "coordinates": [
+      -17.53,
+      -149.56
     ]
   },
   {
@@ -1322,6 +1866,10 @@
     "languages": [
       "Belarusian",
       "Russian"
+    ],
+    "coordinates": [
+      53.9,
+      27.57
     ]
   },
   {
@@ -1331,6 +1879,10 @@
     "flagUrl": "assets/flags/latvia.svg",
     "languages": [
       "Latvian"
+    ],
+    "coordinates": [
+      56.95,
+      24.1
     ]
   },
   {
@@ -1341,6 +1893,10 @@
     "languages": [
       "English",
       "Palauan"
+    ],
+    "coordinates": [
+      7.5,
+      134.62
     ]
   },
   {
@@ -1350,6 +1906,10 @@
     "flagUrl": "assets/flags/guadeloupe.svg",
     "languages": [
       "French"
+    ],
+    "coordinates": [
+      16.03,
+      -61.73
     ]
   },
   {
@@ -1360,6 +1920,10 @@
     "languages": [
       "English",
       "Filipino"
+    ],
+    "coordinates": [
+      14.6,
+      120.97
     ]
   },
   {
@@ -1369,6 +1933,10 @@
     "flagUrl": "assets/flags/gibraltar.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      36.13,
+      -5.35
     ]
   },
   {
@@ -1378,6 +1946,10 @@
     "flagUrl": "assets/flags/denmark.svg",
     "languages": [
       "Danish"
+    ],
+    "coordinates": [
+      55.67,
+      12.58
     ]
   },
   {
@@ -1388,6 +1960,10 @@
     "languages": [
       "English",
       "French"
+    ],
+    "coordinates": [
+      3.85,
+      11.5
     ]
   },
   {
@@ -1397,6 +1973,10 @@
     "flagUrl": "assets/flags/guinea.svg",
     "languages": [
       "French"
+    ],
+    "coordinates": [
+      9.5,
+      -13.7
     ]
   },
   {
@@ -1406,6 +1986,10 @@
     "flagUrl": "assets/flags/bahrain.svg",
     "languages": [
       "Arabic"
+    ],
+    "coordinates": [
+      26.23,
+      50.57
     ]
   },
   {
@@ -1415,6 +1999,10 @@
     "flagUrl": "assets/flags/suriname.svg",
     "languages": [
       "Dutch"
+    ],
+    "coordinates": [
+      5.83,
+      -55.17
     ]
   },
   {
@@ -1428,6 +2016,10 @@
       "Lingala",
       "Tshiluba",
       "Swahili"
+    ],
+    "coordinates": [
+      -4.32,
+      15.3
     ]
   },
   {
@@ -1438,6 +2030,10 @@
     "languages": [
       "Arabic",
       "Somali"
+    ],
+    "coordinates": [
+      2.07,
+      45.33
     ]
   },
   {
@@ -1448,6 +2044,10 @@
     "languages": [
       "Czech",
       "Slovak"
+    ],
+    "coordinates": [
+      50.08,
+      14.47
     ]
   },
   {
@@ -1457,6 +2057,10 @@
     "flagUrl": "assets/flags/new-caledonia.svg",
     "languages": [
       "French"
+    ],
+    "coordinates": [
+      -22.27,
+      166.45
     ]
   },
   {
@@ -1468,6 +2072,10 @@
       "Bislama",
       "English",
       "French"
+    ],
+    "coordinates": [
+      -17.73,
+      168.32
     ]
   },
   {
@@ -1477,6 +2085,10 @@
     "flagUrl": "assets/flags/saint-helena,-ascension-and-tristan-da-cunha.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      -15.93,
+      -5.72
     ]
   },
   {
@@ -1486,6 +2098,10 @@
     "flagUrl": "assets/flags/togo.svg",
     "languages": [
       "French"
+    ],
+    "coordinates": [
+      6.14,
+      1.21
     ]
   },
   {
@@ -1495,6 +2111,10 @@
     "flagUrl": "assets/flags/british-virgin-islands.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      18.42,
+      -64.62
     ]
   },
   {
@@ -1505,6 +2125,10 @@
     "languages": [
       "English",
       "Swahili"
+    ],
+    "coordinates": [
+      -1.28,
+      36.82
     ]
   },
   {
@@ -1515,6 +2139,10 @@
     "languages": [
       "English",
       "Niuean"
+    ],
+    "coordinates": [
+      -19.02,
+      -169.92
     ]
   },
   {
@@ -1526,6 +2154,10 @@
       "English",
       "French",
       "Kinyarwanda"
+    ],
+    "coordinates": [
+      -1.95,
+      30.05
     ]
   },
   {
@@ -1535,6 +2167,10 @@
     "flagUrl": "assets/flags/estonia.svg",
     "languages": [
       "Estonian"
+    ],
+    "coordinates": [
+      59.43,
+      24.72
     ]
   },
   {
@@ -1544,6 +2180,10 @@
     "flagUrl": "assets/flags/romania.svg",
     "languages": [
       "Romanian"
+    ],
+    "coordinates": [
+      44.43,
+      26.1
     ]
   },
   {
@@ -1553,6 +2193,10 @@
     "flagUrl": "assets/flags/trinidad-and-tobago.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      10.65,
+      -61.52
     ]
   },
   {
@@ -1562,6 +2206,10 @@
     "flagUrl": "assets/flags/guyana.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      6.8,
+      -58.15
     ]
   },
   {
@@ -1572,6 +2220,10 @@
     "languages": [
       "Portuguese",
       "Tetum"
+    ],
+    "coordinates": [
+      -8.58,
+      125.6
     ]
   },
   {
@@ -1581,6 +2233,10 @@
     "flagUrl": "assets/flags/vietnam.svg",
     "languages": [
       "Vietnamese"
+    ],
+    "coordinates": [
+      21.03,
+      105.85
     ]
   },
   {
@@ -1590,6 +2246,10 @@
     "flagUrl": "assets/flags/uruguay.svg",
     "languages": [
       "Spanish"
+    ],
+    "coordinates": [
+      -34.85,
+      -56.17
     ]
   },
   {
@@ -1600,6 +2260,10 @@
     "languages": [
       "Italian",
       "Latin"
+    ],
+    "coordinates": [
+      41.9,
+      12.45
     ]
   },
   {
@@ -1610,6 +2274,10 @@
     "languages": [
       "English",
       "Chinese"
+    ],
+    "coordinates": [
+      22.267,
+      114.188
     ]
   },
   {
@@ -1619,6 +2287,10 @@
     "flagUrl": "assets/flags/austria.svg",
     "languages": [
       "German"
+    ],
+    "coordinates": [
+      48.2,
+      16.37
     ]
   },
   {
@@ -1628,6 +2300,10 @@
     "flagUrl": "assets/flags/antigua-and-barbuda.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      17.12,
+      -61.85
     ]
   },
   {
@@ -1638,6 +2314,10 @@
     "languages": [
       "Russian",
       "Turkmen"
+    ],
+    "coordinates": [
+      37.95,
+      58.38
     ]
   },
   {
@@ -1647,6 +2327,10 @@
     "flagUrl": "assets/flags/mozambique.svg",
     "languages": [
       "Portuguese"
+    ],
+    "coordinates": [
+      -25.95,
+      32.58
     ]
   },
   {
@@ -1656,6 +2340,10 @@
     "flagUrl": "assets/flags/panama.svg",
     "languages": [
       "Spanish"
+    ],
+    "coordinates": [
+      8.97,
+      -79.53
     ]
   },
   {
@@ -1665,6 +2353,10 @@
     "flagUrl": "assets/flags/micronesia.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      6.92,
+      158.15
     ]
   },
   {
@@ -1675,6 +2367,10 @@
     "languages": [
       "English",
       "Irish"
+    ],
+    "coordinates": [
+      53.32,
+      -6.23
     ]
   },
   {
@@ -1686,6 +2382,10 @@
       "English",
       "Dutch",
       "Papiamento"
+    ],
+    "coordinates": [
+      12.1,
+      -68.92
     ]
   },
   {
@@ -1695,6 +2395,10 @@
     "flagUrl": "assets/flags/french-guiana.svg",
     "languages": [
       "French"
+    ],
+    "coordinates": [
+      4.94,
+      -52.33
     ]
   },
   {
@@ -1706,6 +2410,10 @@
       "Norwegian Nynorsk",
       "Norwegian Bokmål",
       "Sami"
+    ],
+    "coordinates": [
+      59.92,
+      10.75
     ]
   },
   {
@@ -1715,6 +2423,10 @@
     "flagUrl": "assets/flags/åland-islands.svg",
     "languages": [
       "Swedish"
+    ],
+    "coordinates": [
+      60.12,
+      19.9
     ]
   },
   {
@@ -1725,6 +2437,10 @@
     "languages": [
       "French",
       "Sango"
+    ],
+    "coordinates": [
+      4.37,
+      18.58
     ]
   },
   {
@@ -1734,6 +2450,10 @@
     "flagUrl": "assets/flags/burkina-faso.svg",
     "languages": [
       "French"
+    ],
+    "coordinates": [
+      12.37,
+      -1.52
     ]
   },
   {
@@ -1745,6 +2465,10 @@
       "Arabic",
       "English",
       "Tigrinya"
+    ],
+    "coordinates": [
+      15.33,
+      38.93
     ]
   },
   {
@@ -1755,6 +2479,10 @@
     "languages": [
       "English",
       "Swahili"
+    ],
+    "coordinates": [
+      -6.16,
+      35.75
     ]
   },
   {
@@ -1764,6 +2492,10 @@
     "flagUrl": "assets/flags/south-korea.svg",
     "languages": [
       "Korean"
+    ],
+    "coordinates": [
+      37.55,
+      126.98
     ]
   },
   {
@@ -1773,6 +2505,10 @@
     "flagUrl": "assets/flags/jordan.svg",
     "languages": [
       "Arabic"
+    ],
+    "coordinates": [
+      31.95,
+      35.93
     ]
   },
   {
@@ -1782,6 +2518,10 @@
     "flagUrl": "assets/flags/mauritania.svg",
     "languages": [
       "Arabic"
+    ],
+    "coordinates": [
+      18.07,
+      -15.97
     ]
   },
   {
@@ -1791,6 +2531,10 @@
     "flagUrl": "assets/flags/lithuania.svg",
     "languages": [
       "Lithuanian"
+    ],
+    "coordinates": [
+      54.68,
+      25.32
     ]
   },
   {
@@ -1809,6 +2553,10 @@
     "flagUrl": "assets/flags/slovakia.svg",
     "languages": [
       "Slovak"
+    ],
+    "coordinates": [
+      48.15,
+      17.12
     ]
   },
   {
@@ -1818,6 +2566,10 @@
     "flagUrl": "assets/flags/angola.svg",
     "languages": [
       "Portuguese"
+    ],
+    "coordinates": [
+      -8.83,
+      13.22
     ]
   },
   {
@@ -1828,6 +2580,10 @@
     "languages": [
       "Kazakh",
       "Russian"
+    ],
+    "coordinates": [
+      51.16,
+      71.45
     ]
   },
   {
@@ -1837,6 +2593,10 @@
     "flagUrl": "assets/flags/moldova.svg",
     "languages": [
       "Romanian"
+    ],
+    "coordinates": [
+      47.01,
+      28.9
     ]
   },
   {
@@ -1846,6 +2606,10 @@
     "flagUrl": "assets/flags/mali.svg",
     "languages": [
       "French"
+    ],
+    "coordinates": [
+      12.65,
+      -8
     ]
   },
   {
@@ -1855,6 +2619,10 @@
     "flagUrl": "assets/flags/falkland-islands.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      -51.7,
+      -57.85
     ]
   },
   {
@@ -1864,6 +2632,10 @@
     "flagUrl": "assets/flags/armenia.svg",
     "languages": [
       "Armenian"
+    ],
+    "coordinates": [
+      40.17,
+      44.5
     ]
   },
   {
@@ -1874,6 +2646,10 @@
     "languages": [
       "English",
       "Samoan"
+    ],
+    "coordinates": [
+      -13.82,
+      -171.77
     ]
   },
   {
@@ -1885,6 +2661,10 @@
       "English",
       "French",
       "Jèrriais"
+    ],
+    "coordinates": [
+      49.18,
+      -2.1
     ]
   },
   {
@@ -1894,6 +2674,10 @@
     "flagUrl": "assets/flags/japan.svg",
     "languages": [
       "Japanese"
+    ],
+    "coordinates": [
+      35.68,
+      139.75
     ]
   },
   {
@@ -1906,6 +2690,10 @@
       "Guaraní",
       "Quechua",
       "Spanish"
+    ],
+    "coordinates": [
+      -19.02,
+      -65.26
     ]
   },
   {
@@ -1915,6 +2703,10 @@
     "flagUrl": "assets/flags/chile.svg",
     "languages": [
       "Spanish"
+    ],
+    "coordinates": [
+      -33.45,
+      -70.67
     ]
   },
   {
@@ -1924,6 +2716,10 @@
     "flagUrl": "assets/flags/united-states.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      38.89,
+      -77.05
     ]
   },
   {
@@ -1933,6 +2729,10 @@
     "flagUrl": "assets/flags/saint-vincent-and-the-grenadines.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      13.13,
+      -61.22
     ]
   },
   {
@@ -1942,6 +2742,10 @@
     "flagUrl": "assets/flags/bermuda.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      32.28,
+      -64.78
     ]
   },
   {
@@ -1953,6 +2757,10 @@
       "Seychellois Creole",
       "English",
       "French"
+    ],
+    "coordinates": [
+      -4.62,
+      55.45
     ]
   },
   {
@@ -1962,6 +2770,10 @@
     "flagUrl": "assets/flags/british-indian-ocean-territory.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      -7.3,
+      72.4
     ]
   },
   {
@@ -1971,6 +2783,10 @@
     "flagUrl": "assets/flags/guatemala.svg",
     "languages": [
       "Spanish"
+    ],
+    "coordinates": [
+      14.62,
+      -90.52
     ]
   },
   {
@@ -1980,6 +2796,10 @@
     "flagUrl": "assets/flags/ecuador.svg",
     "languages": [
       "Spanish"
+    ],
+    "coordinates": [
+      -0.22,
+      -78.5
     ]
   },
   {
@@ -1989,6 +2809,10 @@
     "flagUrl": "assets/flags/martinique.svg",
     "languages": [
       "French"
+    ],
+    "coordinates": [
+      14.6,
+      -61.08
     ]
   },
   {
@@ -1999,6 +2823,10 @@
     "languages": [
       "Russian",
       "Tajik"
+    ],
+    "coordinates": [
+      38.55,
+      68.77
     ]
   },
   {
@@ -2009,6 +2837,10 @@
     "languages": [
       "English",
       "Maltese"
+    ],
+    "coordinates": [
+      35.88,
+      14.5
     ]
   },
   {
@@ -2018,6 +2850,10 @@
     "flagUrl": "assets/flags/gambia.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      13.45,
+      -16.57
     ]
   },
   {
@@ -2027,6 +2863,10 @@
     "flagUrl": "assets/flags/nigeria.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      9.08,
+      7.53
     ]
   },
   {
@@ -2036,6 +2876,10 @@
     "flagUrl": "assets/flags/bahamas.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      25.08,
+      -77.35
     ]
   },
   {
@@ -2046,6 +2890,10 @@
     "languages": [
       "Albanian",
       "Serbian"
+    ],
+    "coordinates": [
+      42.67,
+      21.17
     ]
   },
   {
@@ -2055,6 +2903,10 @@
     "flagUrl": "assets/flags/kuwait.svg",
     "languages": [
       "Arabic"
+    ],
+    "coordinates": [
+      29.37,
+      47.97
     ]
   },
   {
@@ -2064,6 +2916,10 @@
     "flagUrl": "assets/flags/maldives.svg",
     "languages": [
       "Maldivian"
+    ],
+    "coordinates": [
+      4.17,
+      73.51
     ]
   },
   {
@@ -2073,6 +2929,10 @@
     "flagUrl": "assets/flags/south-sudan.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      4.85,
+      31.62
     ]
   },
   {
@@ -2082,6 +2942,10 @@
     "flagUrl": "assets/flags/iran.svg",
     "languages": [
       "Persian (Farsi)"
+    ],
+    "coordinates": [
+      35.7,
+      51.42
     ]
   },
   {
@@ -2091,6 +2955,10 @@
     "flagUrl": "assets/flags/albania.svg",
     "languages": [
       "Albanian"
+    ],
+    "coordinates": [
+      41.32,
+      19.82
     ]
   },
   {
@@ -2100,6 +2968,10 @@
     "flagUrl": "assets/flags/brazil.svg",
     "languages": [
       "Portuguese"
+    ],
+    "coordinates": [
+      -15.79,
+      -47.88
     ]
   },
   {
@@ -2109,6 +2981,10 @@
     "flagUrl": "assets/flags/serbia.svg",
     "languages": [
       "Serbian"
+    ],
+    "coordinates": [
+      44.83,
+      20.5
     ]
   },
   {
@@ -2120,6 +2996,10 @@
       "Belizean Creole",
       "English",
       "Spanish"
+    ],
+    "coordinates": [
+      17.25,
+      -88.77
     ]
   },
   {
@@ -2129,6 +3009,10 @@
     "flagUrl": "assets/flags/myanmar.svg",
     "languages": [
       "Burmese"
+    ],
+    "coordinates": [
+      19.76,
+      96.07
     ]
   },
   {
@@ -2138,6 +3022,10 @@
     "flagUrl": "assets/flags/bhutan.svg",
     "languages": [
       "Dzongkha"
+    ],
+    "coordinates": [
+      27.47,
+      89.63
     ]
   },
   {
@@ -2147,6 +3035,10 @@
     "flagUrl": "assets/flags/venezuela.svg",
     "languages": [
       "Spanish"
+    ],
+    "coordinates": [
+      10.48,
+      -66.87
     ]
   },
   {
@@ -2156,6 +3048,10 @@
     "flagUrl": "assets/flags/liberia.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      6.3,
+      -10.8
     ]
   },
   {
@@ -2166,6 +3062,10 @@
     "languages": [
       "English",
       "Jamaican Patois"
+    ],
+    "coordinates": [
+      17.99702,
+      -76.79358
     ]
   },
   {
@@ -2175,6 +3075,10 @@
     "flagUrl": "assets/flags/poland.svg",
     "languages": [
       "Polish"
+    ],
+    "coordinates": [
+      52.25,
+      21
     ]
   },
   {
@@ -2184,6 +3088,10 @@
     "flagUrl": "assets/flags/cayman-islands.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      19.3,
+      -81.38
     ]
   },
   {
@@ -2193,6 +3101,10 @@
     "flagUrl": "assets/flags/brunei.svg",
     "languages": [
       "Malay"
+    ],
+    "coordinates": [
+      4.88,
+      114.93
     ]
   },
   {
@@ -2204,6 +3116,10 @@
       "Arabic",
       "French",
       "Comorian"
+    ],
+    "coordinates": [
+      -11.7,
+      43.23
     ]
   },
   {
@@ -2215,6 +3131,10 @@
       "Chamorro",
       "English",
       "Spanish"
+    ],
+    "coordinates": [
+      13.48,
+      144.75
     ]
   },
   {
@@ -2225,6 +3145,10 @@
     "languages": [
       "English",
       "Tongan"
+    ],
+    "coordinates": [
+      -21.13,
+      -175.2
     ]
   },
   {
@@ -2235,6 +3159,10 @@
     "languages": [
       "English",
       "Gilbertese"
+    ],
+    "coordinates": [
+      1.33,
+      172.98
     ]
   },
   {
@@ -2244,6 +3172,10 @@
     "flagUrl": "assets/flags/ghana.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      5.55,
+      -0.22
     ]
   },
   {
@@ -2254,6 +3186,10 @@
     "languages": [
       "Arabic",
       "French"
+    ],
+    "coordinates": [
+      12.1,
+      15.03
     ]
   },
   {
@@ -2277,6 +3213,10 @@
       "Venda",
       "Xhosa",
       "Zimbabwean Sign Language"
+    ],
+    "coordinates": [
+      -17.82,
+      31.03
     ]
   },
   {
@@ -2286,6 +3226,10 @@
     "flagUrl": "assets/flags/saint-martin.svg",
     "languages": [
       "French"
+    ],
+    "coordinates": [
+      18.07,
+      -63.08
     ]
   },
   {
@@ -2295,6 +3239,10 @@
     "flagUrl": "assets/flags/mongolia.svg",
     "languages": [
       "Mongolian"
+    ],
+    "coordinates": [
+      47.92,
+      106.91
     ]
   },
   {
@@ -2304,6 +3252,10 @@
     "flagUrl": "assets/flags/portugal.svg",
     "languages": [
       "Portuguese"
+    ],
+    "coordinates": [
+      38.72,
+      -9.13
     ]
   },
   {
@@ -2314,6 +3266,10 @@
     "languages": [
       "English",
       "Samoan"
+    ],
+    "coordinates": [
+      -14.27,
+      -170.7
     ]
   },
   {
@@ -2325,6 +3281,10 @@
       "French",
       "Kikongo",
       "Lingala"
+    ],
+    "coordinates": [
+      -4.25,
+      15.28
     ]
   },
   {
@@ -2336,6 +3296,10 @@
       "German",
       "French",
       "Dutch"
+    ],
+    "coordinates": [
+      50.83,
+      4.33
     ]
   },
   {
@@ -2346,6 +3310,10 @@
     "languages": [
       "Arabic",
       "Hebrew"
+    ],
+    "coordinates": [
+      31.77,
+      35.23
     ]
   },
   {
@@ -2357,6 +3325,10 @@
       "English",
       "Māori",
       "New Zealand Sign Language"
+    ],
+    "coordinates": [
+      -41.3,
+      174.78
     ]
   },
   {
@@ -2366,6 +3338,10 @@
     "flagUrl": "assets/flags/nicaragua.svg",
     "languages": [
       "Spanish"
+    ],
+    "coordinates": [
+      12.13,
+      -86.25
     ]
   },
   {
@@ -2375,6 +3351,10 @@
     "flagUrl": "assets/flags/anguilla.svg",
     "languages": [
       "English"
+    ],
+    "coordinates": [
+      18.22,
+      -63.05
     ]
   }
 ]

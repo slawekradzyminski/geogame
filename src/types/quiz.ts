@@ -8,7 +8,8 @@ export interface QuizQuestion {
   correctAnswerPL: string;
   optionsEN: string[];
   optionsPL: string[];
-  flag?: string;
+  flag: string;
+  coordinates?: [number, number];
 }
 
 export interface Answer {

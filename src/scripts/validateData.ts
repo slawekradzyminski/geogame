@@ -17,6 +17,21 @@ function validateCountry(country: CountryData, locale: string): string[] {
     errors.push(`Missing languages for country: ${country.name}`);
   }
 
+  // Validate coordinates if present
+  if (country.coordinates) {
+    if (!Array.isArray(country.coordinates) || country.coordinates.length !== 2) {
+      errors.push(`Invalid coordinates format for country: ${country.name}`);
+    } else {
+      const [lat, lng] = country.coordinates;
+      if (typeof lat !== 'number' || typeof lng !== 'number') {
+        errors.push(`Invalid coordinates values for country: ${country.name}`);
+      }
+      if (lat < -90 || lat > 90 || lng < -180 || lng > 180) {
+        errors.push(`Coordinates out of range for country: ${country.name}`);
+      }
+    }
+  }
+
   // Validate flag file exists
   if (country.flagUrl && !country.flagUrl.startsWith('http')) {
     const flagPath = join(__dirname, '..', country.flagUrl);
