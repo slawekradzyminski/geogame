@@ -6,6 +6,10 @@ import useCities from '../hooks/useCities';
 import { generateNewQuestion } from '../utils/capitalQuestionGenerator';
 import { QUESTIONS_PER_QUIZ } from '../types/quiz-provider';
 import { useTranslation } from 'react-i18next';
+import { useCountriesData } from '../hooks/useCountriesData';
+import { useCitiesData } from '../hooks/useCitiesData';
+import { QuizProvider } from './QuizProvider';
+import { CapitalQuestionGenerator } from '../utils/capitalQuestionGenerator';
 
 const initialState: QuizState = {
   currentQuestionNumber: 1,
@@ -15,17 +19,23 @@ const initialState: QuizState = {
   isFinished: false,
 };
 
-export const CapitalQuizProvider = ({ children }: { children: React.ReactNode }) => {
+export const CapitalQuizProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [state, setState] = useState<QuizState>(initialState);
   const [question, setQuestion] = useState<QuizQuestion | null>(null);
   const [usedQuestions, setUsedQuestions] = useState<Set<string>>(new Set());
-  const countriesData = useCountries();
-  const citiesData = useCities();
+  const countriesData = useCountriesData();
+  const citiesData = useCitiesData();
   const { i18n } = useTranslation();
+
+  const generateQuestion = (usedQuestions: Set<string>) => {
+    if (!countriesData || !citiesData) return null;
+    const generator = new CapitalQuestionGenerator(countriesData, citiesData, usedQuestions);
+    return generator.generateQuestion();
+  };
 
   const createNewQuestion = useCallback(() => {
     if (!countriesData || !citiesData) return;
-    const newQuestion = generateNewQuestion(countriesData, citiesData, usedQuestions);
+    const newQuestion = generateQuestion(usedQuestions);
     if (newQuestion) {
       setQuestion(newQuestion);
     }
@@ -91,5 +101,11 @@ export const CapitalQuizProvider = ({ children }: { children: React.ReactNode })
     resetQuiz,
   };
 
-  return <CapitalQuizContext.Provider value={value}>{children}</CapitalQuizContext.Provider>;
+  return (
+    <QuizProvider generateQuestion={generateQuestion}>
+      <CapitalQuizContext.Provider value={value}>
+        {children}
+      </CapitalQuizContext.Provider>
+    </QuizProvider>
+  );
 }; 

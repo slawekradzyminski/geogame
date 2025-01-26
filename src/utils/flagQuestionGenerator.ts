@@ -2,53 +2,54 @@ import { Country } from '../types/quiz-data';
 import { QuizQuestion } from '../types/quiz';
 import { getRandomItems } from './randomUtil';
 import { Language } from '../types/quiz';
+import { BaseQuestionGenerator } from './baseQuestionGenerator';
 
-export const generateNewQuestion = (
-  countriesData: Map<Language, Country[]>,
-  usedQuestions: Set<string>
-): QuizQuestion | null => {
-  const availableCountries = countriesData.get('en')?.filter(
-    (country) => !usedQuestions.has(`flag-${country.id}`) && country.flagUrl
-  );
-
-  if (!availableCountries || availableCountries.length === 0) return null;
-
-  const targetCountry = getRandomItems(availableCountries, 1)[0];
-  const distractorCountries = availableCountries.filter(
-    (country) => country.id !== targetCountry.id
-  );
-
-  if (distractorCountries.length < 3) {
-    console.error('Not enough distractor countries available');
-    return null;
+export class FlagQuestionGenerator extends BaseQuestionGenerator {
+  constructor(
+    countriesData: Map<Language, Country[]>,
+    usedQuestions: Set<string>
+  ) {
+    super(countriesData, usedQuestions, {
+      prefix: 'flag',
+      minOptions: 4,
+      validateCountry: (country) => !!country.flagUrl
+    });
   }
 
-  const targetCountryPL = countriesData.get('pl')?.find(
-    (country) => country.id === targetCountry.id
-  );
+  generateQuestion(): QuizQuestion | null {
+    const availableCountries = this.getAvailableCountries();
+    if (availableCountries.length === 0) return null;
 
-  const selectedDistractors = getRandomItems(distractorCountries, 3);
-  const allOptions = [...selectedDistractors, targetCountry];
-  const shuffledOptions = allOptions.sort(() => Math.random() - 0.5);
+    const targetCountry = getRandomItems(availableCountries, 1)[0];
+    const distractorCountries = availableCountries.filter(
+      (country) => country.id !== targetCountry.id
+    );
 
-  const optionFlags = shuffledOptions.map(country => 
-    `/flags/${country.flagUrl.replace('assets/flags/', '')}`
-  );
+    if (distractorCountries.length < this.config.minOptions - 1) {
+      console.error('Not enough distractor countries available');
+      return null;
+    }
 
-  const correctFlagIndex = shuffledOptions.findIndex(
-    country => country.id === targetCountry.id
-  );
+    const targetCountryPL = this.getTargetCountryPL(targetCountry);
+    const selectedDistractors = getRandomItems(distractorCountries, this.config.minOptions - 1);
+    const allOptions = [...selectedDistractors, targetCountry];
+    const shuffledOptions = allOptions.sort(() => Math.random() - 0.5);
 
-  const flagUrl = `/flags/${targetCountry.flagUrl.replace('assets/flags/', '')}`;
+    const optionFlags = shuffledOptions.map(country => 
+      this.getFlagUrl(country.flagUrl)
+    );
 
-  return {
-    id: `flag-${targetCountry.id}`,
-    nameEN: targetCountry.name,
-    namePL: targetCountryPL?.name || targetCountry.name,
-    correctAnswerEN: optionFlags[correctFlagIndex],
-    correctAnswerPL: optionFlags[correctFlagIndex],
-    optionsEN: optionFlags,
-    optionsPL: optionFlags,
-    flag: flagUrl,
-  };
-}; 
+    const correctFlagIndex = shuffledOptions.findIndex(
+      country => country.id === targetCountry.id
+    );
+
+    return this.createBaseQuestion(
+      targetCountry,
+      targetCountryPL,
+      optionFlags[correctFlagIndex],
+      optionFlags[correctFlagIndex],
+      optionFlags,
+      optionFlags
+    );
+  }
+} 
