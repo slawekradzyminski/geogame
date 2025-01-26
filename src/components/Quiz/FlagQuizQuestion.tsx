@@ -3,7 +3,7 @@ import { useFlagQuiz } from '../../hooks/useFlagQuiz';
 import { useTranslation } from 'react-i18next';
 import { useTheme } from '@mui/material/styles';
 import { useState } from 'react';
-import './FlagQuiz.css';
+import './FlagQuizQuestion.css';
 import { Language } from '../../types/quiz';
 
 const ANSWER_LETTERS = ['A', 'B', 'C', 'D'];
@@ -51,14 +51,6 @@ export const FlagQuizQuestion = () => {
     <Box 
       data-testid="quiz-question" 
       className="flag-question-container"
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        gap: 3,
-        maxWidth: '800px',
-        margin: '0 auto',
-        padding: 4,
-      }}
     >
       <Box textAlign="center">
         <Typography
@@ -87,15 +79,17 @@ export const FlagQuizQuestion = () => {
       <Grid container spacing={2}>
         {options.map((flagUrl, index) => (
           <Grid item xs={12} sm={6} key={flagUrl}>
-            <button
-              onClick={() => handleAnswerClick(flagUrl)}
-              disabled={selectedAnswer !== null}
-              data-testid={`answer-option-${index}`}
-              className={getButtonClass(flagUrl)}
-            >
-              <span className="flag-answer-letter">{ANSWER_LETTERS[index]}</span>
-              <img src={flagUrl} alt={`Flag option ${index + 1}`} />
-            </button>
+            <div className="flag-option-container">
+              <button
+                onClick={() => handleAnswerClick(flagUrl)}
+                disabled={selectedAnswer !== null}
+                data-testid={`answer-option-${index}`}
+                className={getButtonClass(flagUrl)}
+              >
+                <span className="flag-answer-letter">{ANSWER_LETTERS[index]}</span>
+                <img src={flagUrl} alt={`Flag option ${index + 1}`} />
+              </button>
+            </div>
           </Grid>
         ))}
       </Grid>
