@@ -11,7 +11,9 @@
     "scrape-data": "tsx src/scripts/scrapeData.ts",
     "validate-data": "tsx src/scripts/validateData.ts",
     "prepare-data": "npm run scrape-data && npm run validate-data",
-    "test": "playwright test --reporter=list",
+    "test": "npm run test:unit && npm run test:e2e",
+    "test:unit": "jest",
+    "test:e2e": "playwright test tests/ --reporter=list",
     "fetch-cities": "tsx src/scripts/fetchCities.ts"
   },
   "dependencies": {
@@ -28,6 +30,7 @@
   "devDependencies": {
     "@eslint/js": "^9.17.0",
     "@playwright/test": "^1.49.1",
+    "@types/jest": "^29.5.12",
     "@types/node": "^22.10.7",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
@@ -37,6 +40,8 @@
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.16",
     "globals": "^15.14.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
     "tsx": "^4.19.2",
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.18.2",

@@ -16,7 +16,7 @@ const LANGUAGES = [
   { code: 'pl', label: 'Polski', flag: '🇵🇱' }
 ];
 
-export default function LanguageSwitcher() {
+export const LanguageSwitcher = () => {
   const { t, i18n } = useTranslation('common');
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);

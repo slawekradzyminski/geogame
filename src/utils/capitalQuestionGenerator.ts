@@ -17,7 +17,6 @@ export const generateNewQuestion = (
   const englishCities = citiesData.get('en') || [];
   const polishCities = citiesData.get('pl') || [];
 
-  // Find a country that has enough valid distractors
   let targetCountry: Country | null = null;
   let availableDistractorIds: string[] = [];
   let attempts = 0;

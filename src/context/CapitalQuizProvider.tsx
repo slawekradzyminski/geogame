@@ -3,7 +3,7 @@ import { Answer, Language, QuizContextType, QuizQuestion, QuizState } from '../t
 import { CapitalQuizContext } from './CapitalQuizContext';
 import useCountries from '../hooks/useCountries';
 import useCities from '../hooks/useCities';
-import { generateNewQuestion } from '../utils/questionGenerator';
+import { generateNewQuestion } from '../utils/capitalQuestionGenerator';
 import { QUESTIONS_PER_QUIZ } from '../types/quiz-provider';
 import { useTranslation } from 'react-i18next';
 

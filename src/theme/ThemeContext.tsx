@@ -1,28 +1,13 @@
-import { createContext, useContext, useMemo, useState, ReactNode } from 'react';
+import { useMemo, useState, ReactNode } from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-
-type ColorMode = 'light' | 'dark';
-
-interface ColorModeContextType {
-  toggleColorMode: () => void;
-  mode: ColorMode;
-}
-
-const ColorModeContext = createContext<ColorModeContextType>({
-  toggleColorMode: () => {},
-  mode: 'light'
-});
-
-export function useColorMode() {
-  return useContext(ColorModeContext);
-}
+import { ColorModeContext, ColorMode } from './ColorModeContext';
 
 interface ThemeContextProviderProps {
   children: ReactNode;
 }
 
-export function ThemeContextProvider({ children }: ThemeContextProviderProps) {
+export const ThemeContextProvider = ({ children }: ThemeContextProviderProps) => {
   const [mode, setMode] = useState<ColorMode>('light');
 
   const colorMode = useMemo(

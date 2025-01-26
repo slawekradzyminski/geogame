@@ -5,6 +5,7 @@ An interactive quiz application to test your knowledge of world geography, inclu
 ## Project Structure
 
 - `/src` - Source code
+  - Unit tests are co-located with implementation in the same directory
 - `/public` - Static assets and translations
 - `/tests` - E2E tests (Playwright)
 - `PLAN.md` - Current project status and implementation plan
@@ -27,8 +28,9 @@ npm run dev
 
 # Run tests
 npm test
-# or for more detailed output
-npx playwright test --reporter=list
+# or for specific test types:
+npm run test:unit     # Jest unit tests
+npm run test:e2e      # Playwright E2E tests
 ```
 
 ## For AI Agents
@@ -42,14 +44,20 @@ The project plan is maintained in `PLAN.md`. This file contains:
 - Project structure
 
 ### Testing
-- E2E tests are written using Playwright
-- Tests follow the given/when/then pattern
-- Run tests with detailed output:
+- Unit tests with Jest
+  - Co-located with implementation files in the same directory
+  - Tests follow given/when/then pattern
+  - Focus on business logic and utilities
+  - Use real data from JSON files
+- E2E tests with Playwright in `/tests`
+  - Test full user flows and UI interactions
+  - Follow given/when/then pattern
+- Run tests:
   ```bash
-  npx playwright test --reporter=list
+  npm run test:unit     # Jest unit tests
+  npm run test:e2e      # Playwright E2E tests
+  npm test             # Run all tests
   ```
-- Test files are located in `/tests` directory
-- Each test file follows the pattern: `*.spec.ts`
 
 ### Internationalization
 - Translation files are in `/public/locales/{lang}/`

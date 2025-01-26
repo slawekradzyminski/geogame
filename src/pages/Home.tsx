@@ -16,7 +16,7 @@ import PublicIcon from '@mui/icons-material/Public';
 import FlagIcon from '@mui/icons-material/Flag';
 import TranslateIcon from '@mui/icons-material/Translate';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
-import LanguageSwitcher from '../components/LanguageSwitcher';
+import { LanguageSwitcher } from '../components/LanguageSwitcher';
 
 interface QuizOptionProps {
   icon: React.ComponentType<SvgIconProps>;

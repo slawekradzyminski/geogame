@@ -151,3 +151,49 @@ src/
 - Testing
 - Performance optimization
 - Deployment 
+
+## Current Status
+
+### ✅ Completed
+- Basic application setup with React and TypeScript
+- Material UI integration
+- Routing setup
+- Internationalization (i18n) support
+- Capital Quiz implementation
+- Unit tests for core utilities
+  - Question generator tests with given/when/then pattern
+  - Real data testing with JSON files
+- E2E tests with Playwright
+
+### 🚧 In Progress
+- Flag Quiz implementation
+- Test coverage improvements
+
+### 📋 Next Steps
+1. Complete Flag Quiz implementation
+2. Add Language Quiz
+3. Add user statistics and progress tracking
+4. Implement difficulty levels
+5. Add more unit tests for components
+6. Improve accessibility
+
+## Testing Strategy
+
+### Unit Tests (Jest)
+- Co-located with implementation files in `__tests__` directories
+- Follow given/when/then pattern
+- Test core business logic and utilities
+- Use real data from JSON files
+
+### E2E Tests (Playwright)
+- Located in `/tests`
+- Test full user flows
+- Verify UI interactions
+- Test internationalization
+
+### Running Tests
+```bash
+npm run test:unit     # Run unit tests
+npm run test:e2e      # Run E2E tests
+npm test             # Run all tests
+``` 

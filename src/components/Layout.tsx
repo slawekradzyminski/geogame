@@ -2,8 +2,8 @@ import { ReactNode } from 'react';
 import { Box, Container, IconButton, Stack } from '@mui/material';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
-import LanguageSwitcher from './LanguageSwitcher';
-import { useColorMode } from '../theme/ThemeContext';
+import { LanguageSwitcher } from './LanguageSwitcher';
+import { useColorMode } from '../theme/hooks';
 
 interface LayoutProps {
   children: ReactNode;

@@ -3,7 +3,7 @@ import { CapitalQuizProvider } from '../../context/CapitalQuizProvider';
 import { CapitalQuizQuestion } from './CapitalQuizQuestion';
 import { CapitalQuizSummary } from './CapitalQuizSummary';
 import { useCapitalQuiz } from '../../hooks/useCapitalQuiz';
-import LanguageSwitcher from '../LanguageSwitcher';
+import { LanguageSwitcher } from '../LanguageSwitcher';
 import './CapitalQuiz.css';
 
 const CapitalQuizContent = () => {
