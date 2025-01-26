@@ -50,7 +50,7 @@ export const FlagQuizQuestion = () => {
   return (
     <Box 
       data-testid="quiz-question" 
-      className="question-container"
+      className="flag-question-container"
       sx={{
         display: 'flex',
         flexDirection: 'column',
@@ -71,9 +71,16 @@ export const FlagQuizQuestion = () => {
         <Typography 
           variant="h5" 
           gutterBottom
+          sx={{ color: theme.palette.text.secondary }}
+        >
+          {countryName}
+        </Typography>
+        <Typography 
+          variant="h6" 
+          gutterBottom
           sx={{ color: theme.palette.text.secondary, mb: 3 }}
         >
-          {t('flagQuiz.whatIsTheFlag', { country: countryName })}
+          {t('questions.flag', { country: countryName })}
         </Typography>
       </Box>
 
@@ -86,7 +93,7 @@ export const FlagQuizQuestion = () => {
               data-testid={`answer-option-${index}`}
               className={getButtonClass(flagUrl)}
             >
-              <span className="answer-letter">{ANSWER_LETTERS[index]}</span>
+              <span className="flag-answer-letter">{ANSWER_LETTERS[index]}</span>
               <img src={flagUrl} alt={`Flag option ${index + 1}`} />
             </button>
           </Grid>

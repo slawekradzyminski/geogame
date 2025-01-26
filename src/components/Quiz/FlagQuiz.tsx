@@ -14,11 +14,11 @@ const FlagQuizContent = () => {
 export const FlagQuiz = () => {
   return (
     <FlagQuizProvider>
-      <Container maxWidth="md" className="quiz-container">
+      <Container maxWidth="md" className="flag-quiz-container">
         <div className="language-switcher-container">
           <LanguageSwitcher />
         </div>
-        <Paper elevation={3} className="quiz-paper">
+        <Paper elevation={3} className="flag-quiz-paper">
           <FlagQuizContent />
         </Paper>
       </Container>
