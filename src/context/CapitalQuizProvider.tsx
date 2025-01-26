@@ -23,8 +23,6 @@ export const CapitalQuizProvider = ({ children }: { children: React.ReactNode })
   const citiesData = useCities();
   const { i18n } = useTranslation();
 
-  console.log(question)
-
   const createNewQuestion = useCallback(() => {
     if (!countriesData || !citiesData) return;
     const newQuestion = generateNewQuestion(countriesData, citiesData, usedQuestions);
