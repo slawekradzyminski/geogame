@@ -1,4 +1,3 @@
-import React from 'react';
 import { render, act } from '@testing-library/react';
 import { CapitalQuizProvider } from './CapitalQuizProvider';
 import { useCapitalQuiz } from '../hooks/useCapitalQuiz';
@@ -43,7 +42,6 @@ const TestComponent = () => {
 
 describe('CapitalQuizProvider', () => {
   beforeAll(async () => {
-    // Load real data
     const [countriesEN, countriesPL, citiesEN, citiesPL] = await Promise.all([
       import('../data/countries.en.json'),
       import('../data/countries.pl.json'),
@@ -51,7 +49,6 @@ describe('CapitalQuizProvider', () => {
       import('../data/cities.pl.json')
     ]);
 
-    // Update mock implementations with real data
     const useCountries = jest.requireMock('../hooks/useCountries').default;
     const useCities = jest.requireMock('../hooks/useCities').default;
 
