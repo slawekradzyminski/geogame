@@ -19,7 +19,7 @@
   },
   "questions": {
     "capital": "What is the capital of {{country}}?",
-    "flag": "Which flag belongs to {{country}}?",
+    "flag": "Which flag belongs to this country?",
     "language": "Which language is spoken in {{country}}?"
   },
   "feedback": {
