@@ -2,6 +2,14 @@
 
 An interactive quiz application to test your knowledge of world geography, including capitals, flags, and languages.
 
+## Features
+- ✅ Capital Quiz: Test your knowledge of world capitals
+- ✅ Flag Quiz: Identify country flags from around the world
+- 🚧 Language Quiz: Coming soon
+- Internationalization support (English and Polish)
+- Beautiful Material UI design
+- Comprehensive test coverage
+
 ## Project Structure
 
 - `/src` - Source code
