@@ -54,14 +54,29 @@ export const FlagQuizSummary = () => {
             <Paper
               elevation={3}
               className="answer-card"
+              sx={{
+                borderLeft: answer.isCorrect ? `4px solid ${theme.palette.success.main}` : `4px solid ${theme.palette.error.main}`
+              }}
             >
               <Typography variant="h6" gutterBottom>
-                {t('flagQuiz.whatIsTheFlag', { country: answer.countryName })}
+                {t('questions.flag', { country: answer.countryName })}
               </Typography>
               <div className="answer-details">
                 <div className="flag-answer">
-                  <Typography color="text.secondary" gutterBottom>
-                    {t('yourAnswer')}:
+                  <Typography color="text.secondary" gutterBottom sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+                    {t('yourAnswer')}
+                    {answer.isCorrect && (
+                      <Typography 
+                        component="span" 
+                        sx={{ 
+                          color: theme.palette.success.main,
+                          fontWeight: 'bold',
+                          ml: 1 
+                        }}
+                      >
+                        ✓ {t('feedback.correct')}
+                      </Typography>
+                    )}
                   </Typography>
                   <img 
                     src={answer.selectedAnswer} 
