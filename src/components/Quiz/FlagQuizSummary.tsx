@@ -58,6 +58,9 @@ export const FlagQuizSummary = () => {
               <Typography variant="h6" gutterBottom>
                 {t('questions.flag', { country: answer.countryName })}
               </Typography>
+              <Typography variant="subtitle1" gutterBottom sx={{ color: theme.palette.text.secondary }}>
+                {answer.countryName}
+              </Typography>
               <div className="answer-details">
                 <div className="flag-answer">
                   <Typography color="text.secondary" gutterBottom>
