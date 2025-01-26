@@ -76,14 +76,26 @@ export const CapitalQuizQuestion = () => {
         >
           {t('whatIsCapital', { country: countryName })}
         </Typography>
-        <div className="flag-container">
+        <Box 
+          sx={{ 
+            backgroundColor: 'rgba(0, 0, 0, 0.03)',
+            padding: 2,
+            borderRadius: 1,
+            display: 'inline-block',
+            mb: 3
+          }}
+        >
           <img 
             src={question.flag} 
             alt={`${countryName} flag`}
-            className="flag-image"
+            style={{ 
+              maxWidth: '200px',
+              maxHeight: '120px',
+              objectFit: 'contain'
+            }} 
             data-testid="country-flag"
           />
-        </div>
+        </Box>
       </Box>
 
       <Grid container spacing={2}>
