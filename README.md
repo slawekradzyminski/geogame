@@ -5,8 +5,21 @@ An interactive quiz application to test your knowledge of world geography, inclu
 ## Project Structure
 
 - `/src` - Source code
+  - `/assets` - Internal assets and resources
+  - `/components` - React components
+  - `/context` - React context providers
+  - `/data` - Data files and constants
+  - `/hooks` - Custom React hooks
+  - `/i18n` - Internationalization setup
+  - `/pages` - Page components
+  - `/scripts` - Utility scripts
+  - `/theme` - Theme configuration
+  - `/types` - TypeScript type definitions
+  - `/utils` - Utility functions
   - Unit tests are co-located with implementation in the same directory
-- `/public` - Static assets and translations
+- `/public` - Static assets
+  - `/flags` - Country flag images
+  - `/locales` - Translation files
 - `/tests` - E2E tests (Playwright)
 - `PLAN.md` - Current project status and implementation plan
 

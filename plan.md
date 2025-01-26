@@ -40,16 +40,24 @@
 ## Project Structure
 ```
 src/
-├── data/
-├── types/
-├── context/
+├── assets/
 ├── components/
 │   ├── Layout/
 │   ├── Quiz/
-│   │   ├── CapitalQuiz/
-│   │   ├── FlagQuiz/    [Next]
-│   │   └── common/
 │   └── common/
+├── context/
+├── data/
+├── hooks/
+├── i18n/
+├── pages/
+├── scripts/
+├── theme/
+├── types/
+└── utils/
+
+public/
+├── flags/
+└── locales/
 ```
 
 ## Development Timeline
