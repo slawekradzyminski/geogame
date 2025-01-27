@@ -148,7 +148,7 @@ describe('ComponentName', () => {
 3. Testing Principles
 - Test behavior, not implementation
 - Use meaningful test descriptions
-- Follow AAA pattern (Arrange, Act, Assert)
+- Follow given/when/then pattern
 - Mock external dependencies
 - Test edge cases and error states
 - Ensure accessibility compliance
