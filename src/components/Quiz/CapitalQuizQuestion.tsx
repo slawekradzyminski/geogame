@@ -3,12 +3,11 @@ import { useCapitalQuiz } from '../../hooks/useCapitalQuiz';
 import { useTranslation } from 'react-i18next';
 import { useTheme } from '@mui/material/styles';
 import { useState } from 'react';
-import { ComposableMap, Geographies, Geography, Marker } from 'react-simple-maps';
+import { CountryMap } from './CountryMap';
 import './CapitalQuizQuestion.css';
 import { Language } from '../../types/quiz';
 
 const ANSWER_LETTERS = ['A', 'B', 'C', 'D'];
-const geoUrl = "https://raw.githubusercontent.com/deldersveld/topojson/master/world-countries.json";
 
 export const CapitalQuizQuestion = () => {
   const { state, question, submitAnswer } = useCapitalQuiz();
@@ -89,47 +88,9 @@ export const CapitalQuizQuestion = () => {
             </div>
           </Grid>
           <Grid item xs={12} sm={6}>
-            <div className="map-container">
-              <ComposableMap
-                projectionConfig={{
-                  rotate: [-10, 0, 0],
-                  scale: 147
-                }}
-              >
-                <Geographies geography={geoUrl}>
-                  {({ geographies }) =>
-                    geographies.map((geo) => {
-                      const isCurrentCountry = geo.properties.name === question.nameEN;
-                      return (
-                        <Geography
-                          key={geo.rsmKey}
-                          geography={geo}
-                          fill={isCurrentCountry ? theme.palette.primary.main : "#EAEAEC"}
-                          stroke={isCurrentCountry ? theme.palette.primary.dark : "#D6D6DA"}
-                          style={{
-                            default: {
-                              outline: "none",
-                            },
-                            hover: {
-                              outline: "none",
-                              fill: isCurrentCountry ? theme.palette.primary.light : "#F5F5F5",
-                            },
-                            pressed: {
-                              outline: "none",
-                            },
-                          }}
-                        />
-                      );
-                    })
-                  }
-                </Geographies>
-                {question.coordinates && (
-                  <Marker coordinates={[question.coordinates[1], question.coordinates[0]]}>
-                    <circle r={4} fill={theme.palette.secondary.main} />
-                  </Marker>
-                )}
-              </ComposableMap>
-            </div>
+            <CountryMap 
+              coordinates={question.coordinates}
+            />
           </Grid>
         </Grid>
       </Box>

@@ -5,6 +5,14 @@
     "language": "Zgadnij język",
     "select": "Wybierz tryb quizu"
   },
+  "continents": {
+    "northAmerica": "Ameryka Północna",
+    "southAmerica": "Ameryka Południowa",
+    "europe": "Europa",
+    "africa": "Afryka",
+    "asia": "Azja",
+    "oceania": "Oceania"
+  },
   "difficulty": {
     "easy": "Łatwy",
     "medium": "Średni",

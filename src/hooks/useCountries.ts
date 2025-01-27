@@ -12,9 +12,9 @@ const useCountries = () => {
           import(`../data/countries.en.json`),
           import(`../data/countries.pl.json`),
         ]);
-        setCountriesMap(new Map<Language, Country[]>([
-          ['en', enCountries.default],
-          ['pl', plCountries.default],
+        setCountriesMap(new Map([
+          ['en', enCountries.default as Country[]],
+          ['pl', plCountries.default as Country[]],
         ]));
       } catch (error) {
         console.error('Error loading countries data:', error);

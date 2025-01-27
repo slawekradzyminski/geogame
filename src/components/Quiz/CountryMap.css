@@ -1,0 +1,36 @@
+.map-container {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-geography {
+  outline: none;
+}
+
+.map-geography:hover {
+  fill: #F8F8F8;
+  cursor: pointer;
+  outline: none;
+}
+
+.continent-label {
+  font-size: 25px;
+  font-weight: 500;
+  opacity: 0.7;
+  user-select: none;
+  fill: #1976d2;
+}
+
+.capital-marker-outer {
+  fill: #FF0000;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+}
+
+.capital-marker-inner {
+  fill: #CC0000;
+} 

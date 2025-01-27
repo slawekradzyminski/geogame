@@ -9,4 +9,5 @@ export interface Country {
   capital: string;
   flagUrl: string;
   languages: string[];
+  coordinates?: [number, number];
 } 

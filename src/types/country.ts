@@ -4,6 +4,7 @@ export interface CountryData {
   capital: string;
   flagUrl: string;
   languages: string[];
+  coordinates?: [number, number];
 }
 
 export type QuizType = 

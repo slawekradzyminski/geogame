@@ -5,6 +5,14 @@
     "language": "Guess the Language",
     "select": "Select Quiz Mode"
   },
+  "continents": {
+    "northAmerica": "North America",
+    "southAmerica": "South America",
+    "europe": "Europe",
+    "africa": "Africa",
+    "asia": "Asia",
+    "oceania": "Oceania"
+  },
   "difficulty": {
     "easy": "Easy",
     "medium": "Medium",

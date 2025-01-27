@@ -6,7 +6,7 @@ import { CountryData } from '../types/country';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-function validateCountry(country: CountryData, locale: string): string[] {
+function validateCountry(country: CountryData): string[] {
   const errors: string[] = [];
 
   if (!country.id) errors.push(`Missing id for country: ${country.name}`);
@@ -59,7 +59,7 @@ async function validateLocale(locale: string): Promise<number> {
   let totalErrors = 0;
   
   countries.forEach(country => {
-    const errors = validateCountry(country, locale);
+    const errors = validateCountry(country);
     if (errors.length > 0) {
       console.error(`\nErrors for ${country.name}:`);
       errors.forEach(error => console.error(`- ${error}`));

@@ -13,8 +13,8 @@ describe('Flag Question Generator', () => {
     ]);
 
     countriesData = new Map<Language, Country[]>([
-      ['en', countriesEN.default],
-      ['pl', countriesPL.default]
+      ['en', countriesEN.default as Country[]],
+      ['pl', countriesPL.default as Country[]]
     ]);
   });
 
@@ -90,8 +90,8 @@ describe('Flag Question Generator', () => {
 
     // when
     const question = generateNewQuestion(countriesData, usedQuestions);
-    const enCountry = countriesEN.default.find((c: Country) => c.name === question?.nameEN);
-    const plCountry = countriesPL.default.find((c: Country) => c.id === enCountry?.id);
+    const enCountry = (countriesEN.default as Country[]).find(c => c.name === question?.nameEN);
+    const plCountry = (countriesPL.default as Country[]).find(c => c.id === enCountry?.id);
 
     // then
     expect(question?.nameEN).toBe(enCountry?.name);

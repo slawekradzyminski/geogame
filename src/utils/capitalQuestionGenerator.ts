@@ -73,5 +73,6 @@ export const generateNewQuestion = (
     optionsEN,
     optionsPL,
     flag: flagUrl,
+    coordinates: targetCountry.coordinates
   };
 }; 
