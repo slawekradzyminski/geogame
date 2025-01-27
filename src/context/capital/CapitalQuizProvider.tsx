@@ -1,9 +1,10 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import { Answer, Language, QuizContextType, QuizQuestion, QuizState } from '../types/quiz';
-import { FlagQuizContext } from './FlagQuizContext';
-import useCountries from '../hooks/useCountries';
-import { generateNewQuestion } from '../utils/flagQuestionGenerator';
-import { QUESTIONS_PER_QUIZ } from '../types/quiz-provider';
+import { Answer, Language, QuizContextType, QuizQuestion, QuizState } from '../../types/quiz';
+import { CapitalQuizContext } from './CapitalQuizContext';
+import useCountries from '../../hooks/useCountries';
+import useCities from '../../hooks/useCities';
+import { generateNewQuestion } from './capitalQuestionGenerator';
+import { QUESTIONS_PER_QUIZ } from '../../types/quiz-provider';
 import { useTranslation } from 'react-i18next';
 
 const initialState: QuizState = {
@@ -14,26 +15,27 @@ const initialState: QuizState = {
   isFinished: false,
 };
 
-export const FlagQuizProvider = ({ children }: { children: React.ReactNode }) => {
+export const CapitalQuizProvider = ({ children }: { children: React.ReactNode }) => {
   const [state, setState] = useState<QuizState>(initialState);
   const [question, setQuestion] = useState<QuizQuestion | null>(null);
   const [usedQuestions, setUsedQuestions] = useState<Set<string>>(new Set());
   const countriesData = useCountries();
+  const citiesData = useCities();
   const { i18n } = useTranslation();
 
   const createNewQuestion = useCallback(() => {
-    if (!countriesData) return;
-    const newQuestion = generateNewQuestion(countriesData, usedQuestions);
+    if (!countriesData || !citiesData) return;
+    const newQuestion = generateNewQuestion(countriesData, citiesData, usedQuestions);
     if (newQuestion) {
       setQuestion(newQuestion);
     }
-  }, [countriesData, usedQuestions]);
+  }, [countriesData, citiesData, usedQuestions]);
 
   useEffect(() => {
-    if (countriesData && !question && !state.isFinished) {
+    if (countriesData && citiesData && !question && !state.isFinished) {
       createNewQuestion();
     }
-  }, [countriesData, question, state.isFinished, createNewQuestion]);
+  }, [countriesData, citiesData, question, state.isFinished, createNewQuestion]);
 
   const submitAnswer = (selectedAnswer: string) => {
     if (!question) return;
@@ -89,5 +91,5 @@ export const FlagQuizProvider = ({ children }: { children: React.ReactNode }) =>
     resetQuiz,
   };
 
-  return <FlagQuizContext.Provider value={value}>{children}</FlagQuizContext.Provider>;
+  return <CapitalQuizContext.Provider value={value}>{children}</CapitalQuizContext.Provider>;
 }; 

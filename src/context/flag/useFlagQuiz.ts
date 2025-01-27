@@ -1,6 +1,6 @@
 import { useContext } from 'react';
-import { FlagQuizContext } from '../context/FlagQuizContext';
-import { QuizContextType } from '../types/quiz';
+import { FlagQuizContext } from './FlagQuizContext';
+import { QuizContextType } from '../../types/quiz';
 
 export const useFlagQuiz = (): QuizContextType => {
   const context = useContext(FlagQuizContext);

@@ -1,8 +1,8 @@
-import { Country, City } from '../types/quiz-data';
-import { QuizQuestion } from '../types/quiz';
-import { getRandomItems } from './randomUtil';  
-import { MINIMUM_OPTIONS } from '../types/quiz-provider';
-import { Language } from '../types/quiz';
+import { Country, City } from '../../types/quiz-data';
+import { QuizQuestion } from '../../types/quiz';
+import { getRandomItems } from '../../utils/randomUtil';  
+import { MINIMUM_OPTIONS } from '../../types/quiz-provider';
+import { Language } from '../../types/quiz';
 
 export const generateNewQuestion = (
   countriesData: Map<Language, Country[]>,

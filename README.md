@@ -99,3 +99,56 @@ The project plan is maintained in `PLAN.md`. This file contains:
 - Always read the test output carefully to identify the root cause of failures
 - Keep component styles in separate CSS files to improve maintainability
 - Use arrow function syntax for component definitions and hooks
+
+## Package Structure
+
+```
+src/
+├── components/
+│   ├── Layout.tsx
+│   ├── LanguageSwitcher.tsx
+│   └── Quiz/
+│       ├── capital/
+│       │   ├── CapitalQuiz.tsx
+│       │   ├── CapitalQuizQuestion.tsx
+│       │   └── CapitalQuizSummary.tsx
+│       ├── flag/
+│       │   ├── FlagQuiz.tsx
+│       │   ├── FlagQuizQuestion.tsx
+│       │   └── FlagQuizSummary.tsx
+│       ├── CountryMap.tsx
+│       └── constants.ts
+├── context/
+│   ├── capital/
+│   │   ├── CapitalQuizContext.tsx
+│   │   ├── CapitalQuizProvider.tsx
+│   │   ├── capitalQuestionGenerator.ts
+│   │   └── useCapitalQuiz.ts
+│   └── flag/
+│       ├── FlagQuizContext.tsx
+│       ├── FlagQuizProvider.tsx
+│       ├── flagQuestionGenerator.ts
+│       └── useFlagQuiz.ts
+├── data/
+│   ├── cities.en.json
+│   ├── cities.pl.json
+│   ├── countries.en.json
+│   └── countries.pl.json
+├── hooks/
+│   ├── useCities.ts
+│   └── useCountries.ts
+├── i18n/
+│   └── config.ts
+├── pages/
+│   └── Home.tsx
+├── scripts/
+│   ├── scrapeData.ts
+│   └── validateData.ts
+├── theme/
+│   └── theme.ts
+└── types/
+    ├── country.ts
+    ├── quiz-data.ts
+    ├── quiz-provider.ts
+    └── quiz.ts
+```

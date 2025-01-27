@@ -1,5 +1,5 @@
 import { Box, Typography, Button, Grid, Paper } from '@mui/material';
-import { useFlagQuiz } from '../../hooks/useFlagQuiz';
+import { useFlagQuiz } from '../../../context/flag/useFlagQuiz';
 import { useTranslation } from 'react-i18next';
 import { useTheme, alpha } from '@mui/material/styles';
 import './FlagQuiz.css';

@@ -1,6 +1,6 @@
 import { generateNewQuestion } from './flagQuestionGenerator';
-import { Language } from '../types/quiz';
-import { Country } from '../types/quiz-data';
+import { Language } from '../../types/quiz';
+import { Country } from '../../types/quiz-data';
 
 describe('Flag Question Generator', () => {
   let countriesData: Map<Language, Country[]>;
@@ -8,8 +8,8 @@ describe('Flag Question Generator', () => {
   beforeAll(async () => {
     // given
     const [countriesEN, countriesPL] = await Promise.all([
-      import('../data/countries.en.json'),
-      import('../data/countries.pl.json')
+      import('../../data/countries.en.json'),
+      import('../../data/countries.pl.json')
     ]);
 
     countriesData = new Map<Language, Country[]>([
@@ -84,8 +84,8 @@ describe('Flag Question Generator', () => {
     // given
     const usedQuestions = new Set<string>();
     const [countriesEN, countriesPL] = await Promise.all([
-      import('../data/countries.en.json'),
-      import('../data/countries.pl.json')
+      import('../../data/countries.en.json'),
+      import('../../data/countries.pl.json')
     ]);
 
     // when

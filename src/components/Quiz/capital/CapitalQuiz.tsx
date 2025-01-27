@@ -1,9 +1,9 @@
 import { Container, Paper } from '@mui/material';
-import { CapitalQuizProvider } from '../../context/CapitalQuizProvider';
+import { CapitalQuizProvider } from '../../../context/capital/CapitalQuizProvider';
 import { CapitalQuizQuestion } from './CapitalQuizQuestion';
 import { CapitalQuizSummary } from './CapitalQuizSummary';
-import { useCapitalQuiz } from '../../hooks/useCapitalQuiz';
-import { LanguageSwitcher } from '../LanguageSwitcher';
+import { useCapitalQuiz } from '../../../context/capital/useCapitalQuiz';
+import { LanguageSwitcher } from '../../LanguageSwitcher';
 import './CapitalQuiz.css';
 
 const CapitalQuizContent = () => {

@@ -1,16 +1,16 @@
 import { render, act } from '@testing-library/react';
 import { CapitalQuizProvider } from './CapitalQuizProvider';
-import { useCapitalQuiz } from '../hooks/useCapitalQuiz';
-import { QUESTIONS_PER_QUIZ } from '../types/quiz-provider';
+import { useCapitalQuiz } from './useCapitalQuiz';
+import { QUESTIONS_PER_QUIZ } from '../../types/quiz-provider';
 import '@testing-library/jest-dom';
 
 // Mock the hooks to use real data
-jest.mock('../hooks/useCountries', () => ({
+jest.mock('../../hooks/useCountries', () => ({
   __esModule: true,
   default: jest.fn(() => new Map())
 }));
 
-jest.mock('../hooks/useCities', () => ({
+jest.mock('../../hooks/useCities', () => ({
   __esModule: true,
   default: jest.fn(() => new Map())
 }));
@@ -43,14 +43,14 @@ const TestComponent = () => {
 describe('CapitalQuizProvider', () => {
   beforeAll(async () => {
     const [countriesEN, countriesPL, citiesEN, citiesPL] = await Promise.all([
-      import('../data/countries.en.json'),
-      import('../data/countries.pl.json'),
-      import('../data/cities.en.json'),
-      import('../data/cities.pl.json')
+      import('../../data/countries.en.json'),
+      import('../../data/countries.pl.json'),
+      import('../../data/cities.en.json'),
+      import('../../data/cities.pl.json')
     ]);
 
-    const useCountries = jest.requireMock('../hooks/useCountries').default;
-    const useCities = jest.requireMock('../hooks/useCities').default;
+    const useCountries = jest.requireMock('../../hooks/useCountries').default;
+    const useCities = jest.requireMock('../../hooks/useCities').default;
 
     useCountries.mockReturnValue(new Map([
       ['en', countriesEN.default],

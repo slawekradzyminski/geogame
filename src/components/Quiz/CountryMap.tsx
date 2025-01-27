@@ -1,17 +1,9 @@
 import { ComposableMap, Geographies, Geography, Marker, Annotation } from 'react-simple-maps';
 import { useTranslation } from 'react-i18next';
 import './CountryMap.css';
+import { CONTINENTS } from './constants';
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
-
-const CONTINENTS = [
-  { name: "northAmerica", coordinates: [40, -100] },
-  { name: "southAmerica", coordinates: [-20, -60] },
-  { name: "europe", coordinates: [50, 10] },
-  { name: "africa", coordinates: [0, 20] },
-  { name: "asia", coordinates: [45, 90] },
-  { name: "oceania", coordinates: [-20, 130] },
-] as const;
 
 interface CountryMapProps {
   coordinates?: [number, number];

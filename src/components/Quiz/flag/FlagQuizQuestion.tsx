@@ -1,12 +1,11 @@
 import { Box, Typography, CircularProgress, Grid } from '@mui/material';
-import { useFlagQuiz } from '../../hooks/useFlagQuiz';
+import { useFlagQuiz } from '../../../context/flag/useFlagQuiz';
 import { useTranslation } from 'react-i18next';
 import { useTheme } from '@mui/material/styles';
 import { useState } from 'react';
 import './FlagQuizQuestion.css';
-import { Language } from '../../types/quiz';
-
-const ANSWER_LETTERS = ['A', 'B', 'C', 'D'];
+import { Language } from '../../../types/quiz';
+import { ANSWER_LETTERS } from '../constants';
 
 export const FlagQuizQuestion = () => {
   const { state, question, submitAnswer } = useFlagQuiz();

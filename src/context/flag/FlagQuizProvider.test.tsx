@@ -1,11 +1,11 @@
 import { render, act } from '@testing-library/react';
 import { FlagQuizProvider } from './FlagQuizProvider';
-import { useFlagQuiz } from '../hooks/useFlagQuiz';
-import { QUESTIONS_PER_QUIZ } from '../types/quiz-provider';
+import { useFlagQuiz } from './useFlagQuiz';
+import { QUESTIONS_PER_QUIZ } from '../../types/quiz-provider';
 import '@testing-library/jest-dom';
 
 // Mock the hooks
-jest.mock('../hooks/useCountries', () => ({
+jest.mock('../../hooks/useCountries', () => ({
   __esModule: true,
   default: jest.fn(() => new Map())
 }));
@@ -38,11 +38,11 @@ const TestComponent = () => {
 describe('FlagQuizProvider', () => {
   beforeAll(async () => {
     const [countriesEN, countriesPL] = await Promise.all([
-      import('../data/countries.en.json'),
-      import('../data/countries.pl.json')
+      import('../../data/countries.en.json'),
+      import('../../data/countries.pl.json')
     ]);
 
-    const useCountries = jest.requireMock('../hooks/useCountries').default;
+    const useCountries = jest.requireMock('../../hooks/useCountries').default;
 
     useCountries.mockReturnValue(new Map([
       ['en', countriesEN.default],

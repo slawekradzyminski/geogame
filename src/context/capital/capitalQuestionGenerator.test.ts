@@ -1,6 +1,6 @@
 import { generateNewQuestion } from './capitalQuestionGenerator';
-import { Language } from '../types/quiz';
-import { Country, City } from '../types/quiz-data';
+import { Language } from '../../types/quiz';
+import { Country, City } from '../../types/quiz-data';
 
 describe('Question Generator', () => {
   let countriesData: Map<Language, Country[]>;
@@ -9,10 +9,10 @@ describe('Question Generator', () => {
   beforeAll(async () => {
     // given
     const [countriesEN, countriesPL, citiesEN, citiesPL] = await Promise.all([
-      import('../data/countries.en.json'),
-      import('../data/countries.pl.json'),
-      import('../data/cities.en.json'),
-      import('../data/cities.pl.json')
+      import('../../data/countries.en.json'),
+      import('../../data/countries.pl.json'),
+      import('../../data/cities.en.json'),
+      import('../../data/cities.pl.json')
     ]);
 
     countriesData = new Map<Language, Country[]>([
@@ -90,8 +90,8 @@ describe('Question Generator', () => {
     // given
     const usedQuestions = new Set<string>();
     const [countriesEN, countriesPL] = await Promise.all([
-      import('../data/countries.en.json'),
-      import('../data/countries.pl.json')
+      import('../../data/countries.en.json'),
+      import('../../data/countries.pl.json')
     ]);
 
     // when

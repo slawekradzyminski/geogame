@@ -1,9 +1,9 @@
 import { Container, Paper } from '@mui/material';
-import { FlagQuizProvider } from '../../context/FlagQuizProvider';
+import { FlagQuizProvider } from '../../../context/flag/FlagQuizProvider';
 import { FlagQuizQuestion } from './FlagQuizQuestion';
 import { FlagQuizSummary } from './FlagQuizSummary';
-import { useFlagQuiz } from '../../hooks/useFlagQuiz';
-import { LanguageSwitcher } from '../LanguageSwitcher';
+import { useFlagQuiz } from '../../../context/flag/useFlagQuiz';
+import { LanguageSwitcher } from '../../LanguageSwitcher';
 import './FlagQuiz.css';
 
 const FlagQuizContent = () => {

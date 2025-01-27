@@ -1,5 +1,5 @@
 import { Box, Typography, Button, Grid, Paper } from '@mui/material';
-import { useCapitalQuiz } from '../../hooks/useCapitalQuiz';
+import { useCapitalQuiz } from '../../../context/capital/useCapitalQuiz';
 import { useTranslation } from 'react-i18next';
 import { useTheme, alpha } from '@mui/material/styles';
 import './CapitalQuizSummary.css';

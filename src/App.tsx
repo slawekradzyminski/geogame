@@ -4,8 +4,8 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { Container } from '@mui/material';
 import { theme } from './theme/theme';
 import Home from "./pages/Home";
-import { CapitalQuiz } from "./components/Quiz/CapitalQuiz";
-import { FlagQuiz } from "./components/Quiz/FlagQuiz";
+import { CapitalQuiz } from "./components/Quiz/capital/CapitalQuiz";
+import { FlagQuiz } from "./components/Quiz/flag/FlagQuiz";
 import { useParams } from 'react-router-dom';
 
 const QuizSelector = () => {

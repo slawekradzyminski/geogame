@@ -1,14 +1,12 @@
 import { Box, Typography, CircularProgress, Grid } from '@mui/material';
-import { useCapitalQuiz } from '../../hooks/useCapitalQuiz';
+import { useCapitalQuiz } from '../../../context/capital/useCapitalQuiz';
 import { useTranslation } from 'react-i18next';
 import { useTheme } from '@mui/material/styles';
 import { useState } from 'react';
-import { CountryMap } from './CountryMap';
+import { CountryMap } from '../CountryMap';
 import './CapitalQuizQuestion.css';
-import { Language } from '../../types/quiz';
-
-const ANSWER_LETTERS = ['A', 'B', 'C', 'D'];
-
+import { Language } from '../../../types/quiz';
+import { ANSWER_LETTERS } from '../constants';
 export const CapitalQuizQuestion = () => {
   const { state, question, submitAnswer } = useCapitalQuiz();
   const { t, i18n } = useTranslation(['quiz']);
