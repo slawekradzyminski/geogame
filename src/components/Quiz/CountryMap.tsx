@@ -28,7 +28,11 @@ export const CountryMap = ({ coordinates }: CountryMapProps) => {
   };
 
   return (
-    <div className="map-container">
+    <div 
+      className="map-container" 
+      data-testid="map-container"
+      data-projection={needsPacificView ? 'pacific' : 'standard'}
+    >
       <ComposableMap
         projectionConfig={projectionConfig}
         width={800}
@@ -60,6 +64,7 @@ export const CountryMap = ({ coordinates }: CountryMapProps) => {
               textAnchor="middle"
               alignmentBaseline="middle"
               className="continent-label"
+              data-testid="continent-label"
             >
               {t(`continents.${name}`)}
             </text>
@@ -67,7 +72,7 @@ export const CountryMap = ({ coordinates }: CountryMapProps) => {
         ))}
         {coordinates && (
           <Marker coordinates={[coordinates[1], coordinates[0]]}>
-            <g>
+            <g data-testid="capital-marker">
               <circle
                 r={6}
                 className="capital-marker-outer"

@@ -24,6 +24,7 @@ export const FlagQuizSummary = () => {
           variant="h3"
           gutterBottom
           className="summary-title"
+          data-testid="summary-title"
           sx={{
             background: `-webkit-linear-gradient(45deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
             WebkitBackgroundClip: 'text',
@@ -36,12 +37,14 @@ export const FlagQuizSummary = () => {
           variant="h4" 
           gutterBottom
           className="summary-score"
+          data-testid="final-score"
           sx={{ color: theme.palette.text.secondary }}
         >
           {t('finalScore')}: {state.score}/{state.answers.length}
         </Typography>
         <Typography 
           variant="h5"
+          data-testid="accuracy"
           sx={{ color: theme.palette.text.secondary }}
         >
           {t('accuracy')}: {accuracy.toFixed(1)}%
@@ -49,11 +52,12 @@ export const FlagQuizSummary = () => {
       </div>
 
       <Grid container spacing={3} sx={{ mb: 6 }}>
-        {state.answers.map((answer) => (
-          <Grid item xs={12} key={answer.questionId}>
+        {state.answers.map((answer, index) => (
+          <Grid item xs={12} key={`${answer.questionId}-${index}`}>
             <Paper
               elevation={3}
               className="answer-card"
+              data-testid={`answer-card-${index}`}
             >
               <Typography variant="h6" gutterBottom>
                 {t('questions.flag', { country: answer.countryName })}
@@ -70,6 +74,7 @@ export const FlagQuizSummary = () => {
                     src={answer.selectedAnswer} 
                     alt={`Selected flag for ${answer.countryName}`}
                     className="summary-flag"
+                    data-testid={`selected-flag-${index}`}
                   />
                 </div>
                 {!answer.isCorrect && (
@@ -81,6 +86,7 @@ export const FlagQuizSummary = () => {
                       src={answer.correctAnswer} 
                       alt={`Correct flag for ${answer.countryName}`}
                       className="summary-flag"
+                      data-testid={`correct-flag-${index}`}
                     />
                   </div>
                 )}

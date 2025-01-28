@@ -53,15 +53,22 @@ export const FlagQuizProvider = ({ children }: { children: React.ReactNode }) =>
 
     setUsedQuestions((prev) => new Set([...prev, question.id]));
 
+    const nextQuestionNumber = state.currentQuestionNumber + 1;
+    const willBeFinished = nextQuestionNumber > QUESTIONS_PER_QUIZ;
+
     setState((prev) => ({
       ...prev,
       score: isCorrect ? prev.score + 1 : prev.score,
       answers: [...prev.answers, answer],
-      currentQuestionNumber: prev.currentQuestionNumber + 1,
-      isFinished: prev.currentQuestionNumber >= QUESTIONS_PER_QUIZ,
+      currentQuestionNumber: nextQuestionNumber,
+      isFinished: willBeFinished,
     }));
 
     setQuestion(null);
+
+    if (!willBeFinished) {
+      createNewQuestion();
+    }
   };
 
   const nextQuestion = () => {

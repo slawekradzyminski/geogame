@@ -109,11 +109,15 @@ describe('FlagQuizProvider', () => {
     );
 
     // when
-    await act(async () => {
-      for (let i = 0; i < QUESTIONS_PER_QUIZ; i++) {
+    for (let i = 0; i < QUESTIONS_PER_QUIZ; i++) {
+      await act(async () => {
         getByText('Submit Correct Answer').click();
-      }
-    });
+      });
+      // Wait for state updates
+      await act(async () => {
+        await new Promise(resolve => setTimeout(resolve, 0));
+      });
+    }
 
     // then
     expect(getByTestId('is-finished')).toHaveTextContent('true');

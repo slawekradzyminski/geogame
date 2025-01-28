@@ -16,7 +16,7 @@ export const FlagQuizQuestion = () => {
 
   if (!question) {
     return (
-      <div className="loading-container">
+      <div className="loading-container" data-testid="loading-indicator">
         <CircularProgress size={60} />
       </div>
     );
@@ -56,6 +56,7 @@ export const FlagQuizQuestion = () => {
           variant="h4"
           gutterBottom
           sx={{ color: theme.palette.primary.main }}
+          data-testid="question-number"
         >
           {t('question')} {state.currentQuestionNumber}/10
         </Typography>
@@ -63,6 +64,7 @@ export const FlagQuizQuestion = () => {
           variant="h5" 
           gutterBottom
           sx={{ color: theme.palette.text.secondary }}
+          data-testid="country-name"
         >
           {countryName}
         </Typography>
@@ -70,6 +72,7 @@ export const FlagQuizQuestion = () => {
           variant="h6" 
           gutterBottom
           sx={{ color: theme.palette.text.secondary, mb: 3 }}
+          data-testid="question-text"
         >
           {t('questions.flag', { country: countryName })}
         </Typography>
@@ -86,7 +89,7 @@ export const FlagQuizQuestion = () => {
                 className={getButtonClass(flagUrl)}
               >
                 <span className="flag-answer-letter">{ANSWER_LETTERS[index]}</span>
-                <img src={flagUrl} alt={`Flag option ${index + 1}`} />
+                <img src={flagUrl} alt={`Flag option ${index + 1}`} data-testid={`flag-image-${index}`} />
               </button>
             </div>
           </Grid>

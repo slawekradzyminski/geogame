@@ -27,7 +27,7 @@ test.describe('Flag Quiz', () => {
     for (let i = 0; i < 10; i++) {
       await page.getByTestId('answer-option-0').click();
       if (i < 9) {
-        await page.waitForTimeout(2100); // Wait for the next question
+        await page.waitForTimeout(1100); // Wait for feedback and next question
       }
     }
 
