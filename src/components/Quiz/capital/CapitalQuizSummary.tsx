@@ -36,6 +36,7 @@ export const CapitalQuizSummary = () => {
           variant="h4" 
           gutterBottom
           className="summary-score"
+          data-testid="quiz-score"
           sx={{ color: theme.palette.text.secondary }}
         >
           {t('finalScore')}: {state.score}/{state.answers.length}
@@ -53,9 +54,13 @@ export const CapitalQuizSummary = () => {
           <Grid item xs={12} key={answer.questionId}>
             <Paper
               elevation={3}
-              className="answer-card"
+              className={`answer-card ${answer.isCorrect ? 'correct' : 'incorrect'}`}
+              data-testid={`answer-card-${answer.questionId}`}
             >
               <Typography variant="h6" gutterBottom>
+                {answer.countryName}
+              </Typography>
+              <Typography variant="subtitle1" gutterBottom>
                 {t('whatIsCapital', { country: answer.countryName })}
               </Typography>
               <div className="answer-details">

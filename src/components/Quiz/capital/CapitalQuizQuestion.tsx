@@ -7,6 +7,7 @@ import { CountryMap } from '../CountryMap';
 import './CapitalQuizQuestion.css';
 import { Language } from '../../../types/quiz';
 import { ANSWER_LETTERS } from '../constants';
+
 export const CapitalQuizQuestion = () => {
   const { state, question, submitAnswer } = useCapitalQuiz();
   const { t, i18n } = useTranslation(['quiz']);
@@ -16,7 +17,7 @@ export const CapitalQuizQuestion = () => {
 
   if (!question) {
     return (
-      <div className="loading-container">
+      <div className="loading-container" data-testid="loading-indicator">
         <CircularProgress size={60} />
       </div>
     );
@@ -41,8 +42,8 @@ export const CapitalQuizQuestion = () => {
 
   const getButtonClass = (option: string) => {
     if (selectedAnswer === null) return 'answer-button';
-    if (selectedAnswer === option) return isCorrect ? 'answer-button correct' : 'answer-button wrong';
-    if (option === correctAnswer) return 'answer-button correct';
+    if (selectedAnswer === option) return `answer-button ${isCorrect ? 'correct' : 'wrong'}`;
+    if (option === correctAnswer && selectedAnswer !== null) return 'answer-button correct';
     return 'answer-button disabled';
   };
 
@@ -64,11 +65,20 @@ export const CapitalQuizQuestion = () => {
           variant="h4"
           gutterBottom
           sx={{ color: theme.palette.primary.main }}
+          data-testid="question-number"
         >
           {t('question')} {state.currentQuestionNumber}/10
         </Typography>
         <Typography 
           variant="h5" 
+          gutterBottom
+          sx={{ color: theme.palette.text.secondary }}
+          data-testid="country-name"
+        >
+          {countryName}
+        </Typography>
+        <Typography 
+          variant="h6" 
           gutterBottom
           sx={{ color: theme.palette.text.secondary, mb: 3 }}
         >

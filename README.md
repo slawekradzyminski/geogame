@@ -65,14 +65,7 @@ The project plan is maintained in `PLAN.md`. This file contains:
 - Project structure
 
 ### Testing
-- Unit tests with Jest
-  - Co-located with implementation files in the same directory
-  - Tests follow given/when/then pattern
-  - Focus on business logic and utilities
-  - Use real data from JSON files
-- E2E tests with Playwright in `/tests`
-  - Test full user flows and UI interactions
-  - Follow given/when/then pattern
+- See `tests.md` for detailed testing documentation and guidelines
 - Run tests:
   ```bash
   npm run test:unit     # Jest unit tests

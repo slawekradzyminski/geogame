@@ -37,7 +37,7 @@
     "perfect": "Perfect score! You got all questions right!"
   },
   "question": "Question",
-  "whatIsCapital": "What is the capital of {{country}}?",
+  "whatIsCapital": "What is the capital of this country?",
   "identifyCity": "Which city is {{city}}?",
   "summary": "Quiz Summary",
   "finalScore": "Final Score",
