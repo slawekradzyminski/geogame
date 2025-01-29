@@ -92,3 +92,76 @@ The project plan is maintained in `PLAN.md`. This file contains:
 - Always read the test output carefully to identify the root cause of failures
 - Keep component styles in separate CSS files to improve maintainability
 - Use arrow function syntax for component definitions and hooks
+
+### TypeScript Patterns
+- Types should be placed in `/types` directory
+- Use interfaces for component props (e.g., `interface QuizProps`)
+- Use type for complex state objects (e.g., `type QuizState`)
+- Prefer union types over enums
+- Export types from `index.ts` files
+
+### State Management
+- Each quiz type has its own context provider
+- Context structure:
+  ```typescript
+  {
+    state: QuizState;        // Current quiz state
+    question: QuizQuestion;  // Current question data
+    submitAnswer: (answer: string) => void;
+    resetQuiz: () => void;
+  }
+  ```
+- Use reducers for complex state management
+- State includes: score, current question, answers history
+
+### Component Structure
+- Props interface should be defined above component
+- Use functional components with hooks
+- Co-locate tests and styles
+- Follow naming convention:
+  ```typescript
+  interface ComponentProps {}
+  export const Component: React.FC<ComponentProps> = () => {};
+  ```
+
+### Testing Patterns
+- Use given/when/then comments in tests
+- Mock providers in test setup
+- Test data should be in separate fixtures
+- Test file naming: `Component.test.tsx`
+- Order tests by HTTP status code (200, 400, 403, etc.)
+
+### Error Handling
+- Use try/catch for async operations
+- Display error states in UI
+- Log errors appropriately
+- Provide user-friendly error messages
+
+### Accessibility
+- Use semantic HTML
+- Include ARIA labels
+- Support keyboard navigation
+- Test with screen readers
+- Follow WCAG 2.1 guidelines
+
+### Performance
+- Lazy load components when possible
+- Memoize expensive computations
+- Optimize re-renders with useMemo/useCallback
+- Use proper key props in lists
+
+### Quiz Implementation Guide
+1. Create context provider with state management
+2. Implement main quiz component
+3. Create question component with answer handling
+4. Add summary component for results
+5. Include comprehensive tests
+6. Add translations
+7. Style components consistently
+
+### Common Patterns
+- Use Material UI components
+- Follow existing styling patterns
+- Implement responsive design
+- Handle loading states
+- Include proper test coverage

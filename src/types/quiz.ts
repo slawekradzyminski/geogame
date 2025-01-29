@@ -35,4 +35,25 @@ export interface QuizContextType {
   submitAnswer: (answer: string) => void;
   nextQuestion: () => void;
   resetQuiz: () => void;
+}
+
+export interface LanguageQuizQuestion extends Omit<QuizQuestion, 'correctAnswerEN' | 'correctAnswerPL'> {
+  correctAnswersEN: string[];
+  correctAnswersPL: string[];
+}
+
+export interface LanguageQuizAnswer extends Omit<Answer, 'selectedAnswer' | 'correctAnswer'> {
+  selectedAnswers: string[];
+  correctAnswers: string[];
+  partiallyCorrect?: boolean;
+}
+
+export interface LanguageQuizState extends Omit<QuizState, 'answers'> {
+  answers: LanguageQuizAnswer[];
+}
+
+export interface LanguageQuizContextType extends Omit<QuizContextType, 'state' | 'question' | 'submitAnswer'> {
+  state: LanguageQuizState;
+  question: LanguageQuizQuestion | null;
+  submitAnswer: (answers: string[]) => void;
 } 
